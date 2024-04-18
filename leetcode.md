@@ -29,7 +29,7 @@ The number of nodes in each linked list is in the range [1, 100].
 0 <= Node.val <= 9
 It is guaranteed that the list represents a number that does not have leading zeros.
 
-# My First Code
+## My First Code (X)
 
 思路：把链表转换成整数，整数相加，再把整数转换为一个顺序相反的数组，用这个数组生产一个链表。
 
@@ -168,5 +168,6 @@ func getNode(li []int) *ListNode {
 	//最后得到的node就是最新生产的一个元素，也就是链表的第一个元素，就是链表头
 	return node
 }
-
 ```
+
+## My Second Code
