@@ -1,31 +1,48 @@
-/*
+# 1672. Richest Customer Wealth
+
+Easy
+
 You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i​​​​​​​​​​​th​​​​ customer has in the j​​​​​​​​​​​th​​​​ bank. Return the wealth that the richest customer has.
+
 A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+
+ 
 
 Example 1:
 
-Input: accounts = [[1,2,3],[3,2,1]]
+> Input: accounts = \[[1,2,3],[3,2,1]]
 Output: 6
 Explanation:
 1st customer has wealth = 1 + 2 + 3 = 6
 2nd customer has wealth = 3 + 2 + 1 = 6
 Both customers are considered the richest with a wealth of 6 each, so return 6.
-*/
 
-package main
+Example 2:
 
-import "fmt"
+>Input: accounts = \[[1,5],[7,3],[3,5]]
+Output: 10
+Explanation: 
+1st customer has wealth = 6
+2nd customer has wealth = 10 
+3rd customer has wealth = 8
+The 2nd customer is the richest with a wealth of 10.
 
-func main() {
+Example 3:
 
-	var arr [][]int = [][]int{
-		{1, 2, 3},
-		{3, 2, 1},
-	}
-	fmt.Println(maximumWealth(arr))
-	fmt.Println(maximumWealth2(arr))
-}
+>Input: accounts = \[[2,8,7],[7,1,3],[1,9,5]]
+Output: 17
+ 
 
+Constraints:
+
+m == accounts.length
+n == accounts[i].length
+1 <= m, n <= 50
+1 <= accounts[i][j] <= 100
+
+## My First Try (√)
+
+```go
 func maximumWealth(accounts [][]int) int {
 	// 假设最富有的投资者资金为0
 	var oneManInv int = 0
@@ -48,10 +65,12 @@ func maximumWealth(accounts [][]int) int {
 	//返回最富投资者资金总数
 	return oneManInv
 }
+```
 
-//=====================================并发=============================================
+## My Second Try (√) -- Concurrency
 
-func maximumWealth2(accounts [][]int) int {
+```go
+func maximumWealth(accounts [][]int) int {
 	// 假设最富有的投资者资金为0
 	sumMax := 0
 	// 定义一个任务数量为len(accounts)，也就是统计的人数的通道
@@ -82,3 +101,4 @@ func sum(arr []int, result chan<- int) {
 	}
 	result <- sum
 }
+```
