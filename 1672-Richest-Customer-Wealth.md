@@ -102,3 +102,5 @@ func sum(arr []int, result chan<- int) {
 	result <- sum
 }
 ```
+
+使用 goroutines 和 channels 来并发计算每个客户的财富看似提升了效率，但对于这种计算密集型但计算规模较小的任务，引入并发可能反而增加了复杂度和执行时间（因为goroutine的调度和通道的同步操作本身有开销）。对于小规模数据，直接串行处理通常更快，也更简单。
