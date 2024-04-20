@@ -13,3 +13,5 @@
 [88-Merge-Sorted-Array.md](Memos/88-Merge-Sorted-Array.md)
 
 [27-Remove-Element.md](Memos/27-Remove-Element.md)
+
+[26-Remove-Duplicates-from-Sorted-Array.md](Memos/26-Remove-Duplicates-from-Sorted-Array.md)
