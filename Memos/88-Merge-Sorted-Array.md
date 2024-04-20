@@ -48,7 +48,7 @@ Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 ```go
 // 错误原因：没有修改原本nums1的值，而是新拷贝了切片
-func merge1(nums1 []int, m int, nums2 []int, n int) {
+func merge(nums1 []int, m int, nums2 []int, n int) {
 	nums1 = nums1[0:m]
 
 	// 定义一个容量为m+n的切片
@@ -84,7 +84,7 @@ func merge1(nums1 []int, m int, nums2 []int, n int) {
 }
 ```
 
-## Answer
+## Answer 从后往前合并 （最优）
 ```go
 // answer,从后往前合并
 func merge(nums1 []int, m int, nums2 []int, n int) {
@@ -107,6 +107,45 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 			j -= 1
 		}
 		k -= 1
+	}
+}
+```
+
+## 从前往后合并 （一般）
+
+```go
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	// 定义一个新切片来储存nums1中的值，如果不这样，直接在nums1中操作，过程中会覆盖掉还没操作的数据
+	var temp = make([]int, m)
+	copy(temp, nums1[:m])
+	// 定义下标，三个切片均从0开始
+	i, j, k := 0, 0, 0
+
+	// 如果temp和nums2都没取到底，每次都把temp和nums2中的第i或j个元素拿出来比较，小的放进nums1里，然后i或j加一
+	for j < n && i < m {
+		// 如果i小于m并且temp中的值小于nums2中的值，就把temp中的值放进nums1里，反之把nums2中的值放进nums1里
+		if temp[i] <= nums2[j] {
+			nums1[k] = temp[i]
+			i += 1
+		} else {
+			nums1[k] = nums2[j]
+			j += 1
+		}
+		k += 1
+	}
+
+	// 如果nums2中还有数据，就把nums2中的数据放进nums1里
+	for j < n {
+		nums1[k] = nums2[j]
+		j += 1
+		k += 1
+	}
+
+	// 如果temp中还有数据，就把temp中的数据放进nums1里
+	for i < m {
+		nums1[k] = temp[i]
+		i += 1
+		k += 1
 	}
 }
 ```

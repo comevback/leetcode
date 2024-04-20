@@ -11,3 +11,5 @@
 [383-Ransom-Note.md](Memos/383-Ransom-Note.md)
 
 [88-Merge-Sorted-Array.md](Memos/88-Merge-Sorted-Array.md)
+
+[27-Remove-Element.md](Memos/27-Remove-Element.md)
