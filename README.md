@@ -9,3 +9,5 @@
 [876.-Middle-of-the-Linked-List.md](Memos/876.-Middle-of-the-Linked-List.md)
 
 [383-Ransom-Note.md](Memos/383-Ransom-Note.md)
+
+[88-Merge-Sorted-Array.md](Memos/88-Merge-Sorted-Array.md)
