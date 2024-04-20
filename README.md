@@ -1,3 +1,5 @@
+[1-Two-Sum.md](Memos/1-Two-Sum.md)
+
 [2-Add-Two-Number.md](Memos/2-Add-Two-Number.md)
 
 [1480-Running-Sum-of-1d-Array.md](Memos/1480-Running-Sum-of-1d-Array.md)
