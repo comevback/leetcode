@@ -1,3 +1,5 @@
+[Go-bufio-and-fmt.md](Memos/Go-bufio-and-fmt.md)
+
 [1-Two-Sum.md](Memos/1-Two-Sum.md)
 
 [2-Add-Two-Number.md](Memos/2-Add-Two-Number.md)
