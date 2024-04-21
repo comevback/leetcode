@@ -1,4 +1,4 @@
-# Go Package
+# Go Packages
 
 ---
 
