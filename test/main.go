@@ -3,48 +3,90 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
-	// 自分の得意な言語で
-	// スキルチェックの基本となる、標準入力で値を取得し、
-	// 出力するコードを書いてみよう！
-	fmt.Println("enter anything")
+	exec()
+}
 
-	// 这是用fmt的Scan方法的输入 ====
-	var input string
-	_, err := fmt.Scanln(&input)
-
+// main function
+func exec() {
+	var input int
+	_, err := fmt.Scan(&input)
 	if err != nil {
-		fmt.Println("err:", err)
+		log.Fatal("invalid input: ", err)
 	}
+	res := callCal(input, []int{})
+	printArr(res)
+}
 
-	fmt.Println(input)
-
-	// =============================
-
-	// 用bufio
-
-	// 创建一个输入检测对象scanner
-	//scanner := bufio.NewScanner(os.Stdin)
-
-	// 单次输入
-
-	//
-	// scanner.Scan()
-	// str := scanner.Text()
-	// fmt.Println(str)
-	scanner := bufio.NewScanner(os.Stdin)
-
-	// 每一个输入，都输出对应的值
-	for scanner.Scan() {
-		input := scanner.Text()
-		if input == "exit" {
-			break
+// calculate the sum of the square of the positive numbers
+func Sum(arr []string) int {
+	if len(arr) == 0 {
+		return 0
+	} else {
+		num, err := strconv.Atoi(arr[0])
+		if err != nil {
+			log.Fatal(err)
 		}
-		fmt.Print("your input is: ")
-		fmt.Println(input)
+		if num <= 0 {
+			return Sum(arr[1:])
+		} else {
+			return Square(num) + Sum(arr[1:])
+		}
 	}
-	//
+}
+
+func Square(n int) int {
+	return n * n
+}
+
+// call the callSum function for certain times
+func callCal(times int, results []int) []int {
+	if times == 0 {
+		return results
+	} else {
+		arr := getInput()
+		if len(arr) > 1 || len(arr) == 0 {
+			log.Fatal("invalid number")
+		}
+		num, err := strconv.Atoi(arr[0])
+		if err != nil {
+			log.Fatal(err)
+		}
+		// defer fmt.Println(callSum(num))
+		results = append(results, callSum(num))
+		return callCal(times-1, results)
+	}
+}
+
+// calculate the sum of given numbers
+func callSum(amount int) int {
+	arr := getInput()
+	if len(arr) != amount {
+		log.Fatal("not right nums")
+	}
+	return Sum(arr)
+}
+
+// getInput get input from stdin for the callSum and callCal
+func getInput() []string {
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	str := scanner.Text()
+	str = strings.TrimSpace(str)
+	arr := strings.Split(str, " ")
+	return arr
+}
+
+// print the result in thn end
+func printArr(nums []int) {
+	if len(nums) != 0 {
+		fmt.Println(nums[0])
+		printArr(nums[1:])
+	}
 }

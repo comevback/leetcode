@@ -221,6 +221,59 @@ if err := scanner.Err(); err != nil {
 
 - 状态管理：**scanner.Scan() 返回一个布尔值**，如果 scanner.Scan() 能从输入中成功读取数据，它会更新其内部状态并准备下一次读取，返回 true。如果遇到输入结束（EOF）或错误，它会返回 false，这也会导致 for 循环终止。
 
+### bufio.NewScanner(file) 和 bufio.NewReader(file) 有什么不同
+
+`bufio.NewScanner` 和 `bufio.NewReader` 在 Go 语言中都用于读取数据，但它们提供了不同的接口和功能，适用于不同的使用场景。下面是两者之间的主要区别：
+
+### bufio.NewScanner
+
+- **用途**：`bufio.NewScanner` 主要用于逐行读取文本文件。它提供了一个简便的接口来逐行扫描文件。
+- **基本方法**：使用 `Scan()` 方法逐行读取，每次调用 `Scan()` 都会移动到下一行。读取的每一行可以通过 `Text()` 或 `Bytes()` 方法获取。
+- **内存管理**：默认情况下，`Scanner` 的缓冲区大小为 4096 字节，但可以通过 `Buffer()` 方法自定义缓冲区的大小和容量，这对于处理超长行非常有用。
+- **错误处理**：可以通过 `Err()` 方法检查扫描过程中是否发生错误。
+- **使用场景**：非常适合处理标准或结构化的文本文件，尤其是需要按行读取的情况。
+
+### bufio.NewReader
+
+- **用途**：`bufio.NewReader` 提供了更通用的缓冲读取功能，可以用来读取任何类型的数据，不限于文本文件。
+- **基本方法**：提供多种读取方法，如 `Read()`, `ReadByte()`, `ReadBytes()`, `ReadLine()`, `ReadString()` 等。这使得 `NewReader` 在读取数据时更为灵活。
+- **缓冲区**：内置的缓冲机制可以减少对底层 IO 的直接调用次数，提高读取效率。缓冲区大小默认通常为 4096 字节，但这是在底层实现中设置的，通常不需要自定义。
+- **错误处理**：错误通常在各个读取方法中直接返回，需要在每次调用时检查。
+- **使用场景**：更适合需要更复杂数据处理的场景，例如处理二进制文件，或者需要从数据流中读取特定格式数据（如直到遇到特定字符）。
+
+### 示例比较
+
+如果你只需要逐行读取文本文件，并对每一行进行处理，使用 `Scanner` 更为简单直接：
+
+```go
+scanner := bufio.NewScanner(file)
+for scanner.Scan() {
+    line := scanner.Text()
+    // 处理 line
+}
+if err := scanner.Err(); err != nil {
+    log.Fatal(err)
+}
+```
+
+如果需要更灵活地处理数据，比如读取直到遇到特定字符，或者处理可能不仅仅是按行分割的数据，则 `NewReader` 更合适：
+
+```go
+reader := bufio.NewReader(file)
+for {
+    line, err := reader.ReadString('\n')
+    if err != nil {
+        if err == io.EOF {
+            break
+        }
+        log.Fatal(err)
+    }
+    // 处理 line
+}
+```
+
+总的来说，选择哪个依赖于你的具体需求，`bufio.NewScanner` 提供了更简单的接口对于基于行的读取，而 `bufio.NewReader` 则提供了更多的控制和灵活性对于各种类型的输入处理。
+
 ---
 
 # strconv
