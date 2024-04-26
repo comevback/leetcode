@@ -27,3 +27,5 @@
 [80-Remove-Duplicates-from-Sorted-Array-II.md](Memos/80-Remove-Duplicates-from-Sorted-Array-II.md)
 
 [169-Majority-Element.md](Memos/169-Majority-Element.md)
+
+[189-Rotate-Array.md](Memos/189-Rotate-Array.md)
