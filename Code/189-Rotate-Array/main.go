@@ -70,7 +70,7 @@ func rotate3(nums []int, k int) {
 	fmt.Println(nums)
 }
 
-// 翻转数组功能（可定义范围）
+// 翻转数组功能1（可定义范围）
 func reverse(arr []int, start int, end int) {
 	// 边界检查
 	if end <= start {
@@ -90,7 +90,7 @@ func reverse(arr []int, start int, end int) {
 	}
 }
 
-// 翻转数组功能，不可定义范围
+// 翻转数组功能2，不可定义范围
 func reverse2(arr []int) {
 	// 边界检查
 	length := len(arr)
@@ -102,7 +102,7 @@ func reverse2(arr []int) {
 	}
 }
 
-// 翻转数组功能
+// 翻转数组功能3
 func reverse3(arr []int, start int, end int) {
 	length := end - start
 	if length > len(arr) {
