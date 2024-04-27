@@ -23,7 +23,7 @@ func maxProfit(prices []int) int {
 
 //========================================================================================================================
 
-// second try O(n)-O(n)
+// 把每一天和前一天相差的差值，统计为一个数组 O(n)-O(n)
 func maxProfit2(prices []int) int {
 	length := len(prices)
 
