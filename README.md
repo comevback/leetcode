@@ -1,8 +1,4 @@
-[ResumeCheck.md](Memos/Resume.md)
-
-[Go-Packages.md](Memos/Go-Packages.md)
-
-[Go-bufio-and-fmt.md](Memos/Go-bufio-and-fmt.md)
+[Go-Packages.md](Go-Packages.md)
 
 [1-Two-Sum.md](Memos/1-Two-Sum.md)
 
