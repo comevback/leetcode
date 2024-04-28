@@ -2,6 +2,35 @@
 
 ---
 
+# Strings
+### 把字符拼接成字符串 strings.Builder
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	// 定义一个strings.Builder对象为builder
+	var builder strings.Builder
+	// 遍历3到1，用fmt.Fprintf()方法将数字加到builder中，也可以用builder.WriteByte()的方法写入
+	for i := 3; i >= 1; i-- {
+		fmt.Fprintf(&builder, "%d...", i)
+	}
+	// 将字符串"ignition"加到builder中
+	builder.WriteString("ignition")
+	// 将builder中的内容由字符转换为字符串，并打印输出
+	fmt.Println(builder.String())
+
+}
+```
+```terminal
+Output:
+3...2...1...ignition
+```
+
 # os
 <https://pkg.go.dev/os>
 

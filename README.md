@@ -33,3 +33,7 @@
 [55-Jump-Game.md](Memos/55-Jump-Game.md)
 
 [45-Jump-Game-II.md](Memos/45-Jump-Game-II.md)
+
+[1768-Merge-Strings-Alternately.md](Memos/1768-Merge-Strings-Alternately.md)
+
+[1071-Greatest-Common-Divisor-of-Strings.md](Memos/1071-Greatest-Common-Divisor-of-Strings.md)
