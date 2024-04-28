@@ -37,3 +37,5 @@
 [1768-Merge-Strings-Alternately.md](Memos/1768-Merge-Strings-Alternately.md)
 
 [1071-Greatest-Common-Divisor-of-Strings.md](Memos/1071-Greatest-Common-Divisor-of-Strings.md)
+
+[1431-Kids-With-the-Greatest-Number-of-Candies.md](Memos/1431-Kids-With-the-Greatest-Number-of-Candies.md)
