@@ -8,8 +8,16 @@ func main() {
 	fmt.Println(nums)
 }
 
-func BubbleSort(nums []int) {
-	for i := 0; i < len(nums)-1; i++ {
+// BubbleSort 冒泡排序 O(n^2) - O(1)
 
+func BubbleSort(nums []int) {
+	// 两层循环，每次都把最大的数放到最后
+	for i := 0; i < len(nums)-1; i++ {
+		// 每次都把最大的数放到最后
+		for j := 0; j < len(nums)-1-i; j++ {
+			if nums[j] > nums[j+1] {
+				nums[j], nums[j+1] = nums[j+1], nums[j]
+			}
+		}
 	}
 }

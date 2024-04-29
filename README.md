@@ -5,6 +5,7 @@
 ## Sorting Functions:
 
 [Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
+[Bubble-Sort.md](Memos/Bubble-Sort/Bubble-Sort.md)
 
 ## leetcode Practices and Memos:
 
@@ -53,3 +54,5 @@
 [345-Reverse-Vowels-of-a-String.md](Memos/345-Reverse-Vowels-of-a-String.md)
 
 [217-Contains-Duplicate.md](Memos/217-Contains-Duplicate.md)
+
+[53-Maximum-Subarray.md](Memos/53-Maximum-Subarray.md)
