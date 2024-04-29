@@ -1,4 +1,12 @@
+## Package Usage:
+
 [Go-Packages.md](Go-Packages.md)
+
+## Sorting Functions:
+
+[Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
+
+## leetcode Practices and Memos:
 
 [1-Two-Sum.md](Memos/1-Two-Sum.md)
 
@@ -43,3 +51,5 @@
 [605-Can-Place-Flowers.md](Memos/605-Can-Place-Flowers.md)
 
 [345-Reverse-Vowels-of-a-String.md](Memos/345-Reverse-Vowels-of-a-String.md)
+
+[217-Contains-Duplicate.md](Memos/217-Contains-Duplicate.md)
