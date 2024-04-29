@@ -41,3 +41,5 @@
 [1431-Kids-With-the-Greatest-Number-of-Candies.md](Memos/1431-Kids-With-the-Greatest-Number-of-Candies.md)
 
 [605-Can-Place-Flowers.md](Memos/605-Can-Place-Flowers.md)
+
+[345-Reverse-Vowels-of-a-String.md](Memos/345-Reverse-Vowels-of-a-String.md)
