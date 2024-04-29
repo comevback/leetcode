@@ -31,6 +31,60 @@ Output:
 3...2...1...ignition
 ```
 
+### 字符串分割 strings.Split
+有几种方法：
+1. strings.Split(s, sep)：按照 sep 分割字符串 s，返回一个字符串切片。
+2. strings.Fields(s)：按照空格分割字符串 s，返回一个字符串切片。
+3. strings.FieldsFunc(s, f)：按照自定义函数 f 分割字符串 s，返回一个字符串切片。
+4. strings.SplitAfter(s, sep)：按照 sep 分割字符串 s，返回一个字符串切片，每个元素包含 sep。
+
+> - 一个或多个空格分割字符串 ==> strings.Fields(s)
+> - 单个空格或其他字符分割字符串 ==> strings.Split(s, sep)
+> - 自定义函数分割字符串 ==> strings.FieldsFunc(s, f)
+> - 每个元素包含分割的字符 ==> strings.SplitAfter(s, sep)
+
+FieldsFunc 函数接受一个自定义的函数 f，该函数接受一个 rune 类型的参数，并返回一个 bool 类型的值。FieldsFunc 会根据 f 的返回值来决定是否在该位置分割字符串。如果 f 返回 true，则在该位置分割字符串；如果 f 返回 false，则不分割。
+example:
+```go
+func main() {
+	f := func(c rune) bool {
+		return !unicode.IsLetter(c) && !unicode.IsNumber(c)
+	}
+	fmt.Printf("Fields are: %q", strings.FieldsFunc("  foo1;bar2,baz3...", f))
+}
+```
+```terminal
+Output:
+Fields are: ["foo1" "bar2" "baz3"]
+```
+
+### 字符串连接 strings.Join
+```go
+package main
+
+import (
+    "fmt"
+    "strings"
+)
+
+func main() {
+    // 定义一个字符串切片为slice
+    slice := []string{"foo", "bar", "baz"}
+    // 将slice中的元素用"|"连接起来，赋值给str
+    str := strings.Join(slice, "|")
+    // 打印输出str
+    fmt.Println(str)
+}
+```
+```terminal
+Output:
+foo|bar|baz
+```
+
+
+
+
+
 # os
 <https://pkg.go.dev/os>
 
