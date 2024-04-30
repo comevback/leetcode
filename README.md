@@ -5,6 +5,7 @@
 ## Sorting Functions:
 
 [Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
+
 [Bubble-Sort.md](Memos/Bubble-Sort/Bubble-Sort.md)
 
 ## leetcode Practices and Memos:
@@ -58,3 +59,7 @@
 [53-Maximum-Subarray.md](Memos/53-Maximum-Subarray.md)
 
 [Longest-Word.md](Memos/Longest-Word.md)
+
+[283-Move-Zeroes.md](Memos/283-Move-Zeroes.md)
+
+[* 1915-Number-of-Wonderful-Substrings.md](Memos/1915-Number-of-Wonderful-Substrings.md)
