@@ -67,3 +67,5 @@
 [2215-Find-the-Difference-of-Two-Arrays.md](Memos/2215-Find-the-Difference-of-Two-Arrays.md)
 
 [1207-Unique-Number-of-Occurrences.md](Memos/1207-Unique-Number-of-Occurrences.md)
+
+[392-Is-Subsequence.md](Memos/392-Is-Subsequence.md)
