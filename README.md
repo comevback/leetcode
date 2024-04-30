@@ -10,6 +10,8 @@
 
 [Bubble-Sort.md](Memos/Bubble-Sort/Bubble-Sort.md)
 
+[Insertion-Sort.md](Memos/Insertion-Sort/Insertion-Sort.md)
+
 ## leetcode Practices and Memos:
 
 [1-Two-Sum.md](Memos/1-Two-Sum.md)
