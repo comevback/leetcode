@@ -2,6 +2,8 @@
 
 [Go-Packages.md](Go-Packages.md)
 
+[手写LinkedList.md](DSA-implementation/handmadeLinkedList/手写LinkedList.md)
+
 ## Sorting Functions:
 
 [Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
