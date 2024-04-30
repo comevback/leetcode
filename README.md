@@ -1,4 +1,4 @@
-## Package Usage:
+## Fundamentals:
 
 [Go-Packages.md](Go-Packages.md)
 
