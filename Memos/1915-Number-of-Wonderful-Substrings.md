@@ -1,5 +1,7 @@
 # 1915. Number of Wonderful Substrings（二进制掩码+哈希表统计WS出现次数）
 
+## 如果类似这种统计子串的题目，可以考虑用二进制掩码来统计子串的特征，然后用哈希表来统计子串出现的次数
+
 Medium
 
 Hint

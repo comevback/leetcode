@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main_mergeSortedArrays() {
 	arr1 := []int{0, 3, 4, 31}
 	arr2 := []int{4, 6, 30}
 	fmt.Println(mergeSortedArrays1(arr1, arr2))
