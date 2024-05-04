@@ -403,4 +403,154 @@ q := strconv.QuoteToASCII("Hello, 世界")
 ```
 在这行代码中，q 将被赋值为 "\"Hello, \u4e16\u754c\""。这里的中文字符“世界”被转换为了其对应的 Unicode 转义序列。这使得字符串在只支持 ASCII 字符的环境中也能被正确显示或处理。
 
+---
 
+# 定义一个接收各种类型的函数
+
+### 1. 使用switch语句，
+   可以根据传入的值的类型执行不同的操作。这在处理不同类型的输入时非常有用，例如从用户输入中读取值并根据其类型执行不同的操作。类型值用 value.(type)来获取
+```go
+func printType(value interface{}) {
+    switch v := value.(type) {
+    case int:
+        fmt.Println("int:", v)
+    case string:
+        fmt.Println("string:", v)
+    case bool:
+        fmt.Println("bool:", v)
+    default:
+        fmt.Println("unknown type")
+    }
+}
+```
+
+###  2. 使用 value.('具体类型')来断言具体值
+```go
+func printType(value interface{}) {
+    if v, ok := value.(int); ok {
+        fmt.Println("int:", v)
+    } else if v, ok := value.(string); ok {
+        fmt.Println("string:", v)
+    } else if v, ok := value.(bool); ok {
+        fmt.Println("bool:", v)
+    } else {
+        fmt.Println("unknown type")
+    }
+}
+```
+或 
+```go
+func add(a, b interface{}) interface{} {
+    // 尝试将 a 和 b 转换为 int 类型
+    aInt, aIsInt := a.(int)
+    bInt, bIsInt := b.(int)
+    // 如果ab都是Int类型，返回int类型的a+b
+    if aIsInt && bIsInt{
+        return aInt + bInt
+    }
+
+    // 同上，float类型
+    aFloat, aIsFloat := a.(float64)
+    bFloat, bIsFloat := b.(float64)
+
+    if aIsFloat && bIsFloat{
+        return aFloat + bFloat
+    }
+}
+```
+
+### 3. 使用 reflect 包来获取值的类型
+```go
+import "reflect"
+
+func printType(value interface{}) {
+    t := reflect.TypeOf(value)
+    fmt.Println("Type:", t)
+}
+```
+
+### 4. 使用 fmt.Sprintf 来获取值的类型
+fmt.Sprintf 函数可以将任何值转换为字符串，包括其类型。这使得我们可以使用 fmt.Sprintf("%T", value) 来获取值的类型。
+使用方法
+fmt.Sprintf 的语法如下：
+
+```go
+s := fmt.Sprintf(format string, a ...interface{}) string
+
+// format 是一个格式字符串，它告诉函数如何格式化后续的参数。
+// a 是一个可变数量的参数，它们将根据格式字符串进行格式化。
+// 函数返回一个新的字符串，该字符串包含按指定格式格式化的参数。
+```
+
+- %v：默认格式表示
+- %+v：当输出结构体时，会添加字段名
+- %#v：输出该值的 Go 语法表示
+- %T：输出一个值的类型
+- %d：十进制表示
+- %s：字符串表示
+- %f：浮点表示
+- %t：布尔表示
+- %p：指针的地址
+
+实例:
+
+```go
+func printType(value interface{}) {
+    // 使用 fmt.Sprintf 获取值的类型
+    t := fmt.Sprintf("%T", value)
+    fmt.Println("Type:", t)
+}
+```
+
+# 泛型 generics
+
+假如有一个方法，可以接收不同的类型参数，返回不同类型值，怎么做
+
+例如：这个方法可以接收各种类型参数，但是返回值都是any / interface{}, 不利于对这个结果的使用。
+```go
+func add(a, b interface{}) interface{} {
+    // 尝试将 a 和 b 转换为 int 类型
+    aInt, aIsInt := a.(int)
+    bInt, bIsInt := b.(int)
+    // 如果ab都是Int类型，返回int类型的a+b
+    if aIsInt && bIsInt{
+        return aInt + bInt
+    }
+
+    // 同上，float类型
+    aFloat, aIsFloat := a.(float64)
+    bFloat, bIsFloat := b.(float64)
+
+    if aIsFloat && bIsFloat{
+        return aFloat + bFloat
+    }
+}
+```
+
+这时候可以这样,在方法名后面，参数前面加一个[]，里面填入类型代称和类型名
+```go
+func add[T any](a, b T) T {
+    // 尝试将 a 和 b 转换为 int 类型
+    aInt, aIsInt := a.(int)
+    bInt, bIsInt := b.(int)
+    // 如果ab都是Int类型，返回int类型的a+b
+    if aIsInt && bIsInt{
+        return aInt + bInt
+    }
+
+    // 同上，float类型
+    aFloat, aIsFloat := a.(float64)
+    bFloat, bIsFloat := b.(float64)
+
+    if aIsFloat && bIsFloat{
+        return aFloat + bFloat
+    }
+}
+```
+
+```go
+func add[T int|float64|string](a, b T) T {
+    // T的类型是int|float64|string中的一种，确保可以执行+操作
+    return a + b
+}
+```
