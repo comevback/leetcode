@@ -106,4 +106,18 @@ func moveZeroes3(nums []int) {
 		}
 	}
 }
+
+// review solution
+func moveZeroes(nums []int) {
+	// head指向第一个0的位置
+	head := 0
+	// 从前往后遍历, 如果不为0，就把这个数和head指向的数交换，然后head+1, 这样就把所有的不为0的数都堆到前面了，后面的都是0
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			nums[head], nums[i] = nums[i], nums[head]
+			head += 1
+		}
+	}
+}
+
 ```
