@@ -60,3 +60,4 @@
 35. [* 443-String-Compression.md](Memos/443-String-Compression.md)
 36. [2441-Largest-Positive-Integer-That-Exists-With-Its-Negative.md](Memos/2441-Largest-Positive-Integer-That-Exists-With-Its-Negative.md)
 37. [* 322-Coin-Change.md](Memos/322-Coin-Change.md)
+38. [881-Boats-to-Save-People.md](Memos/881-Boats-to-Save-People.md)
