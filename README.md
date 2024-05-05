@@ -63,3 +63,4 @@
 38. [881-Boats-to-Save-People.md](Memos/881-Boats-to-Save-People.md)
 39. [11-Container-With-Most-Water.md](Memos/11-Container-With-Most-Water.md)
 40. [1679-Max-Number-of-K-Sum-Pairs.md](Memos/1679-Max-Number-of-K-Sum-Pairs.md)
+41. [237-Delete-Node-in-a-Linked-List.md](Memos/237-Delete-Node-in-a-Linked-List.md)
