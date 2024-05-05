@@ -1,7 +1,4 @@
-
 # [*Memos Notion link*](https://quaint-fascinator-7a3.notion.site/Xu-leetcode-Summary-ef3bd2078fda4d8281a406e8989215af?pvs=4)
-
-<!-- <h1><a href="https://quaint-fascinator-7a3.notion.site/Xu-leetcode-Summary-ef3bd2078fda4d8281a406e8989215af?pvs=4">Memos</a></h1> -->
 
 ---
 

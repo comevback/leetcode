@@ -4,12 +4,12 @@ func main() {
 
 }
 
-type Stack[T any] struct {
-	value []T
-}
+// type Stack[T any] struct {
+// 	value []T
+// }
 
-type Stack_getMin struct {
-}
+// type Stack_getMin struct {
+// }
 
 // func (stack *Stack[T]) push(newValue any) {
 // 	stack.value = append(stack.value, newValue)
