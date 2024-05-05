@@ -8,7 +8,9 @@
 
 [System-Design-Template.md](System-Design-Template.md)
 
-[手写LinkedList.md](DSA-implementation/handmadeLinkedList/手写LinkedList.md)
+[LinkedList-implementation.md](DSA-implementation/handmadeLinkedList/手写LinkedList.md)
+
+[Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
 
 ## Sorting Functions:
 
