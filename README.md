@@ -66,3 +66,4 @@
 41. [237-Delete-Node-in-a-Linked-List.md](Memos/237-Delete-Node-in-a-Linked-List.md)
 42. [328-Odd-Even-Linked-List.md](Memos/328-Odd-Even-Linked-List.md)
 43. [206-Reverse-Linked-List.md](Memos/206-Reverse-Linked-List.md)
+44. [2130-Maximum-Twin-Sum-of-a-Linked-List.md](Memos/2130-Maximum-Twin-Sum-of-a-Linked-List.md)
