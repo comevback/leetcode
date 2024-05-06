@@ -4,6 +4,10 @@
 
 ## Fundamentals:
 
+[BigO-cheat-sheet.md](BigO-cheat-sheet.md)
+
+[regex-cheatsheet.pdf](regex-cheatsheet.pdf)
+
 [Go-Packages.md](Go-Packages.md)
 
 [System-Design-Template.md](System-Design-Template.md)
@@ -12,7 +16,7 @@
 
 [Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
 
-## Sorting Functions:
+## Sorting:
 
 [Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
 
