@@ -1,25 +1,65 @@
 package main
 
+import "fmt"
+
 func main() {
 
 }
 
-// ======================================== 1. 定义链表结构 ========================================
+// ======================================== 1. 定义链表和节点 ========================================
 
 type LinkedList struct {
-	head *LinkedNode
-	tail *LinkedNode
+	head *ListNode
+	tail *ListNode
 }
 
-// ======================================== 2. 定义链表节点结构 ========================================
-type LinkedNode struct {
-	value any
-	Next  *LinkedNode
+type ListNode struct {
+	Val  any
+	Next *ListNode
+}
+
+// ======================================== 2. 构造方法  ========================================
+
+// 链表的构造函数
+func NewLinkedList(nums []int) *LinkedList {
+
+	// 如果数组为空，直接返回空链表
+	if len(nums) == 0 {
+		return nil
+	}
+
+	// 定义链表头和当前节点，头节点值为数组第一个元素
+	var head *ListNode = &ListNode{Val: nums[0]}
+	var current *ListNode = &ListNode{}
+	// 初始时头节点的下一个节点为当前节点
+	head.Next = current
+
+	// 遍历数组，构造链表，把每个节点的值赋值为数组当前元素的值
+	for i := 1; i < len(nums); i++ {
+		// 如果是最后一个元素，就直接赋值给当前节点的值，不要新增节点
+		if i == len(nums)-1 {
+			current.Val = nums[i]
+			break
+		}
+		current.Val = nums[i]
+		newNode := &ListNode{}
+		current.Next = newNode
+		current = current.Next
+	}
+
+	// 链表中，头节点就是链表的头，当前节点就是链表的尾
+	var linkList *LinkedList = &LinkedList{
+		head: head,
+		tail: current,
+	}
+
+	// 返回链表
+	return linkList
 }
 
 // ======================================== 3. append方法 ========================================
-// append方法 - LinkedNode
-func (node *LinkedNode) Append(newNode *LinkedNode) {
+// append方法 - ListNode
+func (node *ListNode) Append(newNode *ListNode) {
 	if node.Next != nil {
 		node.Next.Append(newNode)
 	} else {
@@ -28,7 +68,7 @@ func (node *LinkedNode) Append(newNode *LinkedNode) {
 }
 
 // append方法 - LinkedList
-func (lkList *LinkedList) Append(newNode *LinkedNode) {
+func (lkList *LinkedList) Append(newNode *ListNode) {
 	if lkList.tail != nil {
 		lkList.tail.Next = newNode
 		lkList.tail = newNode
@@ -39,21 +79,21 @@ func (lkList *LinkedList) Append(newNode *LinkedNode) {
 }
 
 // ======================================== 4. prepend方法 ========================================
-// prepend方法 - LinkedNode
-func (node *LinkedNode) Prepend(newNode *LinkedNode) *LinkedNode {
+// prepend方法 - ListNode
+func (node *ListNode) Prepend(newNode *ListNode) *ListNode {
 	newNode.Next = node
 	return newNode
 }
 
 // prepend方法 - LinkedList
-func (lkList *LinkedList) Prepend(newNode *LinkedNode) {
+func (lkList *LinkedList) Prepend(newNode *ListNode) {
 	newNode.Next = lkList.head
 	lkList.head = newNode
 }
 
 // ======================================== 5. insert方法 ========================================
-// Insert方法 - LinkedNode
-func (node *LinkedNode) Insert(newNode *LinkedNode, index int) {
+// Insert方法 - ListNode
+func (node *ListNode) Insert(newNode *ListNode, index int) {
 	if index == 0 {
 		node.Prepend(newNode)
 	}
@@ -71,7 +111,7 @@ func (node *LinkedNode) Insert(newNode *LinkedNode, index int) {
 }
 
 // Insert方法 - LinkedList
-func (lkList *LinkedList) Insert(newNode *LinkedNode, index int) {
+func (lkList *LinkedList) Insert(newNode *ListNode, index int) {
 	if index == 0 {
 		lkList.Prepend(newNode)
 	} else {
@@ -95,8 +135,8 @@ func (lkList *LinkedList) Insert(newNode *LinkedNode, index int) {
 }
 
 // ======================================== 6. delete方法 ========================================
-// delete方法 - LinkedNode
-func (node *LinkedNode) remove(deleteNode *LinkedNode) {
+// delete方法 - ListNode
+func (node *ListNode) remove(deleteNode *ListNode) {
 	// 检查当前节点的下一个节点是否是要删除的节点
 	if node.Next == deleteNode {
 		// 使当前节点直接指向要删除节点的下一个节点，从而删除之
@@ -112,7 +152,7 @@ func (node *LinkedNode) remove(deleteNode *LinkedNode) {
 }
 
 // delete方法 - LinkedList
-func (lkList *LinkedList) remove(deleteNode *LinkedNode) {
+func (lkList *LinkedList) remove(deleteNode *ListNode) {
 
 	//
 	if lkList.head == deleteNode {
@@ -132,4 +172,37 @@ func (lkList *LinkedList) remove(deleteNode *LinkedNode) {
 		node = node.Next
 	}
 	panic("node not found")
+}
+
+// ======================================== 7. 打印链表方法  ========================================
+
+// 打印链表为数组
+func printList(head *ListNode) {
+	var arr []any
+	for head != nil {
+		arr = append(arr, head.Val)
+		head = head.Next
+	}
+	fmt.Println(arr)
+}
+
+// 翻转链表  具体实现 （206-reverse-linked-list）
+func reverseLink(head *ListNode) *ListNode {
+	// 如果链表为空，直接返回
+	if head == nil {
+		return head
+	}
+	// 定义新链表头
+	var newHead *ListNode
+
+	// 遍历链表，把每个节点的Next指向新链表头，然后更新新链表头为当前节点
+	for head != nil {
+		temp := head.Next
+		head.Next = newHead
+		newHead = head
+		head = temp
+	}
+
+	// 返回新链表头
+	return newHead
 }

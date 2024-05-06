@@ -8,7 +8,7 @@
 
 [System-Design-Template.md](System-Design-Template.md)
 
-[LinkedList-implementation.md](DSA-implementation/handmadeLinkedList/手写LinkedList.md)
+[LinkedList-implementation.md](DSA-implementation/LinkedList/LinkedList-implementation.md)
 
 [Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
 
@@ -66,3 +66,4 @@
 42. [328-Odd-Even-Linked-List.md](Memos/328-Odd-Even-Linked-List.md)
 43. [206-Reverse-Linked-List.md](Memos/206-Reverse-Linked-List.md)
 44. [2130-Maximum-Twin-Sum-of-a-Linked-List.md](Memos/2130-Maximum-Twin-Sum-of-a-Linked-List.md)
+45. [2487-Remove-Nodes-From-Linked-List.md](Memos/2487-Remove-Nodes-From-Linked-List.md)
