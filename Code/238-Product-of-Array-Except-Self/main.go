@@ -93,3 +93,37 @@ func productExceptSelf(nums []int) []int {
 
 	return res
 }
+
+// ========================================================================================================================
+// review  2024.5.6
+func review(nums []int) []int {
+	frontProduct, backProduct := 1, 1
+	head, tail := 0, len(nums)-1
+	zeroCount := 0
+
+	var res []int = make([]int, len(nums))
+	for i := range res {
+		res[i] = 1
+	}
+
+	for head < len(nums) {
+		if nums[head] == 0 || nums[tail] == 0 {
+			if zeroCount == 1 {
+				return make([]int, len(nums))
+			} else {
+				zeroCount += 1
+			}
+		}
+
+		res[head] *= frontProduct  //此时frontProduct还没有乘nums[head]元素本身，所以是前面所有元素之积
+		frontProduct *= nums[head] //这时才乘nums[head]元素本身
+
+		res[tail] *= backProduct  //此时backProduct还没有乘nums[tail]元素本身，所以是前面所有元素之积
+		backProduct *= nums[tail] //这时才乘nums[tail]元素本身
+
+		head += 1
+		tail -= 1
+	}
+
+	return res
+}
