@@ -146,7 +146,7 @@ defer file.Close()
 filename := "example.txt"
 
 // 使用 os.ReadFile 读取文件内容
-content, err := os.ReadFile(filename)
+content, err := os.OpenFile("filename.txt", os.O_CREATE|os.O_WRONLY, 0644)
 if err != nil {
     log.Fatalf("Failed to read file: %v", err)
 }
