@@ -72,6 +72,7 @@
 44. [2130-Maximum-Twin-Sum-of-a-Linked-List.md](Memos/2130-Maximum-Twin-Sum-of-a-Linked-List.md)
 45. [2487-Remove-Nodes-From-Linked-List.md](Memos/2487-Remove-Nodes-From-Linked-List.md)
 46. [2816-Double-a-Number-Represented-as-a-Linked-List.md](Memos/2816-Double-a-Number-Represented-as-a-Linked-List.md)
+47. [1732-Find-the-Highest-Altitude.md](Memos/1732-Find-the-Highest-Altitude.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C084:枠で囲む/C084.md)
