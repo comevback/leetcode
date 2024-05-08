@@ -27,3 +27,16 @@ func insertionSort(arr []int) {
 		arr[j+1] = key
 	}
 }
+
+// 我的实现
+func insertSorting(nums []int) {
+	// 从第二个元素开始遍历，每个i都是未排名的，i之前的元素都是已排名的
+	for i := 1; i < len(nums); i++ {
+		// 从i开始，向前遍历，如果i小于i-1，则交换位置
+		for j := i; j > 0; j-- {
+			if nums[j] < nums[j-1] {
+				nums[j], nums[j-1] = nums[j-1], nums[j]
+			}
+		}
+	}
+}
