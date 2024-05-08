@@ -79,6 +79,7 @@
 49. [506-Relative-Ranks.md](Memos/506-Relative-Ranks.md)
 50. [21-Merge-Two-Sorted-Lists.md](Memos/21-Merge-Two-Sorted-Lists.md)
 51. [389-Find-the-Difference.md](Memos/389-Find-the-Difference.md)
+52. [28-Find-the-Index-of-the-First-Occurrence-in-a-String.md](Memos/28-Find-the-Index-of-the-First-Occurrence-in-a-String.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
