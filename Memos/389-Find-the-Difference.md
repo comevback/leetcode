@@ -1,5 +1,7 @@
 # 389. Find the Difference（异或运算）
 
+**这道题与[Memos/242-Valid-Anagram.md](242-Valid-Anagram.md)类似**
+
 Easy
 
 You are given two strings s and t.
