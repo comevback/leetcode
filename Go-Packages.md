@@ -299,6 +299,78 @@ if err := scanner.Err(); err != nil {
 }
 ```
 
+## bufio.Scanner 使用SplitFunc自定义分隔符
+
+bufio.SplitFunc 是一个函数类型，其定义如下：
+
+```go
+type SplitFunc func(data []byte, atEOF bool) (advance int, token []byte, err error)
+```
+- data: 输入的待处理数据。
+- atEOF: 标志表示是否已到达数据的末尾。
+- **advance**: 表示切掉多少字节。
+- **token**: 表示返回的下一个令牌（如果有的话），返回的不一定等于切掉的全部字节。
+- err: 处理中遇到的任何错误。
+
+### 实例：遇到逗号分隔
+```go
+// 遇到逗号分隔
+func ComSplitter(data []byte, atEOF bool) (advance int, token []byte, err error) {
+	if atEOF {
+		return len(data), data, nil
+	}
+
+	// 在data里向后查找
+	for i := 0; i < len(data); i++ {
+		// 如果发现某个字节为逗号
+		if data[i] == ',' {
+			// advance = i + 1：切掉包括逗号之前的字符串
+			// token = data[:i]：返回从头开始不包括逗号的字符串
+			// err = nil：不返回错误
+			return i + 1, data[:i], nil
+		}
+	}
+	return 0, nil, nil
+}
+```
+
+### 示例: 每两个字符分割字符串
+```go
+// doubleCharSplitter 是一个自定义的 bufio.SplitFunc
+func doubleCharSplitter(data []byte, atEOF bool) (advance int, token []byte, err error) {
+    if atEOF && len(data) == 0 {
+        return 0, nil, nil
+    }
+    if len(data) >= 2 {
+        // 返回两个字符作为一个令牌
+        return 2, data[:2], nil
+    }
+    // 如果到了文件末尾但还有未处理的数据（少于两个字符），也返回它们
+    return len(data), data, nil
+}
+
+func main() {
+    const input = "123456789"
+    scanner := bufio.NewScanner(strings.NewReader(input))
+    scanner.Split(doubleCharSplitter)
+
+    fmt.Println("Tokens:")
+    for scanner.Scan() {
+        fmt.Printf("%q\n", scanner.Text())
+    }
+}
+```
+
+```terminal
+Tokens:
+"12"
+"34"
+"56"
+"78"
+"9"
+```
+
+
 **为什么可以循环**
 - 读取机制：scanner.Scan() 在内部维护一个缓冲区，每次调用时它都会尝试从其底层的 io.Reader（在你的例子中是标准输入）中填充这个缓冲区，并从中提取下一个 token。
 

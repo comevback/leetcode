@@ -16,6 +16,8 @@
 
 [Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
 
+[CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
+
 ## Sorting:
 
 [Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
@@ -75,7 +77,9 @@
 47. [1732-Find-the-Highest-Altitude.md](Memos/1732-Find-the-Highest-Altitude.md)
 48. [724-Find-Pivot-Index.md](Memos/724-Find-Pivot-Index.md)
 49. [506-Relative-Ranks.md](Memos/506-Relative-Ranks.md)
+50. [21-Merge-Two-Sorted-Lists.md](Memos/21-Merge-Two-Sorted-Lists.md)
+51. [389-Find-the-Difference.md](Memos/389-Find-the-Difference.md)
 
 ## Paiza:
-1. [C084.md](Paiza/C084:枠で囲む/C084.md)
+1. [C084.md](Paiza/C/C084/C084.md)
 2. [B138.md](Paiza/B138/B138.md)

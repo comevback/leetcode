@@ -1,5 +1,7 @@
 # Merge-Sorted-Arrays
 
+** 本题与 [21-Merge-Two-Sorted-Lists.md](21-Merge-Two-Sorted-Lists.md) 类似 **
+
 ```go
 package main
 

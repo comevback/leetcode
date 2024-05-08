@@ -16,11 +16,7 @@ func main() {
 	newStack.peek()                  // 查看栈顶元素并打印它（3）
 }
 
-// 链表节点定义
-type LinkedNode[T any] struct {
-	Val  T              // 节点存储的值
-	Next *LinkedNode[T] // 指向下一个节点的指针
-}
+// =================================================  Array Implementation  ====================================================
 
 // 数组实现的栈定义
 type Stack_array[T any] struct {
@@ -55,6 +51,14 @@ func (stack *Stack_array[T]) peek() (T, error) {
 	} else {
 		return stack.Val[len(stack.Val)-1], nil // 返回栈顶元素
 	}
+}
+
+// =================================================  LinkedList Implementation  ====================================================
+
+// 链表节点定义
+type LinkedNode[T any] struct {
+	Val  T              // 节点存储的值
+	Next *LinkedNode[T] // 指向下一个节点的指针
 }
 
 // 链表实现的栈定义
