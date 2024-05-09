@@ -81,6 +81,7 @@
 51. [389-Find-the-Difference.md](Memos/389-Find-the-Difference.md)
 52. [28-Find-the-Index-of-the-First-Occurrence-in-a-String.md](Memos/28-Find-the-Index-of-the-First-Occurrence-in-a-String.md)
 53. [242-Valid-Anagram.md](Memos/242-Valid-Anagram.md)
+54. [459-Repeated-Substring-Pattern.md](Memos/459-Repeated-Substring-Pattern.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
