@@ -83,6 +83,7 @@
 53. [242-Valid-Anagram.md](Memos/242-Valid-Anagram.md)
 54. [459-Repeated-Substring-Pattern.md](Memos/459-Repeated-Substring-Pattern.md)
 55. [* 3075-Maximize-Happiness-of-Selected-Children.md](Memos/3075-Maximize-Happiness-of-Selected-Children.md)
+56. [66-Plus-One.md](Memos/66-Plus-One.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
