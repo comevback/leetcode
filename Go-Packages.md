@@ -43,7 +43,9 @@ Output:
 > - 自定义函数分割字符串 ==> strings.FieldsFunc(s, f)
 > - 每个元素包含分割的字符 ==> strings.SplitAfter(s, sep)
 
-FieldsFunc 函数接受一个自定义的函数 f，该函数接受一个 rune 类型的参数，并返回一个 bool 类型的值。FieldsFunc 会根据 f 的返回值来决定是否在该位置分割字符串。如果 f 返回 true，则在该位置分割字符串；如果 f 返回 false，则不分割。
+- FieldsFunc 函数接受一个自定义的函数 f，该函数接受一个 rune 类型的参数，并返回一个 bool 类型的值。FieldsFunc 会根据 f 的返回值来决定是否在该位置分割字符串。如果 f 返回 true，则在该位置分割字符串；如果 f 返回 false，则不分割。
+- 如果提供的分割函数 f 返回 true 时连续出现几次（即字符串中有连续的分割符），FieldsFunc 会将它们视为单一的分隔点，并且在这些位置分割字符串。所有连续返回 true 的分隔符都会被忽略，这意味着不会有空字符串被包括在返回的切片中。
+
 example:
 ```go
 func main() {
