@@ -86,6 +86,7 @@
 56. [66-Plus-One.md](Memos/66-Plus-One.md)
 57. [1822-Sign-of-the-Product-of-an-Array.md](Memos/1822-Sign-of-the-Product-of-an-Array.md)
 58. [1502-Can-Make-Arithmetic-Progression-From-Sequence.md](Memos/1502-Can-Make-Arithmetic-Progression-From-Sequence.md)
+59. [896-Monotonic-Array.md](Memos/896-Monotonic-Array.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
