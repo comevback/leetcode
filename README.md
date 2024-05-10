@@ -94,6 +94,7 @@
 64. [682-Baseball-Game.md](Memos/682-Baseball-Game.md)
 65. [657-Robot-Return-to-Origin.md](Memos/657-Robot-Return-to-Origin.md)
 66. [1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md](Memos/1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md)
+67. [1041-Robot-Bounded-In-Circle.md](Memos/1041-Robot-Bounded-In-Circle.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
