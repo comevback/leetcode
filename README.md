@@ -95,6 +95,7 @@
 65. [657-Robot-Return-to-Origin.md](Memos/657-Robot-Return-to-Origin.md)
 66. [1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md](Memos/1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md)
 67. [1041-Robot-Bounded-In-Circle.md](Memos/1041-Robot-Bounded-In-Circle.md)
+68. [643-Maximum-Average-Subarray-I.md](Memos/643-Maximum-Average-Subarray-I.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
