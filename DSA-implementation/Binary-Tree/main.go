@@ -2,30 +2,10 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 func main() {
-	tree := NewBinary()
 
-	tree.insert(5)
-	tree.insert(10)
-	tree.insert(3)
-	tree.insert(34)
-	tree.insert(2)
-	tree.insert(54)
-	tree.insert(23)
-	tree.insert(60)
-
-	tree.remove(10)
-	tree.remove(34)
-
-	a, err := tree.lookup(34)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(a)
-	fmt.Println(tree)
 }
 
 type ListNode struct {
@@ -178,3 +158,5 @@ func (binTree *BinaryTree) remove(value int) error {
 
 	return nil
 }
+
+// ====================================================  层序遍历  =================================================
