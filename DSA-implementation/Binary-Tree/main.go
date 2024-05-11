@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"fmt"
 )
 
 func main() {
@@ -153,10 +154,110 @@ func (binTree *BinaryTree) remove(value int) error {
 		} else {
 			parentNode.Right = replacer
 		}
-
 	}
-
 	return nil
 }
 
 // ====================================================  层序遍历  =================================================
+
+type LinkedNode struct {
+	Val  int
+	Next *LinkedNode
+}
+
+type Queue struct {
+	head *LinkedNode
+	tail *LinkedNode
+}
+
+func NewQueue() *Queue {
+	return &Queue{}
+}
+
+func (queue *Queue) Enqueue(value int) {
+	newNode := &LinkedNode{
+		Val: value,
+	}
+
+	if queue.head == nil && queue.tail == queue.head {
+		queue.tail = newNode
+		queue.head = newNode
+		return
+	}
+
+	queue.tail.Next = newNode
+	queue.tail = newNode
+}
+
+func (queue *Queue) Dequeue() (*LinkedNode, error) {
+	if queue.head == nil {
+		return nil, errors.New("empty queue")
+	}
+
+	res := queue.head
+	queue.head = queue.head.Next
+	return res, nil
+}
+
+func (queue *Queue) peek() (*LinkedNode, error) {
+	if queue.head == nil {
+		return nil, errors.New("empty queue")
+	}
+
+	return queue.head, nil
+}
+
+func (queue *Queue) find(value int) (*LinkedNode, error) {
+	if queue.head == nil {
+		return nil, errors.New("empty queue")
+	}
+
+	current := queue.head
+
+	for current != nil {
+		if current.Val == value {
+			return current, nil
+		}
+		current = current.Next
+	}
+
+	return nil, errors.New("didn't find")
+}
+
+func (queue *Queue) delete(value int) error {
+	if queue.head == nil {
+		return errors.New("empty queue")
+	}
+
+	current := queue.head
+	preCurrent := current
+
+	for current != nil {
+		if current.Val == value {
+			if preCurrent == current {
+				queue.head = queue.head.Next
+				return nil
+			} else {
+				preCurrent.Next = current.Next
+				return nil
+			}
+		}
+		preCurrent = current
+		current = current.Next
+	}
+
+	return errors.New("didn't find")
+}
+
+func (queue *Queue) printQueue() {
+	var arr []int
+
+	current := queue.head
+
+	for current != nil {
+		arr = append(arr, current.Val)
+		current = current.Next
+	}
+
+	fmt.Println(arr)
+}

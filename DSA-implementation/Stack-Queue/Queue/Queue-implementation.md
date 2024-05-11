@@ -1,4 +1,9 @@
-package queue
+# Queue 实现 （Linked List）
+
+## 代码实现
+
+```go
+package main
 
 import (
 	"errors" // 导入errors包，用于处理错误
@@ -154,3 +159,4 @@ func (queue *Queue) printQueue() error {
 	fmt.Println(arr) // 打印所有值组成的数组
 	return nil
 }
+```

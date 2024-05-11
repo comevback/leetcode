@@ -16,6 +16,8 @@
 
 [Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
 
+[Queue-implementation.md](DSA-implementation/Stack-Queue/Queue/Queue-implementation.md)
+
 [CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
 
 ## Sorting:
