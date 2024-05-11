@@ -12,19 +12,19 @@ func main() {
 	queue.Enqueue(3)    // 向队列中添加元素3
 	queue.Enqueue(6)    // 向队列中添加元素6
 	queue.Enqueue(7)    // 向队列中添加元素7
-	queue.printQueue()  // 打印队列中的所有元素
+	queue.PrintQueue()  // 打印队列中的所有元素
 
 	queue.Dequeue()    // 从队列中移除一个元素
 	queue.Dequeue()    // 再次从队列中移除一个元素
-	queue.printQueue() // 打印当前队列中的所有元素
+	queue.PrintQueue() // 打印当前队列中的所有元素
 
 	queue.Enqueue(61)  // 向队列中添加元素61
 	queue.Enqueue(75)  // 向队列中添加元素75
-	queue.printQueue() // 打印当前队列中的所有元素
+	queue.PrintQueue() // 打印当前队列中的所有元素
 
-	queue.find(3)      // 在队列中查找元素3
-	queue.delete(61)   // 从队列中删除元素61
-	queue.printQueue() // 打印当前队列中的所有元素
+	queue.Find(3)      // 在队列中查找元素3
+	queue.Delete(61)   // 从队列中删除元素61
+	queue.PrintQueue() // 打印当前队列中的所有元素
 }
 
 // ===================================================  Queue结构和方法  ==============================================
@@ -76,7 +76,7 @@ func (queue *Queue) Dequeue() (*ListNode, error) {
 }
 
 // peek方法：查看队列头部元素
-func (queue *Queue) peek() (*ListNode, error) {
+func (queue *Queue) Peek() (*ListNode, error) {
 	if queue.head == nil { // 如果队列为空
 		return nil, errors.New("empty queue") // 返回空队列错误
 	}
@@ -85,7 +85,7 @@ func (queue *Queue) peek() (*ListNode, error) {
 }
 
 // find方法：在队列中查找元素
-func (queue *Queue) find(value int) (*ListNode, error) {
+func (queue *Queue) Find(value int) (*ListNode, error) {
 	if queue.head == nil { // 如果队列为空
 		return nil, errors.New("empty queue") // 返回空队列错误
 	}
@@ -103,7 +103,7 @@ func (queue *Queue) find(value int) (*ListNode, error) {
 }
 
 // delete方法：在队列中删除元素
-func (queue *Queue) delete(value int) error {
+func (queue *Queue) Delete(value int) error {
 	if queue.head == nil { // 如果队列为空
 		return errors.New("empty queue") // 返回空队列错误
 	}
@@ -138,7 +138,7 @@ func (queue *Queue) delete(value int) error {
 }
 
 // printQueue方法：打印队列中的所有元素
-func (queue *Queue) printQueue() error {
+func (queue *Queue) PrintQueue() error {
 	var arr []int
 
 	current := queue.head
