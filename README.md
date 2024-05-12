@@ -10,6 +10,8 @@
 
 [Go-Packages.md](Go-Packages.md)
 
+[CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
+
 [System-Design-Template.md](System-Design-Template.md)
 
 [LinkedList-implementation.md](DSA/LinkedList/LinkedList-implementation.md)
@@ -18,7 +20,7 @@
 
 [Queue-implementation.md](DSA/Stack-Queue/Queue/Queue-implementation.md)
 
-[CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
+[Binary-Tree.md](DSA/Binary-Tree/Binary-Tree.md)
 
 ## Sorting:
 

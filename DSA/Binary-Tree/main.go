@@ -180,13 +180,15 @@ func (binTree *BinaryTree) reversal() {
 	q3 := queue.NewQueue[int]()
 
 	preTravel(binTree.root, q1)
-	preOrder(binTree.root)
+
 	inTravel(binTree.root, q2)
 	postTravel(binTree.root, q3)
 
 	q1.PrintQueue()
+	preOrder(binTree.root)
 	q2.PrintQueue()
 	q3.PrintQueue()
+	postOrder(binTree.root)
 }
 
 // ====================================================  递归  ====================================================
@@ -232,21 +234,63 @@ func postTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 // ====================================================  迭代  ====================================================
 // 前序遍历
 func preOrder(treeNode *TreeNode) {
+	// 定义一个栈，类型为*TreeNode
 	st := stack.NewStack_Link[*TreeNode]()
+	// 初始时向栈里推入根节点
 	st.Push(treeNode)
+	// 定义结果数组
 	res := []int{}
 
+	// 当栈不为空时循环
 	for !st.IsEmpty() {
+		// 每次弹出一个元素，把这个元素的Val加入到结果数组中
 		poped, _ := st.Pop()
 		res = append(res, poped.Val)
 
+		// 首先如果这个元素有右子节点，压入栈
 		if poped.Right != nil {
 			st.Push(poped.Right)
 		}
-
+		// 然后如果这个元素有左子节点，压入栈
 		if poped.Left != nil {
 			st.Push(poped.Left)
 		}
+	}
+
+	// 打印结果数组
+	fmt.Println(res)
+}
+
+// 后序遍历
+// 和前序遍历类似，因为前序遍历是：中，左，右，而后续遍历是：左，右，中
+// 在前序遍历的基础上切换次序，把中，左，右，变成中，右，左，得到结果数组后，翻转结果数组，顺序就为左，右，中
+func postOrder(treeNode *TreeNode) {
+	// 定义一个栈，类型为*TreeNode
+	st := stack.NewStack_Link[*TreeNode]()
+	// 初始时向栈里推入根节点
+	st.Push(treeNode)
+	// 定义结果数组
+	res := []int{}
+
+	// 当栈不为空时循环
+	for !st.IsEmpty() {
+		// 每次弹出一个元素，把这个元素的Val加入到结果数组中
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		// 首先如果这个元素有左子节点，压入栈
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+		// 然后如果这个元素有右子节点，压入栈
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+	}
+
+	// 翻转结果数组
+	for i := 0; i < len(res)/2; i++ {
+		res[i], res[len(res)-1-i] = res[len(res)-1-i], res[i]
 	}
 
 	fmt.Println(res)
@@ -258,49 +302,14 @@ func inOrder(treeNode *TreeNode) {
 	st.Push(treeNode)
 	res := []int{}
 
-	for {
-		_, err := st.Peek()
-		if err != nil {
-			break
-		}
+	current := treeNode
 
-		poped, _ := st.Pop()
-		res = append(res, poped.Val)
-
-		if poped.Right != nil {
-			st.Push(poped.Right)
-		}
-
-		if poped.Left != nil {
-			st.Push(poped.Left)
-		}
+	for current.Left != nil {
+		st.Push(current)
 	}
 
-	fmt.Println(res)
-}
+	for !st.IsEmpty() {
 
-// 后序遍历
-func postOrder(treeNode *TreeNode) {
-	st := stack.NewStack_Link[*TreeNode]()
-	st.Push(treeNode)
-	res := []int{}
-
-	for {
-		_, err := st.Peek()
-		if err != nil {
-			break
-		}
-
-		poped, _ := st.Pop()
-		res = append(res, poped.Val)
-
-		if poped.Right != nil {
-			st.Push(poped.Right)
-		}
-
-		if poped.Left != nil {
-			st.Push(poped.Left)
-		}
 	}
 
 	fmt.Println(res)
