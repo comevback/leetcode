@@ -2,8 +2,10 @@ package main
 
 import (
 	"errors"
+	"fmt"
 
 	queue "github.com/comevback/leetcode/DSA/Stack-Queue/Queue"
+	stack "github.com/comevback/leetcode/DSA/Stack-Queue/Stack"
 )
 
 func main() {
@@ -17,18 +19,19 @@ func main() {
 
 	binTree.insert(3)
 
+	//preOrder(binTree.root)
 	binTree.reversal()
 }
 
-type ListNode struct {
+type TreeNode struct {
 	Val       int
 	Frequency int
-	Left      *ListNode
-	Right     *ListNode
+	Left      *TreeNode
+	Right     *TreeNode
 }
 
 type BinaryTree struct {
-	root *ListNode
+	root *TreeNode
 }
 
 func NewBinary() *BinaryTree {
@@ -37,7 +40,7 @@ func NewBinary() *BinaryTree {
 
 // ====================================================  insert 方法  =================================================
 func (binTree *BinaryTree) insert(value int) {
-	newNode := &ListNode{ // 创建一个新节点，Val为value，Frequency初始为1
+	newNode := &TreeNode{ // 创建一个新节点，Val为value，Frequency初始为1
 		Val:       value,
 		Frequency: 1,
 	}
@@ -69,7 +72,7 @@ func (binTree *BinaryTree) insert(value int) {
 }
 
 // ====================================================  lookup 方法  =================================================
-func (binTree *BinaryTree) lookup(value int) (*ListNode, error) {
+func (binTree *BinaryTree) lookup(value int) (*TreeNode, error) {
 	current := binTree.root // 从根节点开始查找
 
 	for current != nil { // 当当前节点不为空时
@@ -89,8 +92,8 @@ func (binTree *BinaryTree) lookup(value int) (*ListNode, error) {
 func (binTree *BinaryTree) remove(value int) error {
 	// 定义当前节点current，父节点parentNode，替换者replacer，替换者replacerParent的父节点
 	current := binTree.root
-	var parentNode *ListNode
-	var replacer, replacerParent *ListNode
+	var parentNode *TreeNode
+	var replacer, replacerParent *TreeNode
 
 	// 如果树为空，返回错误
 	if current == nil {
@@ -172,11 +175,12 @@ func (binTree *BinaryTree) remove(value int) error {
 // ====================================================  深度优先遍历  =================================================
 
 func (binTree *BinaryTree) reversal() {
-	q1 := queue.NewQueue()
-	q2 := queue.NewQueue()
-	q3 := queue.NewQueue()
+	q1 := queue.NewQueue[int]()
+	q2 := queue.NewQueue[int]()
+	q3 := queue.NewQueue[int]()
 
 	preTravel(binTree.root, q1)
+	preOrder(binTree.root)
 	inTravel(binTree.root, q2)
 	postTravel(binTree.root, q3)
 
@@ -188,7 +192,7 @@ func (binTree *BinaryTree) reversal() {
 // ====================================================  递归  ====================================================
 
 // 前序遍历
-func preTravel(treeNode *ListNode, q *queue.Queue) {
+func preTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 	q.Enqueue(treeNode.Val)
 	if treeNode.Left != nil {
 		preTravel(treeNode.Left, q)
@@ -200,7 +204,7 @@ func preTravel(treeNode *ListNode, q *queue.Queue) {
 }
 
 // 中序遍历
-func inTravel(treeNode *ListNode, q *queue.Queue) {
+func inTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 
 	if treeNode.Left != nil {
 		inTravel(treeNode.Left, q)
@@ -213,7 +217,7 @@ func inTravel(treeNode *ListNode, q *queue.Queue) {
 }
 
 // 后序遍历
-func postTravel(treeNode *ListNode, q *queue.Queue) {
+func postTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 
 	if treeNode.Left != nil {
 		postTravel(treeNode.Left, q)
@@ -226,3 +230,78 @@ func postTravel(treeNode *ListNode, q *queue.Queue) {
 }
 
 // ====================================================  迭代  ====================================================
+// 前序遍历
+func preOrder(treeNode *TreeNode) {
+	st := stack.NewStack_Link[*TreeNode]()
+	st.Push(treeNode)
+	res := []int{}
+
+	for !st.IsEmpty() {
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+	}
+
+	fmt.Println(res)
+}
+
+// 中序遍历
+func inOrder(treeNode *TreeNode) {
+	st := stack.NewStack_Link[*TreeNode]()
+	st.Push(treeNode)
+	res := []int{}
+
+	for {
+		_, err := st.Peek()
+		if err != nil {
+			break
+		}
+
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+	}
+
+	fmt.Println(res)
+}
+
+// 后序遍历
+func postOrder(treeNode *TreeNode) {
+	st := stack.NewStack_Link[*TreeNode]()
+	st.Push(treeNode)
+	res := []int{}
+
+	for {
+		_, err := st.Peek()
+		if err != nil {
+			break
+		}
+
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+	}
+
+	fmt.Println(res)
+}

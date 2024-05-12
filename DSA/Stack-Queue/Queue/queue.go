@@ -6,13 +6,13 @@ import (
 )
 
 func main() {
-	queue := NewQueue() // 创建一个新的队列
-	queue.Enqueue(1)    // 向队列中添加元素1
-	queue.Enqueue(5)    // 向队列中添加元素5
-	queue.Enqueue(3)    // 向队列中添加元素3
-	queue.Enqueue(6)    // 向队列中添加元素6
-	queue.Enqueue(7)    // 向队列中添加元素7
-	queue.PrintQueue()  // 打印队列中的所有元素
+	queue := NewQueue[int]() // 创建一个新的队列
+	queue.Enqueue(1)         // 向队列中添加元素1
+	queue.Enqueue(5)         // 向队列中添加元素5
+	queue.Enqueue(3)         // 向队列中添加元素3
+	queue.Enqueue(6)         // 向队列中添加元素6
+	queue.Enqueue(7)         // 向队列中添加元素7
+	queue.PrintQueue()       // 打印队列中的所有元素
 
 	queue.Dequeue()    // 从队列中移除一个元素
 	queue.Dequeue()    // 再次从队列中移除一个元素
@@ -22,32 +22,32 @@ func main() {
 	queue.Enqueue(75)  // 向队列中添加元素75
 	queue.PrintQueue() // 打印当前队列中的所有元素
 
-	queue.Find(3)      // 在队列中查找元素3
-	queue.Delete(61)   // 从队列中删除元素61
+	Find(queue, 3)     // 在队列中查找元素3
+	Delete(queue, 61)  // 从队列中删除元素61
 	queue.PrintQueue() // 打印当前队列中的所有元素
 }
 
 // ===================================================  Queue结构和方法  ==============================================
 // ListNode结构定义
-type ListNode struct {
-	Val  int       // 节点存储的值
-	Next *ListNode // 指向下一个节点的指针
+type ListNode[T any] struct {
+	Val  T            // 节点存储的值
+	Next *ListNode[T] // 指向下一个节点的指针
 }
 
 // Queue结构定义
-type Queue struct {
-	head *ListNode // 指向队列头部的指针
-	tail *ListNode // 指向队列尾部的指针
+type Queue[T any] struct {
+	head *ListNode[T] // 指向队列头部的指针
+	tail *ListNode[T] // 指向队列尾部的指针
 }
 
 // Queue构造函数
-func NewQueue() *Queue {
-	return &Queue{} // 初始化一个空队列并返回其地址
+func NewQueue[T any]() *Queue[T] {
+	return &Queue[T]{} // 初始化一个空队列并返回其地址
 }
 
 // Enqueue方法：向队列尾中添加元素
-func (queue *Queue) Enqueue(value int) {
-	newNode := &ListNode{
+func (queue *Queue[T]) Enqueue(value T) {
+	newNode := &ListNode[T]{
 		Val: value, // 创建一个新节点，值为传入的value
 	}
 
@@ -62,7 +62,7 @@ func (queue *Queue) Enqueue(value int) {
 }
 
 // Dequeue方法：从队列头中移除元素
-func (queue *Queue) Dequeue() (*ListNode, error) {
+func (queue *Queue[T]) Dequeue() (*ListNode[T], error) {
 	if queue.head == nil { // 如果队列为空
 		return nil, errors.New("empty queue") // 返回空队列错误
 	}
@@ -76,7 +76,7 @@ func (queue *Queue) Dequeue() (*ListNode, error) {
 }
 
 // peek方法：查看队列头部元素
-func (queue *Queue) Peek() (*ListNode, error) {
+func (queue *Queue[T]) Peek() (*ListNode[T], error) {
 	if queue.head == nil { // 如果队列为空
 		return nil, errors.New("empty queue") // 返回空队列错误
 	}
@@ -85,7 +85,7 @@ func (queue *Queue) Peek() (*ListNode, error) {
 }
 
 // find方法：在队列中查找元素
-func (queue *Queue) Find(value int) (*ListNode, error) {
+func Find(queue *Queue[int], value int) (*ListNode[int], error) {
 	if queue.head == nil { // 如果队列为空
 		return nil, errors.New("empty queue") // 返回空队列错误
 	}
@@ -103,13 +103,13 @@ func (queue *Queue) Find(value int) (*ListNode, error) {
 }
 
 // delete方法：在队列中删除元素
-func (queue *Queue) Delete(value int) error {
+func Delete(queue *Queue[int], value int) error {
 	if queue.head == nil { // 如果队列为空
 		return errors.New("empty queue") // 返回空队列错误
 	}
 
 	current := queue.head
-	var preCurrent *ListNode // 前一个节点初始化为nil
+	var preCurrent *ListNode[int] // 前一个节点初始化为nil
 
 	for current != nil {
 		if current.Val == value { // 找到需要删除的节点
@@ -123,6 +123,7 @@ func (queue *Queue) Delete(value int) error {
 			}
 			// 删除点是尾节点
 			if queue.tail == current { // 如果是尾节点
+				preCurrent.Next = nil
 				queue.tail = preCurrent // 更新尾节点
 				return nil
 			}
@@ -138,8 +139,8 @@ func (queue *Queue) Delete(value int) error {
 }
 
 // printQueue方法：打印队列中的所有元素
-func (queue *Queue) PrintQueue() error {
-	var arr []int
+func (queue *Queue[T]) PrintQueue() error {
+	var arr []T
 
 	current := queue.head
 	if current == nil { // 如果队列为空
