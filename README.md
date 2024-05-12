@@ -98,6 +98,7 @@
 66. [1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md](Memos/1275-Find-Winner-on-a-Tic-Tac-Toe-Game.md)
 67. [1041-Robot-Bounded-In-Circle.md](Memos/1041-Robot-Bounded-In-Circle.md)
 68. [643-Maximum-Average-Subarray-I.md](Memos/643-Maximum-Average-Subarray-I.md)
+69. [2373-Largest-Local-Values-in-a-Matrix.md](Memos/2373-Largest-Local-Values-in-a-Matrix.md)
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
