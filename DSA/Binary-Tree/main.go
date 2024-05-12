@@ -4,7 +4,6 @@ import (
 	"errors"
 
 	queue "github.com/comevback/leetcode/DSA/Stack-Queue/Queue"
-	stack "github.com/comevback/leetcode/DSA/Stack-Queue/Stack"
 )
 
 func main() {
@@ -181,11 +180,12 @@ func (binTree *BinaryTree) reversal() {
 	inTravel(binTree.root, q2)
 	postTravel(binTree.root, q3)
 
-	stack := stack.NewStack()
 	q1.PrintQueue()
 	q2.PrintQueue()
 	q3.PrintQueue()
 }
+
+// ====================================================  递归  ====================================================
 
 // 前序遍历
 func preTravel(treeNode *ListNode, q *queue.Queue) {
@@ -224,3 +224,5 @@ func postTravel(treeNode *ListNode, q *queue.Queue) {
 	}
 	q.Enqueue(treeNode.Val)
 }
+
+// ====================================================  迭代  ====================================================
