@@ -3,10 +3,22 @@ package main
 import (
 	"errors"
 
-	queue "github.com/comevback/leetcode/DSA-implementation/Stack-Queue/Queue"
+	queue "github.com/comevback/leetcode/DSA/Stack-Queue/Queue"
+	stack "github.com/comevback/leetcode/DSA/Stack-Queue/Stack"
 )
 
 func main() {
+	var binTree = NewBinary()
+	binTree.insert(5)
+	binTree.insert(6)
+	binTree.insert(7)
+	binTree.insert(8)
+	binTree.insert(4)
+	binTree.insert(2)
+
+	binTree.insert(3)
+
+	binTree.reversal()
 }
 
 type ListNode struct {
@@ -158,9 +170,57 @@ func (binTree *BinaryTree) remove(value int) error {
 	return nil
 }
 
-// ====================================================  层序遍历  =================================================
+// ====================================================  深度优先遍历  =================================================
 
-func reversal() {
-	q := queue.NewQueue()
-	q.Enqueue(6)
+func (binTree *BinaryTree) reversal() {
+	q1 := queue.NewQueue()
+	q2 := queue.NewQueue()
+	q3 := queue.NewQueue()
+
+	preTravel(binTree.root, q1)
+	inTravel(binTree.root, q2)
+	postTravel(binTree.root, q3)
+
+	stack := stack.NewStack()
+	q1.PrintQueue()
+	q2.PrintQueue()
+	q3.PrintQueue()
+}
+
+// 前序遍历
+func preTravel(treeNode *ListNode, q *queue.Queue) {
+	q.Enqueue(treeNode.Val)
+	if treeNode.Left != nil {
+		preTravel(treeNode.Left, q)
+	}
+
+	if treeNode.Right != nil {
+		preTravel(treeNode.Right, q)
+	}
+}
+
+// 中序遍历
+func inTravel(treeNode *ListNode, q *queue.Queue) {
+
+	if treeNode.Left != nil {
+		inTravel(treeNode.Left, q)
+	}
+
+	q.Enqueue(treeNode.Val)
+	if treeNode.Right != nil {
+		inTravel(treeNode.Right, q)
+	}
+}
+
+// 后序遍历
+func postTravel(treeNode *ListNode, q *queue.Queue) {
+
+	if treeNode.Left != nil {
+		postTravel(treeNode.Left, q)
+	}
+
+	if treeNode.Right != nil {
+		postTravel(treeNode.Right, q)
+	}
+	q.Enqueue(treeNode.Val)
 }

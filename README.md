@@ -12,21 +12,21 @@
 
 [System-Design-Template.md](System-Design-Template.md)
 
-[LinkedList-implementation.md](DSA-implementation/LinkedList/LinkedList-implementation.md)
+[LinkedList-implementation.md](DSA/LinkedList/LinkedList-implementation.md)
 
-[Stack-implementation.md](DSA-implementation/Stack-Queue/Stack/Stack-implementation.md)
+[Stack-implementation.md](DSA/Stack-Queue/Stack/Stack-implementation.md)
 
-[Queue-implementation.md](DSA-implementation/Stack-Queue/Queue/Queue-implementation.md)
+[Queue-implementation.md](DSA/Stack-Queue/Queue/Queue-implementation.md)
 
 [CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
 
 ## Sorting:
 
-[Selection-Sort.md](Memos/Selection-Sort/Selection-Sort.md)
+[Selection-Sort.md](DSA/Selection-Sort/Selection-Sort.md)
 
-[Bubble-Sort.md](Memos/Bubble-Sort/Bubble-Sort.md)
+[Bubble-Sort.md](DSA/Bubble-Sort/Bubble-Sort.md)
 
-[Insertion-Sort.md](Memos/Insertion-Sort/Insertion-Sort.md)
+[Insertion-Sort.md](DSA/Insertion-Sort/Insertion-Sort.md)
 
 ## leetcode Practices and Memos:
 

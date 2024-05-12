@@ -1,4 +1,4 @@
-package main
+package stack
 
 import (
 	"errors" // 导入errors包，用于错误处理
