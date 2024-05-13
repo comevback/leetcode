@@ -104,6 +104,7 @@
 70. [861-Score-After-Flipping-Matrix.md](Code/861-Score-After-Flipping-Matrix/861-Score-After-Flipping-Matrix.md)
 71. [700-Search-in-a-Binary-Search-Tree.md](Code/700-Search-in-a-Binary-Search-Tree/700-Search-in-a-Binary-Search-Tree.md)
 72. [450-Delete-Node-in-a-BST.md](Code/450-Delete-Node-in-a-BST/450-Delete-Node-in-a-BST.md)
+73. [2390-Removing-Stars-From-a-String.md](Code/2390-Removing-Stars-From-a-String/2390-Removing-Stars-From-a-String.md)
 
 
 ## Paiza:
