@@ -6,7 +6,12 @@ import (
 )
 
 func main() {
-	fmt.Println(fizzBuzz(15))
+	var max int
+	fmt.Scan(&max)
+	res := fizzBuzz(max)
+	for _, v := range res {
+		fmt.Println(v)
+	}
 }
 
 func fizzBuzz(n int) []string {
@@ -16,7 +21,6 @@ func fizzBuzz(n int) []string {
 	for i := 0; i < n; i++ {
 		arr = append(arr, CheckFB(i+1))
 	}
-
 	// 返回得到的切片
 	return arr
 }

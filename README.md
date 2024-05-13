@@ -116,3 +116,8 @@
 11. [Word-Count-Part6.md](Paiza/C/Word-Count-Part6/Word-Count-Part6.md)
 12. [Word-Count-Part7.md](Paiza/C/Word-Count-Part7/Word-Count-Part7.md)
 13. [Word-Count-final.md](Paiza/C/Word-Count-final/Word-Count-final.md)
+14. [Orange-Divide.md](Paiza/C/Orange-Divide/Orange-Divide.md)
+15. [Sort.md](Paiza/C/Sort/Sort.md)
+16. [C097.md](Paiza/C/C097/C097.md)
+17. [C139.md](Paiza/C/C139/C139.md)
+18. [C120.md](Paiza/C/C120/C120.md)
