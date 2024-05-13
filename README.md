@@ -121,3 +121,5 @@
 16. [C097.md](Paiza/C/C097/C097.md)
 17. [C139.md](Paiza/C/C139/C139.md)
 18. [C120.md](Paiza/C/C120/C120.md)
+19. [C030.md](Paiza/C/C030/C030.md)
+20. [C043.md](Paiza/C/C043/C043.md)
