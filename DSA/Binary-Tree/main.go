@@ -153,7 +153,7 @@ func (binTree *BinaryTree) remove(value int) error {
 			replacer = replacer.Left
 		}
 
-		// 如果替换者不是删除节点的直接右子节点
+		// 如果replacerParent不是原本初始化定义的current，也就是说如果替换者不是删除节点的直接右子节点
 		if replacerParent != current {
 			replacerParent.Left = replacer.Right // 将替换者父节点的左链接指向替换者的右子节点
 			replacer.Right = current.Right       // 替换者右子链接指向当前节点的右子节点
