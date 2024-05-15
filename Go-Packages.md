@@ -5,13 +5,6 @@
 # Strings
 ### 把字符拼接成字符串 strings.Builder
 ```go
-package main
-
-import (
-	"fmt"
-	"strings"
-)
-
 func main() {
 	// 定义一个strings.Builder对象为builder
 	var builder strings.Builder
