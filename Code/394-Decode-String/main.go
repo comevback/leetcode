@@ -1,16 +1,12 @@
 package main
 
 import (
-	"fmt"
-	"regexp"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	s := "3[a]2[bc]"
-	res := getMatched(s)
-	fmt.Println(res)
+	// s := "3[a2[c]]"
 }
 
 // 1. 栈
@@ -67,9 +63,40 @@ func decodeString(s string) string {
 }
 
 // ==========================================================================================================
-// 2. 递归
-func getMatched(s string) []string {
-	re := regexp.MustCompile(`\d+\[\w+\]`)
-	finded := re.FindAllString(s, -1)
-	return finded
+// 2. 递归 from leetcode
+func decodeString1(s string) string {
+	r, _ := helper(s, 0)
+	return r
+}
+
+func helper(s string, start int) (cur string, end int) {
+	// 如果字符串为空，返回空字符串和位置 0
+	if len(s) == 0 {
+		return "", 0
+	}
+	// 初始化变量
+	repeatTime := 0 // 重复次数
+	i := start      // 当前遍历位置
+	for i < len(s) {
+		ch := string(s[i])
+		// 处理数字字符
+		if n, err := strconv.Atoi(ch); err == nil {
+			repeatTime = repeatTime*10 + n // 累积数字，处理多位数
+		} else if ch == "[" {
+			// 遇到 '[' 开始新的递归调用处理子字符串
+			decoded, end := helper(s, i+1)
+			cur += strings.Repeat(decoded, repeatTime) // 将子字符串重复 repeatTime 次并拼接到 cur
+			i = end                                    // 更新当前位置到子字符串结尾
+			repeatTime = 0                             // 重置 k
+		} else if ch == "]" {
+			// 遇到 ']' 结束当前递归，返回当前解码的字符串和位置
+			return cur, i
+		} else {
+			// 处理普通字符，直接添加到 cur
+			cur += ch
+		}
+		i++ // 继续下一个字符
+	}
+	// 返回解码的字符串和当前位置
+	return cur, i
 }

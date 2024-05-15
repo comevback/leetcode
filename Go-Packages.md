@@ -62,13 +62,6 @@ Fields are: ["foo1" "bar2" "baz3"]
 
 ### 字符串连接 strings.Join
 ```go
-package main
-
-import (
-    "fmt"
-    "strings"
-)
-
 func main() {
     // 定义一个字符串切片为slice
     slice := []string{"foo", "bar", "baz"}
@@ -82,6 +75,97 @@ func main() {
 Output:
 foo|bar|baz
 ```
+
+### 字符串替换 strings.Replace
+```go
+func main() {
+    // 定义一个字符串s
+    s := "foo foo foo"
+    // 将s中的"foo"替换为"bar"，替换次数为2，赋值给str
+    str := strings.Replace(s, "foo", "bar", 2)
+    // 打印输出str
+    fmt.Println(str)
+}
+```
+```terminal
+Output:
+bar bar foo
+```
+
+### 字符串重复 strings.Repeat
+```go
+func main() {
+    // 定义一个字符串s
+    s := "foo"
+    // 将s重复3次，赋值给str
+    str := strings.Repeat(s, 3)
+    // 打印输出str
+    fmt.Println(str)
+}
+```
+```terminal
+Output:
+foofoofoo
+```
+
+### 字符串修剪 strings.Trim
+```go
+func main() {
+    // 定义一个字符串s
+    s := "  foo bar baz  "
+    // 将s两侧的空格去掉，赋值给str
+    str := strings.Trim(s, " ")
+    // 打印输出str
+    fmt.Println(str)
+}
+```
+```terminal
+
+Output:
+foo bar baz
+```
+
+### 字符串搜索 strings.Contains 和 strings.Index
+```go
+func main() {
+    // 定义一个字符串s
+    s := "foo bar baz"
+    // 判断s中是否包含"bar"，赋值给b
+    b := strings.Contains(s, "bar")
+    // 打印输出b
+    fmt.Println(b)
+
+    // 获取s中"bar"的索引，赋值给i
+    i := strings.Index(s, "bar")
+    // 打印输出i
+    fmt.Println(i)
+}
+```
+```terminal
+Output:
+true
+4
+```
+
+### 字符串比较 strings.Compare
+用于比较两个字符串，如果字符串相等，返回0；如果字符串s1小于s2，返回-1；如果字符串s1大于s2，返回1。
+字符串的比较是按照字典顺序进行的，即按照字符的 Unicode 编码值进行比较，从字符串的第一个字符开始逐个比较，直到找到不同的字符为止，如果这个不同的字符在 s1 中的 Unicode 编码值小于 s2 中的 Unicode 编码值，则 s1 小于 s2，返回 -1；如果大于，则 s1 大于 s2，返回 1；如果两个字符串完全相同，则返回 0。
+```go
+func main() {
+    // 定义两个字符串s1和s2
+    s1 := "foo"
+    s2 := "bar"
+    // 比较s1和s2，赋值给i
+    i := strings.Compare(s1, s2)
+    // 打印输出i
+    fmt.Println(i)
+}
+```
+```terminal
+Output:
+1
+```
+
 
 
 
