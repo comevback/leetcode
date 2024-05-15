@@ -107,6 +107,8 @@
 73. [2390-Removing-Stars-From-a-String.md](Code/2390-Removing-Stars-From-a-String/2390-Removing-Stars-From-a-String.md)
 74. [1657-Determine-if-Two-Strings-Are-Close.md](Code/1657-Determine-if-Two-Strings-Are-Close/1657-Determine-if-Two-Strings-Are-Close.md)
 75. [735-Asteroid-Collision.md](Code/735-Asteroid-Collision/735-Asteroid-Collision.md)
+76. [394-Decode-String.md](Code/394-Decode-String/394-Decode-String.md)
+77. [933-Number-of-Recent-Calls.md](Code/933-Number-of-Recent-Calls/933-Number-of-Recent-Calls.md)
 
 
 ## Paiza:
