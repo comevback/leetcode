@@ -4,11 +4,11 @@
 
 ## Fundamentals:
 
+[Go-Packages.md](Go-Packages.md)
+
 [BigO-cheat-sheet.md](BigO-cheat-sheet.md)
 
 [regex-cheatsheet.pdf](regex-cheatsheet.pdf)
-
-[Go-Packages.md](Go-Packages.md)
 
 [CustomizedSplit.md](Paiza/space-input/CustomizedSplit.md)
 
