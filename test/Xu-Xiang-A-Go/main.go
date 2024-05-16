@@ -28,7 +28,6 @@ func main() {
 
 		for i := 0; i < H; i++ {
 			layerWidth := getWidth(graph[i])
-			fmt.Println(layerWidth)
 			if i != H-1 && (layerWidth[0] == -1 || width[1] < layerWidth[0] || width[0] > layerWidth[1]) {
 				continue
 			} else if i == H-1 && (layerWidth[0] == -1 || width[1] < layerWidth[0] || width[0] > layerWidth[1]) {
