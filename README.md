@@ -109,6 +109,7 @@
 75. [735-Asteroid-Collision.md](Code/735-Asteroid-Collision/735-Asteroid-Collision.md)
 76. [394-Decode-String.md](Code/394-Decode-String/394-Decode-String.md)
 77. [933-Number-of-Recent-Calls.md](Code/933-Number-of-Recent-Calls/933-Number-of-Recent-Calls.md)
+78. [1325-Delete-Leaves-With-a-Given-Value.md](Code/1325-Delete-Leaves-With-a-Given-Value/1325-Delete-Leaves-With-a-Given-Value.md)
 
 
 ## Paiza:
