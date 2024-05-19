@@ -174,20 +174,21 @@ func (binTree *BinaryTree) remove(value int) error {
 
 // ====================================================  深度优先遍历  =================================================
 func (binTree *BinaryTree) reversal() {
-	q1 := queue.NewQueue[int]()
+	//q1 := queue.NewQueue[int]()
 	q2 := queue.NewQueue[int]()
-	q3 := queue.NewQueue[int]()
+	//q3 := queue.NewQueue[int]()
 
-	preTravel(binTree.root, q1)
+	//preTravel(binTree.root, q1)
 
 	inTravel(binTree.root, q2)
-	postTravel(binTree.root, q3)
+	//postTravel(binTree.root, q3)
 
-	q1.PrintQueue()
-	preOrder(binTree.root)
+	//q1.PrintQueue()
+	//preOrder(binTree.root)
 	q2.PrintQueue()
-	q3.PrintQueue()
-	postOrder(binTree.root)
+	//q3.PrintQueue()
+	//postOrder(binTree.root)
+	inOrder(binTree.root)
 }
 
 // ====================================================  递归  ====================================================
@@ -298,18 +299,25 @@ func postOrder(treeNode *TreeNode) {
 // 中序遍历：左，中，右  ！访问顺序和处理顺序不一样
 func inOrder(treeNode *TreeNode) {
 	st := stack.NewStack_Link[*TreeNode]()
-
 	res := []int{}
+	var current *TreeNode
+	// 初始化current为根节点
+	current = treeNode
 
-	current := treeNode
-
-	for current.Left != nil {
-		st.Push(current)
+	// 循环条件是，current不为nil并且栈不空
+	for !st.IsEmpty() || current != nil {
+		// 每次循环，如果当前节点不是空，就把当前节点压入栈，然后转到左子节点，一直到底
+		for current != nil {
+			st.Push(current)
+			current = current.Left
+		}
+		// 如果当前节点是空，但是栈不空，就把栈顶弹出，变为当前节点，加入结果数组，并且当前节点变为右子节点。
+		poped, _ := st.Pop()
+		current = poped
+		res = append(res, current.Val)
+		current = current.Right
 	}
 
-	for !st.IsEmpty() {
-
-	}
-
+	// 当栈空而且current为nil时，打印结果数组
 	fmt.Println(res)
 }

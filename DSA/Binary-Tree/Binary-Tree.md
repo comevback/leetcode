@@ -6,21 +6,36 @@ package main
 
 import (
 	"errors"
+	"fmt"
+
+	queue "github.com/comevback/leetcode/DSA/Stack-Queue/Queue"
+	stack "github.com/comevback/leetcode/DSA/Stack-Queue/Stack"
 )
 
 func main() {
+	var binTree = NewBinary()
+	binTree.insert(5)
+	binTree.insert(6)
+	binTree.insert(7)
+	binTree.insert(8)
+	binTree.insert(4)
+	binTree.insert(2)
 
+	binTree.insert(3)
+
+	//preOrder(binTree.root)
+	binTree.reversal()
 }
 
-type ListNode struct {
+type TreeNode struct {
 	Val       int
 	Frequency int
-	Left      *ListNode
-	Right     *ListNode
+	Left      *TreeNode
+	Right     *TreeNode
 }
 
 type BinaryTree struct {
-	root *ListNode
+	root *TreeNode
 }
 
 func NewBinary() *BinaryTree {
@@ -29,7 +44,7 @@ func NewBinary() *BinaryTree {
 
 // ====================================================  insert 方法  =================================================
 func (binTree *BinaryTree) insert(value int) {
-	newNode := &ListNode{ // 创建一个新节点，Val为value，Frequency初始为1
+	newNode := &TreeNode{ // 创建一个新节点，Val为value，Frequency初始为1
 		Val:       value,
 		Frequency: 1,
 	}
@@ -61,7 +76,7 @@ func (binTree *BinaryTree) insert(value int) {
 }
 
 // ====================================================  lookup 方法  =================================================
-func (binTree *BinaryTree) lookup(value int) (*ListNode, error) {
+func (binTree *BinaryTree) lookup(value int) (*TreeNode, error) {
 	current := binTree.root // 从根节点开始查找
 
 	for current != nil { // 当当前节点不为空时
@@ -77,12 +92,12 @@ func (binTree *BinaryTree) lookup(value int) (*ListNode, error) {
 	return nil, errors.New("didn't find") // 如果未找到，返回nil和错误信息
 }
 
-// ====================================================  remove 方法  =================================================
+// ************************************************  remove 方法  ************************************************
 func (binTree *BinaryTree) remove(value int) error {
 	// 定义当前节点current，父节点parentNode，替换者replacer，替换者replacerParent的父节点
 	current := binTree.root
-	var parentNode *ListNode
-	var replacer, replacerParent *ListNode
+	var parentNode *TreeNode
+	var replacer, replacerParent *TreeNode
 
 	// 如果树为空，返回错误
 	if current == nil {
@@ -142,7 +157,7 @@ func (binTree *BinaryTree) remove(value int) error {
 			replacer = replacer.Left
 		}
 
-		// 如果替换者不是删除节点的直接右子节点
+		// 如果replacerParent不是原本初始化定义的current，也就是说如果替换者不是删除节点的直接右子节点
 		if replacerParent != current {
 			replacerParent.Left = replacer.Right // 将替换者父节点的左链接指向替换者的右子节点
 			replacer.Right = current.Right       // 替换者右子链接指向当前节点的右子节点
@@ -157,9 +172,157 @@ func (binTree *BinaryTree) remove(value int) error {
 		} else {
 			parentNode.Right = replacer
 		}
+	}
+	return nil
+}
 
+// ====================================================  深度优先遍历  =================================================
+func (binTree *BinaryTree) reversal() {
+	//q1 := queue.NewQueue[int]()
+	q2 := queue.NewQueue[int]()
+	//q3 := queue.NewQueue[int]()
+
+	//preTravel(binTree.root, q1)
+
+	inTravel(binTree.root, q2)
+	//postTravel(binTree.root, q3)
+
+	//q1.PrintQueue()
+	//preOrder(binTree.root)
+	q2.PrintQueue()
+	//q3.PrintQueue()
+	//postOrder(binTree.root)
+	inOrder(binTree.root)
+}
+
+// ====================================================  递归  ====================================================
+// 前序遍历
+func preTravel(treeNode *TreeNode, q *queue.Queue[int]) {
+	q.Enqueue(treeNode.Val)
+	if treeNode.Left != nil {
+		preTravel(treeNode.Left, q)
 	}
 
-	return nil
+	if treeNode.Right != nil {
+		preTravel(treeNode.Right, q)
+	}
+}
+
+// 中序遍历
+func inTravel(treeNode *TreeNode, q *queue.Queue[int]) {
+
+	if treeNode.Left != nil {
+		inTravel(treeNode.Left, q)
+	}
+
+	q.Enqueue(treeNode.Val)
+	if treeNode.Right != nil {
+		inTravel(treeNode.Right, q)
+	}
+}
+
+// 后序遍历
+func postTravel(treeNode *TreeNode, q *queue.Queue[int]) {
+
+	if treeNode.Left != nil {
+		postTravel(treeNode.Left, q)
+	}
+
+	if treeNode.Right != nil {
+		postTravel(treeNode.Right, q)
+	}
+	q.Enqueue(treeNode.Val)
+}
+
+// ====================================================  迭代  ====================================================
+// 前序遍历：中，左，右
+func preOrder(treeNode *TreeNode) {
+	// 定义一个栈，类型为*TreeNode
+	st := stack.NewStack_Link[*TreeNode]()
+	// 初始时向栈里推入根节点
+	st.Push(treeNode)
+	// 定义结果数组
+	res := []int{}
+
+	// 当栈不为空时循环
+	for !st.IsEmpty() {
+		// 每次弹出一个元素，把这个元素的Val加入到结果数组中
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		// 首先如果这个元素有右子节点，压入栈
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+		// 然后如果这个元素有左子节点，压入栈
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+	}
+
+	// 打印结果数组
+	fmt.Println(res)
+}
+
+// 后序遍历：左，右，中
+// 和前序遍历类似，因为前序遍历是：中，左，右，而后续遍历是：左，右，中
+// 在前序遍历的基础上切换次序，把中，左，右，变成中，右，左，得到结果数组后，翻转结果数组，顺序就为左，右，中
+func postOrder(treeNode *TreeNode) {
+	// 定义一个栈，类型为*TreeNode
+	st := stack.NewStack_Link[*TreeNode]()
+	// 初始时向栈里推入根节点
+	st.Push(treeNode)
+	// 定义结果数组
+	res := []int{}
+
+	// 当栈不为空时循环
+	for !st.IsEmpty() {
+		// 每次弹出一个元素，把这个元素的Val加入到结果数组中
+		poped, _ := st.Pop()
+		res = append(res, poped.Val)
+
+		// 首先如果这个元素有左子节点，压入栈
+		if poped.Left != nil {
+			st.Push(poped.Left)
+		}
+		// 然后如果这个元素有右子节点，压入栈
+		if poped.Right != nil {
+			st.Push(poped.Right)
+		}
+	}
+
+	// 翻转结果数组
+	for i := 0; i < len(res)/2; i++ {
+		res[i], res[len(res)-1-i] = res[len(res)-1-i], res[i]
+	}
+
+	fmt.Println(res)
+}
+
+// *************************************************  中序遍历  *************************************************
+// 中序遍历：左，中，右  ！访问顺序和处理顺序不一样
+func inOrder(treeNode *TreeNode) {
+	st := stack.NewStack_Link[*TreeNode]()
+	res := []int{}
+	var current *TreeNode
+	// 初始化current为根节点
+	current = treeNode
+
+	// 循环条件是，current不为nil并且栈不空
+	for !st.IsEmpty() || current != nil {
+		// 每次循环，如果当前节点不是空，就把当前节点压入栈，然后转到左子节点，一直到底
+		for current != nil {
+			st.Push(current)
+			current = current.Left
+		}
+		// 如果当前节点是空，但是栈不空，就把栈顶弹出，变为当前节点，加入结果数组，并且当前节点变为右子节点。
+		poped, _ := st.Pop()
+		current = poped
+		res = append(res, current.Val)
+		current = current.Right
+	}
+
+	// 当栈空而且current为nil时，打印结果数组
+	fmt.Println(res)
 }
 ```

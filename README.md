@@ -111,6 +111,7 @@
 77. [933-Number-of-Recent-Calls.md](Code/933-Number-of-Recent-Calls/933-Number-of-Recent-Calls.md)
 78. [1325-Delete-Leaves-With-a-Given-Value.md](Code/1325-Delete-Leaves-With-a-Given-Value/1325-Delete-Leaves-With-a-Given-Value.md)
 79. [649-Dota2-Senate.md](Code/649-Dota2-Senate/649-Dota2-Senate.md)
+80. [232-Implement-Queue-using-Stacks.md](Code/232-Implement-Queue-using-Stacks/232-Implement-Queue-using-Stacks.md)
 
 
 ## Paiza:
