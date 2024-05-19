@@ -1,4 +1,4 @@
-# 28. Find the Index of the First Occurrence in a String
+# 28. Find the Index of the First Occurrence in a String（KMP）
 
 Easy
 
@@ -64,7 +64,7 @@ func strStr(haystack string, needle string) int {
 	return -1
 }
 
-// 2. 用标准库的strings.Index方法
+// 3.KMP算法 
 // strings.Index 返回字符串在另一个字符串中第一次出现的索引，如果没有找到，返回-1
 func strStrSample1(haystack string, needle string) int {
 	return strings.Index(haystack, needle)

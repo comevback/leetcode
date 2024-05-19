@@ -38,3 +38,23 @@ func strStr(haystack string, needle string) int {
 func strStrSample1(haystack string, needle string) int {
 	return strings.Index(haystack, needle)
 }
+
+// 3. KMP算法
+func strStrSample2(haystack string, needle string) int {
+
+}
+
+func findPrefix(needle string) []int {
+	prefixList := make([]int, len(needle))
+	j := 0
+	for i := 1; i < len(needle); i++ {
+		for j > 0 && needle[j] != needle[i] {
+			j = prefixList[j-1]
+		}
+
+		if needle[j] == needle[i] {
+			prefixList[i] = j
+		}
+	}
+	return prefixList
+}
