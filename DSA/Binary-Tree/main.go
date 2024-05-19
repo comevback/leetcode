@@ -88,7 +88,7 @@ func (binTree *BinaryTree) lookup(value int) (*TreeNode, error) {
 	return nil, errors.New("didn't find") // 如果未找到，返回nil和错误信息
 }
 
-// ====================================================  remove 方法  =================================================
+// ************************************************  remove 方法  ************************************************
 func (binTree *BinaryTree) remove(value int) error {
 	// 定义当前节点current，父节点parentNode，替换者replacer，替换者replacerParent的父节点
 	current := binTree.root
@@ -173,7 +173,6 @@ func (binTree *BinaryTree) remove(value int) error {
 }
 
 // ====================================================  深度优先遍历  =================================================
-
 func (binTree *BinaryTree) reversal() {
 	q1 := queue.NewQueue[int]()
 	q2 := queue.NewQueue[int]()
@@ -192,7 +191,6 @@ func (binTree *BinaryTree) reversal() {
 }
 
 // ====================================================  递归  ====================================================
-
 // 前序遍历
 func preTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 	q.Enqueue(treeNode.Val)
@@ -232,7 +230,7 @@ func postTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 }
 
 // ====================================================  迭代  ====================================================
-// 前序遍历
+// 前序遍历：中，左，右
 func preOrder(treeNode *TreeNode) {
 	// 定义一个栈，类型为*TreeNode
 	st := stack.NewStack_Link[*TreeNode]()
@@ -261,7 +259,7 @@ func preOrder(treeNode *TreeNode) {
 	fmt.Println(res)
 }
 
-// 后序遍历
+// 后序遍历：左，右，中
 // 和前序遍历类似，因为前序遍历是：中，左，右，而后续遍历是：左，右，中
 // 在前序遍历的基础上切换次序，把中，左，右，变成中，右，左，得到结果数组后，翻转结果数组，顺序就为左，右，中
 func postOrder(treeNode *TreeNode) {
@@ -296,10 +294,11 @@ func postOrder(treeNode *TreeNode) {
 	fmt.Println(res)
 }
 
-// 中序遍历
+// *************************************************  中序遍历  *************************************************
+// 中序遍历：左，中，右  ！访问顺序和处理顺序不一样
 func inOrder(treeNode *TreeNode) {
 	st := stack.NewStack_Link[*TreeNode]()
-	st.Push(treeNode)
+
 	res := []int{}
 
 	current := treeNode
