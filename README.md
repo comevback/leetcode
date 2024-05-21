@@ -140,3 +140,4 @@
 20. [C090.md](Paiza/C/C090/C090.md)
 21. [B029.md](Paiza/B/B029/B029.md)
 22. [B131.md](Paiza/B/B131/B131.md)
+23. [A066.md](Paiza/A/A066/A066.md)
