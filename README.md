@@ -114,6 +114,7 @@
 80. [232-Implement-Queue-using-Stacks.md](Code/232-Implement-Queue-using-Stacks/232-Implement-Queue-using-Stacks.md)
 81. [1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md](Code/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md)
 82. [1004-Max-Consecutive-Ones-III.md](Code/1004-Max-Consecutive-Ones-III/1004-Max-Consecutive-Ones-III.md)
+83. [78-Subsets.md](Code/78-Subsets/78-Subsets.md)
 
 
 ## Paiza:
