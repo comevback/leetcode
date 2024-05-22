@@ -22,6 +22,8 @@
 
 [Binary-Tree.md](DSA/Binary-Tree/Binary-Tree.md)
 
+[KMP.md](DSA/KMP/KMP.md)
+
 ## Sorting:
 
 [Selection-Sort.md](DSA/Selection-Sort/Selection-Sort.md)
@@ -83,7 +85,7 @@
 49. [506-Relative-Ranks.md](Memos/506-Relative-Ranks.md)
 50. [21-Merge-Two-Sorted-Lists.md](Memos/21-Merge-Two-Sorted-Lists.md)
 51. [389-Find-the-Difference.md](Memos/389-Find-the-Difference.md)
-52. [28-Find-the-Index-of-the-First-Occurrence-in-a-String.md](Memos/28-Find-the-Index-of-the-First-Occurrence-in-a-String.md)
+52. [28-Find-the-Index-of-the-First-Occurrence-in-a-String.md](Code/28-Find-the-Index-of-the-First-Occurrence-in-a-String/28-Find-the-Index-of-the-First-Occurrence-in-a-String.md)
 53. [242-Valid-Anagram.md](Memos/242-Valid-Anagram.md)
 54. [459-Repeated-Substring-Pattern.md](Memos/459-Repeated-Substring-Pattern.md)
 55. [* 3075-Maximize-Happiness-of-Selected-Children.md](Memos/3075-Maximize-Happiness-of-Selected-Children.md)

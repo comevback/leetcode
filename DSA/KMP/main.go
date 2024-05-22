@@ -1,20 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func main() {
-	var haystack string = "abc"
-	var needle string = "c"
-
-	fmt.Println(strStr(haystack, needle))
+	str := "mississippi"
+	res := KMP(str, "issip")
+	fmt.Println(res)
 }
 
-// ============================================================================================================
 // 函数实现了 KMP 算法用于在 str 中查找 needle 字符串的位置
-func strStr(str string, needle string) int {
+func KMP(str string, needle string) int {
 	// needle 的最长公共前后缀数组
 	next := LPS(needle)
 	// start 用于标记 needle 中当前匹配的位置
@@ -61,33 +56,4 @@ func LPS(needle string) []int {
 		}
 	}
 	return prefixList // 返回构建的 LPS 数组
-}
-
-// ============================================================================================================
-// 1. 遍历对比
-func strStr1(haystack string, needle string) int {
-
-	// 如果两个字符串相等，直接返回0
-	if haystack == needle {
-		return 0
-	}
-
-	length := len(needle)
-
-	// i < len(haystack)-length+1 是关键，遍历到最后一位恰恰到达len(haystack)-1
-	for i := 0; i < len(haystack)-length+1; i++ {
-		// 如果在haystack中有和needle一样的字符串，找到就直接返回
-		if haystack[i:i+length] == needle {
-			return i
-		}
-	}
-	// 如果没找到，返回-1
-	return -1
-}
-
-// ============================================================================================================
-// 2. 用标准库的strings.Index方法
-// strings.Index 返回字符串在另一个字符串中第一次出现的索引，如果没有找到，返回-1
-func strStrSample1(haystack string, needle string) int {
-	return strings.Index(haystack, needle)
 }
