@@ -117,6 +117,7 @@
 81. [1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md](Code/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md)
 82. [1004-Max-Consecutive-Ones-III.md](Code/1004-Max-Consecutive-Ones-III/1004-Max-Consecutive-Ones-III.md)
 83. [78-Subsets.md](Code/78-Subsets/78-Subsets.md)
+84. [1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md](Code/1493-Longest-Subarray-of-1s-After-Deleting-One-Element/1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md)
 
 
 ## Paiza:
