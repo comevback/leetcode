@@ -120,6 +120,7 @@
 84. [1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md](Code/1493-Longest-Subarray-of-1s-After-Deleting-One-Element/1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md)
 85. [125-Valid-Palindrome.md](Code/125-Valid-Palindrome/125-Valid-Palindrome.md)
 86. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
+87. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
 
 
 ## Paiza:

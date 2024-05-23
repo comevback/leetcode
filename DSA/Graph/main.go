@@ -7,17 +7,17 @@ import (
 
 func main() {
 	graph := NewGraph_Map()
+	graph.addVertex(0)
 	graph.addVertex(1)
 	graph.addVertex(2)
 	graph.addVertex(4)
-	graph.addVertex(5)
 	graph.addVertex(3)
-	graph.addEdge(1, 5)
-	graph.addEdge(2, 5)
-	graph.addEdge(1, 4)
+	graph.addEdge(1, 2)
+	graph.addEdge(2, 3)
+	graph.addEdge(0, 4)
 	graph.addEdge(3, 4)
-	graph.addEdge(2, 4)
-	graph.addEdge(1, 5)
+	graph.addEdge(2, 0)
+	graph.addEdge(1, 3)
 	fmt.Println(graph.NumOfEdge)
 	fmt.Println(graph.NumOfNode)
 	graph.showConnections()
@@ -55,6 +55,13 @@ func (graph *Graph_Map) addEdge(node1 int, node2 int) error {
 	if !exist1 || !exist2 {
 		return errors.New("node not exist")
 	}
+
+	for _, v := range graph.adjList[node1] {
+		if v == node2 {
+			return errors.New("bridge already exist")
+		}
+	}
+
 	graph.adjList[node1] = append(graph.adjList[node1], node2)
 	graph.adjList[node2] = append(graph.adjList[node2], node1)
 	graph.NumOfEdge += 1
@@ -63,7 +70,7 @@ func (graph *Graph_Map) addEdge(node1 int, node2 int) error {
 
 func (graph *Graph_Map) showConnections() {
 	for key, value := range graph.adjList {
-		fmt.Println(key, value)
+		fmt.Println(key, "==>", value)
 	}
 }
 
@@ -88,15 +95,22 @@ func NewGraph_Array() *Graph_Array {
 
 func (graph *Graph_Array) addVertex(value int) {
 	graph.adjList = append(graph.adjList, []int{})
+	graph.NumOfNode += 1
 }
 
 func (graph *Graph_Array) addEdge(node1 int, node2 int) error {
-	if node1 >= 0 && node1 < len(graph.adjList) && node2 > 0 && node2 < len(graph.adjList) {
+	if node1 >= 0 && node1 < len(graph.adjList) && node2 >= 0 && node2 < len(graph.adjList) {
 		graph.adjList[node1] = append(graph.adjList[node1], node2)
 		graph.adjList[node2] = append(graph.adjList[node2], node1)
+		graph.NumOfEdge += 1
+		return nil
+	} else {
+		return errors.New("invalid input")
 	}
 }
 
 func (graph *Graph_Array) showConnections() {
-
+	for i, v := range graph.adjList {
+		fmt.Println(i, "===>", v)
+	}
 }
