@@ -119,6 +119,7 @@
 83. [78-Subsets.md](Code/78-Subsets/78-Subsets.md)
 84. [1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md](Code/1493-Longest-Subarray-of-1s-After-Deleting-One-Element/1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md)
 85. [125-Valid-Palindrome.md](Code/125-Valid-Palindrome/125-Valid-Palindrome.md)
+86. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
 
 
 ## Paiza:
