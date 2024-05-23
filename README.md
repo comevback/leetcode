@@ -24,13 +24,15 @@
 
 [KMP.md](DSA/KMP/KMP.md)
 
+[Recursion.md](DSA/Recursion/Recursion.md)
+
 ## Sorting:
 
-[Selection-Sort.md](DSA/Selection-Sort/Selection-Sort.md)
+[Selection-Sort.md](DSA/Sorting/Selection-Sort/Selection-Sort.md)
 
-[Bubble-Sort.md](DSA/Bubble-Sort/Bubble-Sort.md)
+[Bubble-Sort.md](DSA/Sorting/Bubble-Sort/Bubble-Sort.md)
 
-[Insertion-Sort.md](DSA/Insertion-Sort/Insertion-Sort.md)
+[Insertion-Sort.md](DSA/Sorting/Insertion-Sort/Insertion-Sort.md)
 
 ## leetcode Practices and Memos:
 
