@@ -71,11 +71,7 @@ func (stack *Stack_Link[T]) Peek() (T, error) {
 
 // 是否为空方法
 func (stack *Stack_Link[T]) IsEmpty() bool {
-	if stack.Top == nil {
-		return true
-	} else {
-		return false
-	}
+	return stack.Top == nil
 }
 
 // Find 方法在栈中查找一个指定的值

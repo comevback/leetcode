@@ -34,6 +34,8 @@
 
 [Insertion-Sort.md](DSA/Sorting/Insertion-Sort/Insertion-Sort.md)
 
+[Merge-Sort.md](DSA/Sorting/Merge-Sort/Merge-Sort.md)
+
 ## leetcode Practices and Memos:
 
 1. [1-Two-Sum.md](Memos/1-Two-Sum.md)

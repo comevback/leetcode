@@ -84,6 +84,11 @@ func (queue *Queue[T]) Peek() (*ListNode[T], error) {
 	return queue.head, nil // 返回头节点
 }
 
+// isEmpty
+func (queue *Queue[T]) IsEmpty() bool {
+	return queue.head == nil
+}
+
 // find方法：在队列中查找元素
 func Find(queue *Queue[int], value int) (*ListNode[int], error) {
 	if queue.head == nil { // 如果队列为空
