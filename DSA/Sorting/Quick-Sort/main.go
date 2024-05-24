@@ -16,9 +16,11 @@ func QuickSort(arr []int) {
 	head := 0
 	for head < key {
 		if arr[head] > arr[key] {
+			// 如果要交换的两个元素相邻，直接交换
 			if head+1 == key {
 				arr[key], arr[head] = arr[head], arr[key]
 			} else {
+				// 如果不相邻，head，key-1，key三个数组互相交换
 				arr[key], arr[head], arr[key-1] = arr[head], arr[key-1], arr[key]
 			}
 			key -= 1
@@ -27,6 +29,7 @@ func QuickSort(arr []int) {
 		}
 	}
 
+	// 如果key左边有元素，对左边元素进行递归，右侧同理
 	if key > 0 {
 		QuickSort(arr[:key])
 	}
