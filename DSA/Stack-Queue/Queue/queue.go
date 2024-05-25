@@ -77,12 +77,13 @@ func (queue *Queue[T]) Dequeue() (T, error) {
 }
 
 // peek方法：查看队列头部元素
-func (queue *Queue[T]) Peek() (*ListNode[T], error) {
+func (queue *Queue[T]) Peek() (T, error) {
 	if queue.head == nil { // 如果队列为空
-		return nil, errors.New("empty queue") // 返回空队列错误
+		var null T
+		return null, errors.New("empty queue") // 返回空队列错误
 	}
 
-	return queue.head, nil // 返回头节点
+	return queue.head.Val, nil // 返回头节点
 }
 
 // isEmpty

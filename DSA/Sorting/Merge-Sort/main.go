@@ -120,7 +120,7 @@ func MergeSortIterate(arr []int) []int {
 	for !resQueue.IsEmpty() {
 		// 如果队列头元素的数组长度为原数组，说明已经排序好，推出循环
 		top, _ := resQueue.Peek()
-		if len(top.Val) == length {
+		if len(top) == length {
 			break
 		}
 

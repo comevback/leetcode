@@ -21,15 +21,18 @@ func main() {
 	//preOrder(binTree.root)
 	// binTree.reversal()
 
-	preOrder(binTree.root)
-	res := DAC_DFS_preOrder(binTree.root)
-	fmt.Println(res)
-	inOrder(binTree.root)
-	res = DAC_DFS_inOrder(binTree.root)
-	fmt.Println(res)
-	postOrder(binTree.root)
-	res = DAC_DFS_postOrder(binTree.root)
-	fmt.Println(res)
+	// preOrder(binTree.root)
+	// res := DAC_DFS_preOrder(binTree.root)
+	// fmt.Println(res)
+	// inOrder(binTree.root)
+	// res = DAC_DFS_inOrder(binTree.root)
+	// fmt.Println(res)
+	// postOrder(binTree.root)
+	// res = DAC_DFS_postOrder(binTree.root)
+	// fmt.Println(res)
+
+	BFS(binTree.root)
+	BFS_Re(binTree.root)
 }
 
 type TreeNode struct {
@@ -226,11 +229,39 @@ func BFS(treeNode *TreeNode) {
 }
 
 func BFS_Re(treeNode *TreeNode) {
+	if treeNode == nil {
+		return
+	}
 
+	res := []int{}
+	queue := []*TreeNode{}
+	queue = append(queue, treeNode)
+
+	BFS_Recursive(queue, &res)
+
+	fmt.Println(res)
+}
+
+func BFS_Recursive(queue []*TreeNode, res *[]int) {
+	if len(queue) == 0 {
+		return
+	}
+
+	current := queue[0]
+	queue = queue[1:]
+	*res = append(*res, current.Val)
+	if current.Left != nil {
+		queue = append(queue, current.Left)
+	}
+	if current.Right != nil {
+		queue = append(queue, current.Right)
+	}
+
+	BFS_Recursive(queue, res)
 }
 
 // *****************************************************  深度优先遍历  *****************************************************
-// ====================================================  递归  ====================================================
+// ========================================================  递归  ========================================================
 // 前序遍历
 func preTravel(treeNode *TreeNode, q *queue.Queue[int]) {
 	q.Enqueue(treeNode.Val)
