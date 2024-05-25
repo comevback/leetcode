@@ -100,8 +100,8 @@ func MergeSortIterate(arr []int) []int {
 		// 弹出队列头
 		divided, _ := inputQueue.Dequeue()
 		// 得到队列头代表的元素的左右半部分
-		left := divided.Val[:len(divided.Val)/2]
-		right := divided.Val[len(divided.Val)/2:]
+		left := divided[:len(divided)/2]
+		right := divided[len(divided)/2:]
 
 		// 如果左右半部分长度为1，加入到输出队列，否则继续加入到输入队列
 		if len(left) == 1 {
@@ -129,11 +129,11 @@ func MergeSortIterate(arr []int) []int {
 		merge2, _ := resQueue.Dequeue()
 
 		// 把这两个数组进行merge，加入队尾
-		new := mergeIndex(merge1.Val, merge2.Val)
+		new := mergeIndex(merge1, merge2)
 		resQueue.Enqueue(new)
 	}
 
 	// 弹出排序好的数组
 	res, _ := resQueue.Dequeue()
-	return res.Val
+	return res
 }

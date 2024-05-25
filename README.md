@@ -36,6 +36,11 @@
 
 [Merge-Sort.md](DSA/Sorting/Merge-Sort/Merge-Sort.md)
 
+## Binary-Tree 100
+
+[104-Maximum-Depth-of-Binary-Tree.md](Binary-Tree/104-Maximum-Depth-of-Binary-Tree/104-Maximum-Depth-of-Binary-Tree.md)
+
+
 ## leetcode Practices and Memos:
 
 1. [1-Two-Sum.md](Memos/1-Two-Sum.md)

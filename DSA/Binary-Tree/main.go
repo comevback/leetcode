@@ -16,11 +16,20 @@ func main() {
 	binTree.insert(8)
 	binTree.insert(4)
 	binTree.insert(2)
-
 	binTree.insert(3)
 
 	//preOrder(binTree.root)
-	binTree.reversal()
+	// binTree.reversal()
+
+	preOrder(binTree.root)
+	res := DAC_DFS_preOrder(binTree.root)
+	fmt.Println(res)
+	inOrder(binTree.root)
+	res = DAC_DFS_inOrder(binTree.root)
+	fmt.Println(res)
+	postOrder(binTree.root)
+	res = DAC_DFS_postOrder(binTree.root)
+	fmt.Println(res)
 }
 
 type TreeNode struct {
@@ -172,25 +181,55 @@ func (binTree *BinaryTree) remove(value int) error {
 	return nil
 }
 
-// ====================================================  深度优先遍历  =================================================
+// *****************************************************  树遍历  *************************************************
 func (binTree *BinaryTree) reversal() {
 	//q1 := queue.NewQueue[int]()
-	q2 := queue.NewQueue[int]()
+	//q2 := queue.NewQueue[int]()
 	//q3 := queue.NewQueue[int]()
 
 	//preTravel(binTree.root, q1)
 
-	inTravel(binTree.root, q2)
+	//inTravel(binTree.root, q2)
 	//postTravel(binTree.root, q3)
 
 	//q1.PrintQueue()
 	//preOrder(binTree.root)
-	q2.PrintQueue()
+	//q2.PrintQueue()
 	//q3.PrintQueue()
 	//postOrder(binTree.root)
-	inOrder(binTree.root)
+	//inOrder(binTree.root)
+	BFS(binTree.root)
 }
 
+// *****************************************************  广度优先遍历  *************************************************
+func BFS(treeNode *TreeNode) {
+	// 定义一个队列，接收类型为*TreeNode
+	q := queue.NewQueue[*TreeNode]()
+	q.Enqueue(treeNode) // 首先把根节点推入队列
+	res := []int{}      // 定义结果数组
+
+	// 当队列不为空时循环
+	for !q.IsEmpty() {
+		poped, _ := q.Dequeue()      // 每次弹出一个元素
+		res = append(res, poped.Val) // 把这个元素的Val加入到结果数组中
+		// 如果这个元素有左子节点，压入队列，如果有右子节点，也压入队列
+		if poped.Left != nil {
+			q.Enqueue(poped.Left)
+		}
+		if poped.Right != nil {
+			q.Enqueue(poped.Right)
+		}
+	}
+
+	// 打印结果数组
+	fmt.Println(res)
+}
+
+func BFS_Re(treeNode *TreeNode) {
+
+}
+
+// *****************************************************  深度优先遍历  *****************************************************
 // ====================================================  递归  ====================================================
 // 前序遍历
 func preTravel(treeNode *TreeNode, q *queue.Queue[int]) {
@@ -320,4 +359,47 @@ func inOrder(treeNode *TreeNode) {
 
 	// 当栈空而且current为nil时，打印结果数组
 	fmt.Println(res)
+}
+
+// ************************************************  分治法DFS  ************************************************************
+// 前序遍历
+func DAC_DFS_preOrder(root *TreeNode) []int {
+	var res []int
+	if root == nil {
+		return res
+	}
+
+	res = append(res, root.Val)
+	res = append(res, DAC_DFS_preOrder(root.Left)...)
+	res = append(res, DAC_DFS_preOrder(root.Right)...)
+
+	return res
+}
+
+// 中序遍历
+func DAC_DFS_inOrder(root *TreeNode) []int {
+	var res []int
+	if root == nil {
+		return res
+	}
+
+	res = append(res, DAC_DFS_inOrder(root.Left)...)
+	res = append(res, root.Val)
+	res = append(res, DAC_DFS_inOrder(root.Right)...)
+
+	return res
+}
+
+// 后序遍历
+func DAC_DFS_postOrder(root *TreeNode) []int {
+	var res []int
+	if root == nil {
+		return res
+	}
+
+	res = append(res, DAC_DFS_postOrder(root.Left)...)
+	res = append(res, DAC_DFS_postOrder(root.Right)...)
+	res = append(res, root.Val)
+
+	return res
 }

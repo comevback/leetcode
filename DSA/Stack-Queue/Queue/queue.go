@@ -62,9 +62,10 @@ func (queue *Queue[T]) Enqueue(value T) {
 }
 
 // Dequeue方法：从队列头中移除元素
-func (queue *Queue[T]) Dequeue() (*ListNode[T], error) {
+func (queue *Queue[T]) Dequeue() (T, error) {
 	if queue.head == nil { // 如果队列为空
-		return nil, errors.New("empty queue") // 返回空队列错误
+		var null T
+		return null, errors.New("empty queue") // 返回空队列错误
 	}
 
 	res := queue.head      // 获取头节点
@@ -72,7 +73,7 @@ func (queue *Queue[T]) Dequeue() (*ListNode[T], error) {
 		queue.tail = nil // 将尾指针设为空
 	}
 	queue.head = queue.head.Next // 更新头指针
-	return res, nil              // 返回被删除的元素
+	return res.Val, nil          // 返回被删除的元素
 }
 
 // peek方法：查看队列头部元素
