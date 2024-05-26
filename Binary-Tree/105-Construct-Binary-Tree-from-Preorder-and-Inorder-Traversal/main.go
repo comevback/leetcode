@@ -11,7 +11,6 @@ type TreeNode struct {
 }
 
 func buildTree(preorder []int, inorder []int) *TreeNode {
-
 	// 如果给的遍历数组长度为0，说明是空，返回nil
 	if len(preorder) == 0 {
 		return nil

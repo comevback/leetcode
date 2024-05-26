@@ -62,6 +62,8 @@
 
 [889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md](Binary-Tree/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md)
 
+[652-Find-Duplicate-Subtrees.md](Binary-Tree/652-Find-Duplicate-Subtrees/652-Find-Duplicate-Subtrees.md)
+
 
 ## leetcode Practices and Memos:
 
