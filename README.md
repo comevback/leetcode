@@ -40,6 +40,7 @@
 
 [104-Maximum-Depth-of-Binary-Tree.md](Binary-Tree/104-Maximum-Depth-of-Binary-Tree/104-Maximum-Depth-of-Binary-Tree.md)
 
+[144-Binary-Tree-Preorder-Traversal.md](Binary-Tree/144-Binary-Tree-Preorder-Traversal/144-Binary-Tree-Preorder-Traversal.md)
 
 ## leetcode Practices and Memos:
 
