@@ -58,8 +58,9 @@
 
 [105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md](Binary-Tree/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
 
-
 [106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md](Binary-Tree/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md)
+
+[889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md](Binary-Tree/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md)
 
 
 ## leetcode Practices and Memos:
