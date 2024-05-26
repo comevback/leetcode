@@ -48,6 +48,8 @@
 
 [257-Binary-Tree-Paths.md](Binary-Tree/257-Binary-Tree-Paths/257-Binary-Tree-Paths.md)
 
+[226-Invert-Binary-Tree.md](Binary-Tree/226-Invert-Binary-Tree/226-Invert-Binary-Tree.md)
+
 
 ## leetcode Practices and Memos:
 
