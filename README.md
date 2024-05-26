@@ -50,6 +50,8 @@
 
 [226-Invert-Binary-Tree.md](Binary-Tree/226-Invert-Binary-Tree/226-Invert-Binary-Tree.md)
 
+[116-Populating-Next-Right-Pointers-in-Each-Node.md](Binary-Tree/116-Populating-Next-Right-Pointers-in-Each-Node/116-Populating-Next-Right-Pointers-in-Each-Node.md)
+
 
 ## leetcode Practices and Memos:
 
