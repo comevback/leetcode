@@ -54,9 +54,12 @@
 
 [114-Flatten-Binary-Tree-to-Linked-List.md](Binary-Tree/114-Flatten-Binary-Tree-to-Linked-List/114-Flatten-Binary-Tree-to-Linked-List.md)
 
+[654-Maximum-Binary-Tree.md](Binary-Tree/654-Maximum-Binary-Tree/654-Maximum-Binary-Tree.md)
+
 [105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md](Binary-Tree/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
 
-[654-Maximum-Binary-Tree.md](Binary-Tree/654-Maximum-Binary-Tree/654-Maximum-Binary-Tree.md)
+
+[106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md](Binary-Tree/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md)
 
 
 ## leetcode Practices and Memos:
