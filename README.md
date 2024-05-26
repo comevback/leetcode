@@ -54,6 +54,8 @@
 
 [114-Flatten-Binary-Tree-to-Linked-List.md](Binary-Tree/114-Flatten-Binary-Tree-to-Linked-List/114-Flatten-Binary-Tree-to-Linked-List.md)
 
+[105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md](Binary-Tree/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
+
 
 ## leetcode Practices and Memos:
 
