@@ -40,9 +40,13 @@
 
 [104-Maximum-Depth-of-Binary-Tree.md](Binary-Tree/104-Maximum-Depth-of-Binary-Tree/104-Maximum-Depth-of-Binary-Tree.md)
 
+[LCR-175-binary-tree-depth.md](Binary-Tree/LCR-175-binary-tree-depth/LCR-175-binary-tree-depth.md)
+
 [144-Binary-Tree-Preorder-Traversal.md](Binary-Tree/144-Binary-Tree-Preorder-Traversal/144-Binary-Tree-Preorder-Traversal.md)
 
 [543-Diameter-of-Binary-Tree.md](Binary-Tree/543-Diameter-of-Binary-Tree/543-Diameter-of-Binary-Tree.md)
+
+[257-Binary-Tree-Paths.md](Binary-Tree/257-Binary-Tree-Paths/257-Binary-Tree-Paths.md)
 
 
 ## leetcode Practices and Memos:
