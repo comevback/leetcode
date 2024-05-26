@@ -42,6 +42,9 @@
 
 [144-Binary-Tree-Preorder-Traversal.md](Binary-Tree/144-Binary-Tree-Preorder-Traversal/144-Binary-Tree-Preorder-Traversal.md)
 
+[543-Diameter-of-Binary-Tree.md](Binary-Tree/543-Diameter-of-Binary-Tree/543-Diameter-of-Binary-Tree.md)
+
+
 ## leetcode Practices and Memos:
 
 1. [1-Two-Sum.md](Memos/1-Two-Sum.md)
