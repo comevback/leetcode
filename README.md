@@ -52,6 +52,8 @@
 
 [116-Populating-Next-Right-Pointers-in-Each-Node.md](Binary-Tree/116-Populating-Next-Right-Pointers-in-Each-Node/116-Populating-Next-Right-Pointers-in-Each-Node.md)
 
+[114-Flatten-Binary-Tree-to-Linked-List.md](Binary-Tree/114-Flatten-Binary-Tree-to-Linked-List/114-Flatten-Binary-Tree-to-Linked-List.md)
+
 
 ## leetcode Practices and Memos:
 
