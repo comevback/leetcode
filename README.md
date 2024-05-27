@@ -66,6 +66,7 @@
 
 [297-Serialize-and-Deserialize-Binary-Tree.md](Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree.md)
 
+[912-Sort-an-Array.md](Binary-Tree/912-Sort-an-Array/912-Sort-an-Array.md)
 
 ## leetcode Practices and Memos:
 

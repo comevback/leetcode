@@ -137,3 +137,55 @@ func MergeSortIterate(arr []int) []int {
 	res, _ := resQueue.Dequeue()
 	return res
 }
+
+// ****************************************************  指针方法  ****************************************************
+func sortArray(nums []int) []int {
+	temp := make([]int, len(nums)) // 提前定义这个数组，避免在递归中重复定义，如果是很大的数组，在递归中定义的数组被重复创建和销毁，很浪费时间
+	MergeSortIndex(nums, 0, len(nums)-1, temp)
+	return nums
+}
+
+func MergeSortIndex(nums []int, lo int, hi int, temp []int) {
+	if lo >= hi {
+		return
+	}
+
+	mid := (lo + hi) / 2
+
+	MergeSortIndex(nums, lo, mid, temp)
+	MergeSortIndex(nums, mid+1, hi, temp)
+
+	Merge(nums, lo, mid, hi, temp)
+}
+
+func Merge(nums []int, lo int, mid int, hi int, temp []int) {
+	copy(temp[lo:hi+1], nums[lo:hi+1])
+
+	var leftIndex, rightIndex int = lo, mid + 1
+	var current int = lo
+
+	for leftIndex < mid+1 && rightIndex < hi+1 {
+		if temp[leftIndex] <= temp[rightIndex] {
+			nums[current] = temp[leftIndex]
+			leftIndex += 1
+		} else {
+			nums[current] = temp[rightIndex]
+			rightIndex += 1
+		}
+
+		current += 1
+	}
+
+	for leftIndex < mid+1 {
+		nums[current] = temp[leftIndex]
+		current += 1
+		leftIndex += 1
+	}
+
+	for rightIndex < hi+1 {
+		nums[current] = temp[rightIndex]
+		current += 1
+		rightIndex += 1
+	}
+
+}
