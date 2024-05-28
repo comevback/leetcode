@@ -26,6 +26,8 @@
 
 [Recursion.md](DSA/Recursion/Recursion.md)
 
+---
+
 ## Sorting:
 
 [Selection-Sort.md](DSA/Sorting/Selection-Sort/Selection-Sort.md)
@@ -35,6 +37,8 @@
 [Insertion-Sort.md](DSA/Sorting/Insertion-Sort/Insertion-Sort.md)
 
 [Merge-Sort.md](DSA/Sorting/Merge-Sort/Merge-Sort.md)
+
+---
 
 ## Binary-Tree 100
 
@@ -69,6 +73,19 @@
 [912-Sort-an-Array.md](Binary-Tree/912-Sort-an-Array/912-Sort-an-Array.md)
 
 [ ! 315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
+
+
+
+---
+
+## Array and LinkedList
+
+[86-Partition-List.md](Array-and-LinkedList/86-Partition-List/86-Partition-List.md)
+
+
+
+---
+
 ## leetcode Practices and Memos:
 
 1. [1-Two-Sum.md](Memos/1-Two-Sum.md)
@@ -159,6 +176,7 @@
 86. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
 87. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
 
+---
 
 ## Paiza:
 1. [C084.md](Paiza/C/C084/C084.md)
@@ -185,3 +203,5 @@
 22. [B131.md](Paiza/B/B131/B131.md)
 23. [A066.md](Paiza/A/A066/A066.md)
 24. [A081.md](Paiza/A/A081/A081.md)
+
+---
