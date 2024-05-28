@@ -82,7 +82,11 @@
 
 [86-Partition-List.md](Array-and-LinkedList/86-Partition-List/86-Partition-List.md)
 
+[21-Merge-Two-Sorted-Lists.md](Array-and-LinkedList/21-Merge-Two-Sorted-Lists/21-Merge-Two-Sorted-Lists.md)
 
+[23-Merge-k-Sorted-Lists.md](Array-and-LinkedList/23-Merge-k-Sorted-Lists/23-Merge-k-Sorted-Lists.md)
+
+[19-Remove-Nth-Node-From-End-of-List.md](Array-and-LinkedList/19-Remove-Nth-Node-From-End-of-List/19-Remove-Nth-Node-From-End-of-List.md)
 
 ---
 
