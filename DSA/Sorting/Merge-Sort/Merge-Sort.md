@@ -2,6 +2,8 @@
 
 ![Merge-Sort.gif](Merge-Sort.gif)
 
+## 递归的 sort 函数就是二叉树的遍历函数，而 merge 函数就是在每个节点上做的事情
+
 # Code
 ```go
 package main

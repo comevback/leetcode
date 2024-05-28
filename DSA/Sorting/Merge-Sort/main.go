@@ -150,7 +150,8 @@ func MergeSortIndex(nums []int, lo int, hi int, temp []int) {
 		return
 	}
 
-	mid := (lo + hi) / 2
+	mid := (lo + hi) / 2 // 这种方法可能引起整型溢出
+	mid = lo + (hi-lo)/2 // 这种方法不会溢出
 
 	MergeSortIndex(nums, lo, mid, temp)
 	MergeSortIndex(nums, mid+1, hi, temp)
