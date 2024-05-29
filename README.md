@@ -38,6 +38,8 @@
 
 [Merge-Sort.md](DSA/Sorting/Merge-Sort/Merge-Sort.md)
 
+[Quick-Sort.md](DSA/Sorting/Quick-Sort/Quick-Sort.md)
+
 ---
 
 ## Binary-Tree 100
@@ -99,6 +101,10 @@
 [83-Remove-Duplicates-from-Sorted-List.md](Two-Pointer/83-Remove-Duplicates-from-Sorted-List/83-Remove-Duplicates-from-Sorted-List.md)
 
 [283-Move-Zeroes.md](Two-Pointer/283-Move-Zeroes/283-Move-Zeroes.md)
+
+[5-Longest-Palindromic-Substring.md](Two-Pointer/5-Longest-Palindromic-Substring/5-Longest-Palindromic-Substring.md)
+
+
 
 ---
 
