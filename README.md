@@ -94,6 +94,12 @@
 
 [160-Intersection-of-Two-Linked-Lists.md](Array-and-LinkedList/160-Intersection-of-Two-Linked-Lists/160-Intersection-of-Two-Linked-Lists.md)
 
+[26-Remove-Duplicates-from-Sorted-Array.md](Two-Pointer/26-Remove-Duplicates-from-Sorted-Array/26-Remove-Duplicates-from-Sorted-Array.md)
+
+[83-Remove-Duplicates-from-Sorted-List.md](Two-Pointer/83-Remove-Duplicates-from-Sorted-List/83-Remove-Duplicates-from-Sorted-List.md)
+
+
+
 ---
 
 ## leetcode Practices and Memos:
