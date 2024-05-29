@@ -98,7 +98,7 @@
 
 [83-Remove-Duplicates-from-Sorted-List.md](Two-Pointer/83-Remove-Duplicates-from-Sorted-List/83-Remove-Duplicates-from-Sorted-List.md)
 
-
+[283-Move-Zeroes.md](Two-Pointer/283-Move-Zeroes/283-Move-Zeroes.md)
 
 ---
 
@@ -129,7 +129,7 @@
 23. [217-Contains-Duplicate.md](Memos/217-Contains-Duplicate.md)
 24. [53-Maximum-Subarray.md](Memos/53-Maximum-Subarray.md)
 25. [Longest-Word.md](Memos/Longest-Word.md)
-26. [283-Move-Zeroes.md](Memos/283-Move-Zeroes.md)
+26. [283-Move-Zeroes.md](Two-Pointer/283-Move-Zeroes/283-Move-Zeroes.md)
 27. [* 1915-Number-of-Wonderful-Substrings.md](Memos/1915-Number-of-Wonderful-Substrings.md)
 28. [2215-Find-the-Difference-of-Two-Arrays.md](Memos/2215-Find-the-Difference-of-Two-Arrays.md)
 29. [1207-Unique-Number-of-Occurrences.md](Memos/1207-Unique-Number-of-Occurrences.md)
