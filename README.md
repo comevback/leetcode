@@ -78,7 +78,7 @@
 
 ---
 
-## Array and LinkedList
+## Two-Pointer
 
 [86-Partition-List.md](Array-and-LinkedList/86-Partition-List/86-Partition-List.md)
 
@@ -92,7 +92,7 @@
 
 [142-Linked-List-Cycle-II.md](Array-and-LinkedList/142-Linked-List-Cycle-II/142-Linked-List-Cycle-II.md)
 
-
+[160-Intersection-of-Two-Linked-Lists.md](Array-and-LinkedList/160-Intersection-of-Two-Linked-Lists/160-Intersection-of-Two-Linked-Lists.md)
 
 ---
 
