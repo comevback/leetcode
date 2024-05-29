@@ -88,6 +88,12 @@
 
 [19-Remove-Nth-Node-From-End-of-List.md](Array-and-LinkedList/19-Remove-Nth-Node-From-End-of-List/19-Remove-Nth-Node-From-End-of-List.md)
 
+[876-Middle-of-the-Linked-List.md](Array-and-LinkedList/876-Middle-of-the-Linked-List/876-Middle-of-the-Linked-List.md)
+
+[142-Linked-List-Cycle-II.md](Array-and-LinkedList/142-Linked-List-Cycle-II/142-Linked-List-Cycle-II.md)
+
+
+
 ---
 
 ## leetcode Practices and Memos:
@@ -97,7 +103,7 @@
 3. [1480-Running-Sum-of-1d-Array.md](Memos/1480-Running-Sum-of-1d-Array.md)
 4. [1672-Richest-Customer-Wealth.md](Memos/1672-Richest-Customer-Wealth.md)
 5. [412-Fizz-Buzz.md](Memos/412-Fizz-Buzz.md)
-6. [876.-Middle-of-the-Linked-List.md](Memos/876.-Middle-of-the-Linked-List.md)
+6. [876-Middle-of-the-Linked-List.md](Array-and-LinkedList/876-Middle-of-the-Linked-List/876-Middle-of-the-Linked-List.md)
 7. [383-Ransom-Note.md](Memos/383-Ransom-Note.md)
 8. [88-Merge-Sorted-Array.md](Memos/88-Merge-Sorted-Array.md)
 9. [27-Remove-Element.md](Memos/27-Remove-Element.md)
