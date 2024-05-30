@@ -106,6 +106,19 @@
 
 [141-Linked-List-Cycle.md](Two-Pointer/141-Linked-List-Cycle/141-Linked-List-Cycle.md)
 
+[82-Remove-Duplicates-from-Sorted-List-II.md](Two-Pointer/82-Remove-Duplicates-from-Sorted-List-II/82-Remove-Duplicates-from-Sorted-List-II.md)
+
+[1836-Remove-Duplicates-from-Unsorted-List.md](Two-Pointer/1836-Remove-Duplicates-from-Unsorted-List/1836-Remove-Duplicates-from-Unsorted-List.md)
+
+[264-Ugly-Number-II.md](Two-Pointer/264-Ugly-Number-II/264-Ugly-Number-II.md)
+
+---
+
+## Other Skills
+
+[204-Count-Primes.md](Code/204-Count-Primes/204-Count-Primes.md)
+
+
 ---
 
 ## leetcode Practices and Memos:
