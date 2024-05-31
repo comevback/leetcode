@@ -82,19 +82,19 @@
 
 ## Two-Pointer
 
-[86-Partition-List.md](Array-and-LinkedList/86-Partition-List/86-Partition-List.md)
+[86-Partition-List.md](Two-Pointer/86-Partition-List/86-Partition-List.md)
 
-[21-Merge-Two-Sorted-Lists.md](Array-and-LinkedList/21-Merge-Two-Sorted-Lists/21-Merge-Two-Sorted-Lists.md)
+[21-Merge-Two-Sorted-Lists.md](Two-Pointer/21-Merge-Two-Sorted-Lists/21-Merge-Two-Sorted-Lists.md)
 
-[23-Merge-k-Sorted-Lists.md](Array-and-LinkedList/23-Merge-k-Sorted-Lists/23-Merge-k-Sorted-Lists.md)
+[23-Merge-k-Sorted-Lists.md](Two-Pointer/23-Merge-k-Sorted-Lists/23-Merge-k-Sorted-Lists.md)
 
-[19-Remove-Nth-Node-From-End-of-List.md](Array-and-LinkedList/19-Remove-Nth-Node-From-End-of-List/19-Remove-Nth-Node-From-End-of-List.md)
+[19-Remove-Nth-Node-From-End-of-List.md](Two-Pointer/19-Remove-Nth-Node-From-End-of-List/19-Remove-Nth-Node-From-End-of-List.md)
 
-[876-Middle-of-the-Linked-List.md](Array-and-LinkedList/876-Middle-of-the-Linked-List/876-Middle-of-the-Linked-List.md)
+[876-Middle-of-the-Linked-List.md](Two-Pointer/876-Middle-of-the-Linked-List/876-Middle-of-the-Linked-List.md)
 
-[142-Linked-List-Cycle-II.md](Array-and-LinkedList/142-Linked-List-Cycle-II/142-Linked-List-Cycle-II.md)
+[142-Linked-List-Cycle-II.md](Two-Pointer/142-Linked-List-Cycle-II/142-Linked-List-Cycle-II.md)
 
-[160-Intersection-of-Two-Linked-Lists.md](Array-and-LinkedList/160-Intersection-of-Two-Linked-Lists/160-Intersection-of-Two-Linked-Lists.md)
+[160-Intersection-of-Two-Linked-Lists.md](Two-Pointer/160-Intersection-of-Two-Linked-Lists/160-Intersection-of-Two-Linked-Lists.md)
 
 [26-Remove-Duplicates-from-Sorted-Array.md](Two-Pointer/26-Remove-Duplicates-from-Sorted-Array/26-Remove-Duplicates-from-Sorted-Array.md)
 
@@ -111,6 +111,10 @@
 [1836-Remove-Duplicates-from-Unsorted-List.md](Two-Pointer/1836-Remove-Duplicates-from-Unsorted-List/1836-Remove-Duplicates-from-Unsorted-List.md)
 
 [264-Ugly-Number-II.md](Two-Pointer/264-Ugly-Number-II/264-Ugly-Number-II.md)
+
+[378-Kth-Smallest-Element-in-a-Sorted-Matrix.md](Two-Pointer/378-Kth-Smallest-Element-in-a-Sorted-Matrix/378-Kth-Smallest-Element-in-a-Sorted-Matrix.md)
+
+[373-Find-K-Pairs-with-Smallest-Sums.md](Two-Pointer/373-Find-K-Pairs-with-Smallest-Sums/373-Find-K-Pairs-with-Smallest-Sums.md)
 
 ---
 

@@ -90,3 +90,15 @@ func printLinnkedList(head *ListNode) {
 	}
 	fmt.Println(res)
 }
+
+// =======================================================================================================================
+
+func reverseListRe(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	} else {
+		temp := head.Next
+		newhead := reverseListRe(temp)
+		return
+	}
+}

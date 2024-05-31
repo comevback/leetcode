@@ -1,7 +1,5 @@
 package main
 
-import "math"
-
 func main() {
 
 }
@@ -9,15 +7,17 @@ func main() {
 func kthSmallest(matrix [][]int, k int) int {
 	pq := NewPQ()
 
+	// 将矩阵中的每一行都放入优先队列
 	for _, v := range matrix {
 		pq.push(v)
 	}
 
+	// 弹出k次，最后一次弹出的就是第k小的数
 	res := []int{}
 	for i := 0; i < k; i++ {
 		poped := pq.pop()
 		res = append(res, poped[0])
-		poped = poped[1:]
+		poped = poped[1:] // 弹出的数组去掉第一个元素，然后重新放入优先队列
 		if len(poped) != 0 {
 			pq.push(poped)
 		}
@@ -35,6 +35,7 @@ func NewPQ() *PQ {
 	return &PQ{}
 }
 
+// 上浮方法
 func (pq *PQ) swim(index int) {
 	parent := index / 2
 
@@ -45,6 +46,7 @@ func (pq *PQ) swim(index int) {
 	}
 }
 
+// 下沉方法
 func (pq *PQ) sink(index int) {
 	for {
 		left := 2 * index
@@ -68,6 +70,7 @@ func (pq *PQ) sink(index int) {
 	}
 }
 
+// 插入方法
 func (pq *PQ) push(arr []int) {
 	if len(*pq) == 0 {
 		(*pq) = append((*pq), []int{})
@@ -76,6 +79,7 @@ func (pq *PQ) push(arr []int) {
 	pq.swim(len(*pq) - 1)
 }
 
+// 弹出方法
 func (pq *PQ) pop() []int {
 
 	if len(*pq) <= 1 {
@@ -90,22 +94,3 @@ func (pq *PQ) pop() []int {
 }
 
 // -----------------------------------------------------------------------------------------------------------------------
-func kthSmallest1(matrix [][]int, k int) int {
-	length := len(matrix[0])
-	arrY := make([]int, length)
-
-	// p1, p2, p3 := []int{0, y1}, []int{0, y2}, []int{0, y3}
-
-}
-
-func getMinandIndex(arr []int) (int, int) {
-	min := math.MaxInt
-	index := -1
-
-	for i, v := range arr {
-		min = v
-		index = i
-	}
-
-	return min, index
-}
