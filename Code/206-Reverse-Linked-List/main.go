@@ -9,7 +9,7 @@ func main() {
 	head.Next.Next.Next = &ListNode{Val: 4}
 	head.Next.Next.Next.Next = &ListNode{Val: 5}
 	printLinnkedList(head)
-	res := reverseList(head)
+	res := reverseBetween(head, 1, 2)
 	printLinnkedList(res)
 }
 
@@ -92,13 +92,73 @@ func printLinnkedList(head *ListNode) {
 }
 
 // =======================================================================================================================
-
+// 递归实现
 func reverseListRe(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
-	} else {
-		temp := head.Next
-		newhead := reverseListRe(temp)
-		return
 	}
+	nextHead := reverseListRe(head.Next)
+	head.Next.Next = head // ! 这一步最重要，head之后的链表都翻转了,所以 head.Next 已经被移动到nextHead的末尾了，这一行就是把 head 移动到nextHead的末尾。
+	head.Next = nil
+
+	return nextHead
+}
+
+// =======================================================================================================================
+func reverseBetween(head *ListNode, left int, right int) *ListNode {
+
+	// 如果链表为空或只有一个节点，直接返回head
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	var index int = 0
+	var current *ListNode
+
+	// 创建一个哑节点，并将其Next指向head
+	var dummy *ListNode = &ListNode{}
+	dummy.Next = head
+	// 保存哑节点的引用，以便后续返回链表头部
+	saveHead := dummy
+
+	// 移动dummy节点到left-1的位置，以找到需要反转部分的前一个节点
+	for index < left-1 {
+		dummy = dummy.Next
+		index += 1
+	}
+	// 当前节点指向需要反转部分的第一个节点
+	current = dummy.Next
+
+	// 创建一个新的头节点newHead，用于构建反转后的链表
+	var newHead *ListNode = nil
+
+	// 反转链表从left到right部分
+	for current != nil {
+		// 保存当前节点的下一个节点
+		next := current.Next
+		// 将当前节点的Next指向newHead（即反转链表的前一个节点）
+		current.Next = newHead
+		// 更新newHead为当前节点
+		newHead = current
+		// 更新当前节点为下一个节点
+		current = next
+		index += 1
+		// 当到达right位置时，停止反转，并连接反转后的链表与剩余链表
+		if index == right {
+			cur := newHead
+			// 找到反转后链表的最后一个节点
+			for cur.Next != nil {
+				cur = cur.Next
+			}
+			// 将反转后的链表的最后一个节点连接到原链表剩余部分
+			cur.Next = next
+			break
+		}
+	}
+
+	// 将反转部分的头节点连接到原链表的前半部分
+	dummy.Next = newHead
+
+	// 返回新的链表头节点
+	return saveHead.Next
 }
