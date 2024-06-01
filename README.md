@@ -74,7 +74,7 @@
 
 [912-Sort-an-Array.md](Binary-Tree/912-Sort-an-Array/912-Sort-an-Array.md)
 
-[ ! 315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
+[! 315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
 
 
 
