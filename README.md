@@ -76,7 +76,9 @@
 
 [! 315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
 
+[15-3Sum.md](Two-Pointer/15-3Sum/15-3Sum.md)
 
+[18-4Sum.md](Two-Pointer/18-4Sum/18-4Sum.md)
 
 ---
 

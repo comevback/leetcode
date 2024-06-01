@@ -6,41 +6,42 @@ import (
 )
 
 func main() {
-	nums := []int{-1, 0, 1, 2, -1, -4}
-	res := threeSum(nums, 0, 0)
+	nums := []int{1, 0, -1, 0, -2, 2}
+	res := fourSum(nums, 0, 0)
 	fmt.Println(res)
 }
 
-// func fourSum(nums []int, start int, target int) [][]int {
-// 	if len(nums) < 4 {
-// 		return [][]int{}
-// 	}
-// 	QuickSort(nums)
+// fourSum 四数之和
+func fourSum(nums []int, start int, target int) [][]int {
+	if len(nums) < 4 {
+		return [][]int{}
+	}
+	QuickSort(nums)
 
-// 	res := [][]int{}
-// 	pre := math.MinInt
+	res := [][]int{}
+	pre := math.MinInt
 
-// 	for i := 0; i < len(nums); i++ {
-// 		val := nums[i]
-// 		if i > 0 && val == pre {
-// 			continue
-// 		}
-// 		preRes := threeSum(nums, i+1, target-nums[i])
-// 		for i := range preRes {
-// 			preRes[i] = append(preRes[i], val)
-// 		}
-// 		res = append(res, preRes...)
-// 		pre = nums[i]
-// 	}
-// 	return res
-// }
+	for i := 0; i < len(nums); i++ {
+		val := nums[i]
+		if i > 0 && val == pre {
+			continue
+		}
+		preRes := threeSum(nums, i+1, target-nums[i])
+		for i := range preRes {
+			preRes[i] = append(preRes[i], val)
+		}
+		res = append(res, preRes...)
+		pre = nums[i]
+	}
+	return res
+}
 
-// ThreeSum 三数之和
+// threeSum 三数之和
 func threeSum(nums []int, start int, target int) [][]int {
 	if len(nums) < 3 {
 		return [][]int{}
 	}
-	QuickSort(nums)
+	// QuickSort(nums)
 
 	res := [][]int{}
 	pre := math.MinInt
@@ -60,7 +61,7 @@ func threeSum(nums []int, start int, target int) [][]int {
 	return res
 }
 
-// TwoSum 两数之和，基础情况
+// TwoSum 两数之和
 func TwoSum(nums []int, start int, target int) [][]int {
 	left, right := start, len(nums)-1
 	res := [][]int{}
@@ -92,7 +93,7 @@ func TwoSum(nums []int, start int, target int) [][]int {
 	return res
 }
 
-// =================================================================================================================
+// ==================================================================================================================
 // QuickSort 快速排序
 func QuickSort(nums []int) {
 	if len(nums) <= 1 {
