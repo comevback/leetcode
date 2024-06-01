@@ -8,7 +8,7 @@ import (
 
 func main() {
 	arr := []int{5, 4, 3, 2, 1}
-	res := MergeSortIterate(arr)
+	res := MergeSort(arr)
 	fmt.Println(res)
 }
 
@@ -20,12 +20,7 @@ func MergeSort(arr []int) []int {
 		return arr
 	}
 
-	// 如果arr长度大于1，分化
-	if len(arr) == 1 {
-		return arr
-	} else {
-		return mergeIndex(MergeSort(arr[:len(arr)/2]), MergeSort(arr[len(arr)/2:]))
-	}
+	return mergeIndex(MergeSort(arr[:len(arr)/2]), MergeSort(arr[len(arr)/2:]))
 }
 
 // 切片方式的merge

@@ -116,6 +116,12 @@
 
 [373-Find-K-Pairs-with-Smallest-Sums.md](Two-Pointer/373-Find-K-Pairs-with-Smallest-Sums/373-Find-K-Pairs-with-Smallest-Sums.md)
 
+[234-Palindrome-Linked-List.md](Two-Pointer/234-Palindrome-Linked-List/234-Palindrome-Linked-List.md)
+
+[977-Squares-of-a-Sorted-Array.md](Two-Pointer/977-Squares-of-a-Sorted-Array/977-Squares-of-a-Sorted-Array.md)
+
+[25-Reverse-Nodes-in-k-Group.md](Code/25-Reverse-Nodes-in-k-Group/25-Reverse-Nodes-in-k-Group.md)
+
 ---
 
 ## Other Skills
