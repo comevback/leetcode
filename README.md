@@ -76,10 +76,6 @@
 
 [315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
 
-[15-3Sum.md](Two-Pointer/15-3Sum/15-3Sum.md)
-
-[18-4Sum.md](Two-Pointer/18-4Sum/18-4Sum.md)
-
 ---
 
 ## Two-Pointer
@@ -123,6 +119,13 @@
 [977-Squares-of-a-Sorted-Array.md](Two-Pointer/977-Squares-of-a-Sorted-Array/977-Squares-of-a-Sorted-Array.md)
 
 [25-Reverse-Nodes-in-k-Group.md](Code/25-Reverse-Nodes-in-k-Group/25-Reverse-Nodes-in-k-Group.md)
+
+[15-3Sum.md](Two-Pointer/15-3Sum/15-3Sum.md)
+
+[18-4Sum.md](Two-Pointer/18-4Sum/18-4Sum.md)
+
+[303-Range-Sum-Query-Immutable.md](Code/303-Range-Sum-Query-Immutable/303-Range-Sum-Query-Immutable.md)
+
 
 ---
 
