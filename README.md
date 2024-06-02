@@ -128,7 +128,7 @@
 
 [1314-Matrix-Block-Sum.md](Code/1314-Matrix-Block-Sum/1314-Matrix-Block-Sum.md)
 
-
+[525-Contiguous-Array.md](Code/525-Contiguous-Array/525-Contiguous-Array.md)
 
 ---
 

@@ -54,7 +54,7 @@ func productExceptSelf1(nums []int) []int {
 // ===============================================================================================================================
 // 优化版本
 // 不使用额外的map，直接使用变量记录0的个数
-func productExceptSelf(nums []int) []int {
+func productExceptSelf2(nums []int) []int {
 	// 0的个数
 	var zeroCount int = 0
 	// 前面的乘积
@@ -125,5 +125,42 @@ func review(nums []int) []int {
 		tail -= 1
 	}
 
+	return res
+}
+
+// ===================================================================================================
+// review 2024.6.2
+func productExceptSelf(nums []int) []int {
+	product := 1                  // 储存所有元素的乘积
+	res := make([]int, len(nums)) // 结果数组
+	zeroCount := 0                // 0的个数
+	zeroIndex := -1               // 0的位置
+
+	// 计算所有元素的乘积，如果有0，第一次遇到0，记录0的位置，不加入乘积，第二次遇到0，直接返回全0数组
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			product *= nums[i]
+		} else {
+			if zeroCount == 0 {
+				zeroCount += 1
+				zeroIndex = i
+			} else {
+				return res
+			}
+		}
+	}
+
+	// 如果0的个数等于1，位于zeroIndex的位置的元素等于product
+	if zeroCount == 1 {
+		res[zeroIndex] = product
+		return res
+	}
+
+	// 遍历数组，每个元素等于product除以当前元素的值
+	for i := 0; i < len(nums); i++ {
+		res[i] = product / nums[i]
+	}
+
+	// 返回结果数组
 	return res
 }

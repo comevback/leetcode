@@ -1,7 +1,11 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	nums := []int{2, 1, -1}
+	res := pivotIndex2(nums)
+	fmt.Println(res)
 }
 
 // 1. map
@@ -70,4 +74,26 @@ func pivotIndex1(nums []int) int {
 
 	// 无则返回-1
 	return -1
+}
+
+// ========================================================================================================
+// review
+func pivotIndex2(nums []int) int {
+	sum := 0
+	prefix := make([]int, len(nums))
+
+	for i := 0; i < len(nums); i++ {
+		prefix[i] = sum
+		sum += nums[i]
+	}
+
+	index := -1
+	for i := 0; i < len(nums); i++ {
+		if sum-prefix[i]-nums[i] == prefix[i] {
+			index = i
+			break
+		}
+	}
+
+	return index
 }
