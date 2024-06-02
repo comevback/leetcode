@@ -126,6 +126,9 @@
 
 [303-Range-Sum-Query-Immutable.md](Code/303-Range-Sum-Query-Immutable/303-Range-Sum-Query-Immutable.md)
 
+[304-Range-Sum-Query-2D-Immutable.md](Code/304-Range-Sum-Query-2D-Immutable/304-Range-Sum-Query-2D-Immutable.md)
+
+
 
 ---
 
