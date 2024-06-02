@@ -108,8 +108,6 @@
 
 [1836-Remove-Duplicates-from-Unsorted-List.md](Two-Pointer/1836-Remove-Duplicates-from-Unsorted-List/1836-Remove-Duplicates-from-Unsorted-List.md)
 
-[264-Ugly-Number-II.md](Two-Pointer/264-Ugly-Number-II/264-Ugly-Number-II.md)
-
 [378-Kth-Smallest-Element-in-a-Sorted-Matrix.md](Two-Pointer/378-Kth-Smallest-Element-in-a-Sorted-Matrix/378-Kth-Smallest-Element-in-a-Sorted-Matrix.md)
 
 [373-Find-K-Pairs-with-Smallest-Sums.md](Two-Pointer/373-Find-K-Pairs-with-Smallest-Sums/373-Find-K-Pairs-with-Smallest-Sums.md)
@@ -128,6 +126,8 @@
 
 [304-Range-Sum-Query-2D-Immutable.md](Code/304-Range-Sum-Query-2D-Immutable/304-Range-Sum-Query-2D-Immutable.md)
 
+[1314-Matrix-Block-Sum.md](Code/1314-Matrix-Block-Sum/1314-Matrix-Block-Sum.md)
+
 
 
 ---
@@ -136,6 +136,7 @@
 
 [204-Count-Primes.md](Code/204-Count-Primes/204-Count-Primes.md)
 
+[264-Ugly-Number-II.md](Two-Pointer/264-Ugly-Number-II/264-Ugly-Number-II.md)
 
 ---
 
