@@ -136,6 +136,8 @@
 
 [325-maximum-size-subarray-sum-equals-k.md](Code/325-maximum-size-subarray-sum-equals-k/325-maximum-size-subarray-sum-equals-k.md)
 
+[974-Subarray-Sums-Divisible-by-K.md](Code/974-Subarray-Sums-Divisible-by-K/974-Subarray-Sums-Divisible-by-K.md)
+
 ---
 
 ## Other Skills
