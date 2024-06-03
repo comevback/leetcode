@@ -134,6 +134,8 @@
 
 [560-Subarray-Sum-Equals-K.md](Code/560-Subarray-Sum-Equals-K/560-Subarray-Sum-Equals-K.md)
 
+[325-maximum-size-subarray-sum-equals-k.md](Code/325-maximum-size-subarray-sum-equals-k/325-maximum-size-subarray-sum-equals-k.md)
+
 ---
 
 ## Other Skills
