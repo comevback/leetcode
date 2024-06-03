@@ -130,6 +130,8 @@
 
 [525-Contiguous-Array.md](Code/525-Contiguous-Array/525-Contiguous-Array.md)
 
+[523-Continuous-Subarray-Sum.md](Code/523-Continuous-Subarray-Sum/523-Continuous-Subarray-Sum.md)
+
 ---
 
 ## Other Skills
