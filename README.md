@@ -144,8 +144,6 @@
 
 [1109-Corporate-Flight-Bookings.md](Code/1109-Corporate-Flight-Bookings/1109-Corporate-Flight-Bookings.md)
 
-
-
 ---
 
 ## Other Skills
@@ -153,6 +151,8 @@
 [204-Count-Primes.md](Code/204-Count-Primes/204-Count-Primes.md)
 
 [264-Ugly-Number-II.md](Two-Pointer/264-Ugly-Number-II/264-Ugly-Number-II.md)
+
+[48-Rotate-Image.md](Code/48-Rotate-Image/48-Rotate-Image.md)
 
 ---
 
