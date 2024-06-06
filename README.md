@@ -144,7 +144,7 @@
 
 [1109-Corporate-Flight-Bookings.md](Code/1109-Corporate-Flight-Bookings/1109-Corporate-Flight-Bookings.md)
 
-[76-Minimum-Window-Substring.md](Code/76-Minimum-Window-Substring/76-Minimum-Window-Substring.md)
+[76-Minimum-Window-Substring.md](Two-Pointer/76-Minimum-Window-Substring/76-Minimum-Window-Substring.md)
 
 [567-Permutation-in-String.md](Two-Pointer/567-Permutation-in-String/567-Permutation-in-String.md)
 
