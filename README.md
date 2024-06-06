@@ -146,6 +146,8 @@
 
 [76-Minimum-Window-Substring.md](Code/76-Minimum-Window-Substring/76-Minimum-Window-Substring.md)
 
+[567-Permutation-in-String.md](Two-Pointer/567-Permutation-in-String/567-Permutation-in-String.md)
+
 ---
 
 ## Other Skills
