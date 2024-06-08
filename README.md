@@ -152,7 +152,7 @@
 
 [3-Longest-Substring-Without-Repeating-Characters.md](Two-Pointer/3-Longest-Substring-Without-Repeating-Characters/3-Longest-Substring-Without-Repeating-Characters.md)
 
-
+[1658-Minimum-Operations-to-Reduce-X-to-Zero.md](Two-Pointer/1658-Minimum-Operations-to-Reduce-X-to-Zero/1658-Minimum-Operations-to-Reduce-X-to-Zero.md)
 
 ---
 
