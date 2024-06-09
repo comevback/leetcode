@@ -156,6 +156,8 @@
 
 [713-Subarray-Product-Less-Than-K.md](Two-Pointer/713-Subarray-Product-Less-Than-K/713-Subarray-Product-Less-Than-K.md)
 
+[1004-Max-Consecutive-Ones-III.md](Two-Pointer/1004-Max-Consecutive-Ones-III/1004-Max-Consecutive-Ones-III.md)
+
 ---
 
 ## Other Skills
@@ -255,12 +257,11 @@
 79. [649-Dota2-Senate.md](Code/649-Dota2-Senate/649-Dota2-Senate.md)
 80. [232-Implement-Queue-using-Stacks.md](Code/232-Implement-Queue-using-Stacks/232-Implement-Queue-using-Stacks.md)
 81. [1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md](Code/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length/1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length.md)
-82. [1004-Max-Consecutive-Ones-III.md](Code/1004-Max-Consecutive-Ones-III/1004-Max-Consecutive-Ones-III.md)
-83. [78-Subsets.md](Code/78-Subsets/78-Subsets.md)
-84. [1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md](Code/1493-Longest-Subarray-of-1s-After-Deleting-One-Element/1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md)
-85. [125-Valid-Palindrome.md](Code/125-Valid-Palindrome/125-Valid-Palindrome.md)
-86. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
-87. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
+82. [78-Subsets.md](Code/78-Subsets/78-Subsets.md)
+83. [1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md](Code/1493-Longest-Subarray-of-1s-After-Deleting-One-Element/1493-Longest-Subarray-of-1's-After-Deleting-One-Element.md)
+84. [125-Valid-Palindrome.md](Code/125-Valid-Palindrome/125-Valid-Palindrome.md)
+85. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
+86. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
 
 ---
 

@@ -14,7 +14,7 @@ func main() {
 // ====================================================================================================================
 // 1. 我的解法 数组
 // 当k > 0时，可以继续把0翻转为1，继续记录长度，但当k=0时，不能再翻转0了，把start转到当前窗口的第一个0的下一个位置
-func longestOnes(nums []int, k int) int {
+func longestOnes1(nums []int, k int) int {
 	// start 记录当前窗口的起始位置
 	start := 0
 	// zeros 记录当前窗口内的0的位置index数组
@@ -50,7 +50,7 @@ func longestOnes(nums []int, k int) int {
 // =====================================================================================================================
 // 2. 我的解法 队列
 // 与上一个解法类似，只是用队列来存储0的位置，每次遇到0时，把0的位置加入队列，当k=0时，把队列的第一个0的位置移除
-func longestOnes1(nums []int, k int) int {
+func longestOnes2(nums []int, k int) int {
 	start := 0
 	zeros := NewQueue()
 	max := 0
@@ -116,4 +116,85 @@ func (queue *Queue) DeQueue() (*ListNode, error) {
 		queue.tail = nil
 	}
 	return res, nil
+}
+
+// =====================================================================================================================
+// review 6.9
+// 用fliped数组存储翻转的 0 的位置，每次遇到 0 时，如果翻转的 0 的数量小于 k，翻转当前的 0，否则移动左边界到第一个翻转的 0 的右侧
+func longestOnes3(nums []int, k int) int {
+	// 初始化最长长度为 0
+	maxLength := 0
+	// 滑动窗口的左边界和右边界
+	left, right := 0, 0
+	// 存储翻转的 0 的位置
+	fliped := []int{}
+
+	// 右边界遍历数组
+	for right < len(nums) {
+		if nums[right] == 1 {
+			// 如果当前元素是 1，移动右边界
+			right += 1
+		} else {
+			// 如果当前元素是 0
+			if len(fliped) < k {
+				// 如果翻转的 0 的数量小于 k，翻转当前的 0
+				fliped = append(fliped, right)
+				right += 1
+			} else {
+				// 如果翻转的 0 的数量等于 k
+				fliped = append(fliped, right)
+				// 移动左边界到第一个翻转的 0 的右侧
+				left = fliped[0] + 1
+				// 移除第一个翻转的 0
+				fliped = fliped[1:]
+				right += 1
+			}
+		}
+
+		// 更新当前窗口的长度
+		length := right - left
+		if length > maxLength {
+			// 更新最大长度
+			maxLength = length
+		}
+	}
+
+	return maxLength
+}
+
+// =====================================================================================================================
+// 最优解，不用数组，用变量记录遇到0的数量，空间更优化
+func longestOnes(nums []int, k int) int {
+	// 初始化最长长度为 0
+	maxLength := 0
+	// 滑动窗口的左边界和右边界
+	left, right := 0, 0
+	// 存储翻转的 0 的位置
+	zeroCount := 0
+
+	// 右边界遍历数组，当右边界到达数组末尾时结束
+	for right < len(nums) {
+		// 如果当前元素是 0，如果窗口中 0 的数量等于 k，移动左边界到第一个 0 的右侧
+		if nums[right] == 0 {
+			if zeroCount == k {
+				for nums[left] != 0 {
+					left += 1
+				}
+				left += 1
+			} else {
+				// 如果窗口中 0 的数量小于 k，更新 0 的数量，照常移动右边界
+				zeroCount += 1
+			}
+		}
+		right += 1
+
+		// 更新当前窗口的长度
+		length := right - left
+		if length > maxLength {
+			// 更新最大长度
+			maxLength = length
+		}
+	}
+
+	return maxLength
 }
