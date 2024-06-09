@@ -154,6 +154,8 @@
 
 [1658-Minimum-Operations-to-Reduce-X-to-Zero.md](Two-Pointer/1658-Minimum-Operations-to-Reduce-X-to-Zero/1658-Minimum-Operations-to-Reduce-X-to-Zero.md)
 
+[713-Subarray-Product-Less-Than-K.md](Two-Pointer/713-Subarray-Product-Less-Than-K/713-Subarray-Product-Less-Than-K.md)
+
 ---
 
 ## Other Skills
