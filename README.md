@@ -158,6 +158,8 @@
 
 [1004-Max-Consecutive-Ones-III.md](Two-Pointer/1004-Max-Consecutive-Ones-III/1004-Max-Consecutive-Ones-III.md)
 
+[219-Contains-Duplicate-II.md](Two-Pointer/219-Contains-Duplicate-II/219-Contains-Duplicate-II.md)
+
 ---
 
 ## Other Skills
