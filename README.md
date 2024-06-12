@@ -160,6 +160,8 @@
 
 [219-Contains-Duplicate-II.md](Two-Pointer/219-Contains-Duplicate-II/219-Contains-Duplicate-II.md)
 
+[187-Repeated-DNA-Sequences.md](Two-Pointer/187-Repeated-DNA-Sequences/187-Repeated-DNA-Sequences.md)
+
 ---
 
 ## Other Skills
