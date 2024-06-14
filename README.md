@@ -40,6 +40,8 @@
 
 [Quick-Sort.md](DSA/Sorting/Quick-Sort/Quick-Sort.md)
 
+[Binary-Search.md](DSA/Binary-Search/Binary-Search.md)
+
 ---
 
 ## Binary-Tree 100
@@ -266,6 +268,8 @@
 84. [125-Valid-Palindrome.md](Code/125-Valid-Palindrome/125-Valid-Palindrome.md)
 85. [1523-Count-Odd-Numbers-in-an-Interval-Range.md](Code/1523-Count-Odd-Numbers-in-an-Interval-Range/1523-Count-Odd-Numbers-in-an-Interval-Range.md)
 86. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
+87. [34-Find-First-and-Last-Position-of-Element-in-Sorted-Array.md](Two-Pointer/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array.md)
+88. [704-Binary-Search.md](Code/704-Binary-Search/704-Binary-Search.md)
 
 ---
 
