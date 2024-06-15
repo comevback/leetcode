@@ -170,6 +170,10 @@
 
 [410-Split-Array-Largest-Sum.md](Code/410-Split-Array-Largest-Sum/410-Split-Array-Largest-Sum.md)
 
+[74-Search-a-2D-Matrix.md](Code/74-Search-a-2D-Matrix/74-Search-a-2D-Matrix.md)
+
+[240-Search-a-2D-Matrix-II.md](Code/240-Search-a-2D-Matrix-II/240-Search-a-2D-Matrix-II.md)
+
 
 
 ---

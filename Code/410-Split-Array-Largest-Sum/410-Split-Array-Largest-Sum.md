@@ -60,7 +60,7 @@ func splitArray(nums []int, k int) int {
 		mid := left + (right-left)/2 // 计算中点，作为尝试的组和上限
 		if getGroups(nums, mid) <= k {
 			right = mid // 如果当前最大组和可以满足分组条件，尝试更小的最大组和
-		} else {
+		} else if getGroups(nums, mid) > k {
 			left = mid + 1 // 如果不能满足，增加最大组和
 		}
 	}
