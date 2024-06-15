@@ -36,7 +36,7 @@ func KMP(str string, needle string) int {
 			}
 			start += 1 // 匹配成功时，移动 needle 的匹配位置
 		} else {
-			//*** 当前字符不匹配情况，和LPS函数类似处理
+			// *** 当前字符不匹配情况，和LPS函数类似处理
 			for start > 0 && str[i] != needle[start] { // 使用 LPS 数组进行跳转，直到找到可能的匹配位置或回退到初始位置
 				start = next[start-1]
 			}
@@ -51,7 +51,6 @@ func KMP(str string, needle string) int {
 
 // LPS 函数计算字符串 needle 的最长公共前后缀数组
 func LPS(needle string) []int {
-
 	prefixList := make([]int, len(needle)) // LPS数组
 	length := 0                            // length 用于跟踪当前最长的前后缀长度
 
