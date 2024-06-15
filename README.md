@@ -164,6 +164,8 @@
 
 [187-Repeated-DNA-Sequences.md](Two-Pointer/187-Repeated-DNA-Sequences/187-Repeated-DNA-Sequences.md)
 
+[875-Koko-Eating-Bananas.md](Code/875-Koko-Eating-Bananas/875-Koko-Eating-Bananas.md)
+
 ---
 
 ## Other Skills
