@@ -78,3 +78,43 @@ func bounds(nums []int, target int) []int {
 
 	return []int{left1, left2 - 1} // 返回左边界和右边界的索引
 }
+
+// =============================================================================
+// review 6.17
+func searchRange1(nums []int, target int) []int {
+	left, right := 0, len(nums)
+	res := []int{}
+
+	for left < right {
+		mid := left + (right-left)/2
+		if nums[mid] == target {
+			right = mid
+		} else if nums[mid] < target {
+			left = mid + 1
+		} else if nums[mid] > target {
+			right = mid
+		}
+	}
+
+	if left != len(nums) && nums[left] == target {
+		res = append(res, left)
+	} else {
+		return []int{-1, -1}
+	}
+
+	left, right = 0, len(nums)
+
+	for left < right {
+		mid := left + (right-left)/2
+		if nums[mid] == target {
+			left = mid + 1
+		} else if nums[mid] < target {
+			left = mid + 1
+		} else if nums[mid] > target {
+			right = mid
+		}
+	}
+
+	res = append(res, left)
+	return res
+}
