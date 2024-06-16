@@ -2,6 +2,50 @@
 
 ---
 
+## Setup Command:
+
+### Files:
+
+[leetcode-setup-linux](leetcode-setup-linux)
+
+[leetcode-setup-mac](leetcode-setup-mac)
+
+[leetcode-setup.exe](leetcode-setup.exe)
+
+[leetcode-setup.go](leetcode-setup.go)
+
+### For Windows Users
+
+1. **Create a Directory:**
+   - Create a directory where you will store the binary. Recommended locations are `C:\Tools` or `C:\Users\YourUsername\bin`.
+
+2. **Move the Binary File:**
+   - Move the `leetcode-setup.exe` file into the directory you created.
+
+3. **Add the Directory to the PATH:**
+   - Right-click on **"This PC"** or **"My Computer"**, and select **"Properties"**.
+   - Click on **"Advanced system settings"**.
+   - In the **"System Properties"** window, click on **"Environment Variables"**.
+   - In the **"System variables"** section, find and select the **"Path"** variable, then click on **"Edit"**.
+   - In the **"Edit environment variable"** window, click **"New"** and enter the path to your directory, e.g., `C:\Tools`.
+   - Click **"OK"** to save the changes.
+
+### For macOS and Linux Users
+
+1. **Move the Binary File:**
+   - Open a terminal and use the `mv` command to move your `leetcode-setup` file to `/usr/local/bin/`:
+     ```bash
+     mv /path/to/leetcode-setup /usr/local/bin/
+     ```
+   
+2. **Set Execution Permissions:**
+   - Make sure the file is executable by setting the appropriate permissions:
+     ```bash
+     sudo chmod +x /usr/local/bin/leetcode-setup
+     ```
+
+---
+
 ## Fundamentals:
 
 [Go-Packages.md](Go-Packages.md)
