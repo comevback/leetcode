@@ -10,10 +10,22 @@ import (
 )
 
 func main() {
+	// 定义命令行参数的使用说明
+	// define the usage of command line arguments
+	flag.Usage = func() {
+		fmt.Fprintln(os.Stderr, "Usage of leetcode-setup:")
+		fmt.Fprintln(os.Stderr, "  leetcode-setup -n={QuestionName}")
+		fmt.Fprintln(os.Stderr, "\nOptions:")
+		fmt.Fprintln(os.Stderr, "  -n string")
+		fmt.Fprintln(os.Stderr, "        name of the question")
+		fmt.Fprintln(os.Stderr, "\nExample:")
+		fmt.Fprintln(os.Stderr, "  leetcode-setup -n=\"1.Two Sum\"\n")
+	}
+
 	// 检查命令行参数数量是否正确，如果不是两个参数，则输出使用说明并退出
 	// check if the number of command line arguments is correct, if not two arguments, print usage and exit
 	if len(os.Args) != 2 {
-		fmt.Println("Usage:\nleetcode-setup -n={Question Name}")
+		flag.Usage()
 		return
 	}
 
