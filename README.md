@@ -178,6 +178,8 @@
 
 [162-Find-Peak-Element.md](Code/162-Find-Peak-Element/162-Find-Peak-Element.md)
 
+[852-Peak-Index-in-a-Mountain-Array.md](Code/852-Peak-Index-in-a-Mountain-Array/852-Peak-Index-in-a-Mountain-Array.md)
+
 
 
 ---
