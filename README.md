@@ -235,6 +235,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [852-Peak-Index-in-a-Mountain-Array.md](Code/852-Peak-Index-in-a-Mountain-Array/852-Peak-Index-in-a-Mountain-Array.md)
 
+[LCR-173-takeAttendance.md](Code/LCR-173-takeAttendance/LCR-173-takeAttendance.md)
+
 
 
 ---
