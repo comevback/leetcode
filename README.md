@@ -176,6 +176,8 @@
 
 [658-Find-K-Closest-Elements.md](Code/658-Find-K-Closest-Elements/658-Find-K-Closest-Elements.md)
 
+[162-Find-Peak-Element.md](Code/162-Find-Peak-Element/162-Find-Peak-Element.md)
+
 
 
 ---
