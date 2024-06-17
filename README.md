@@ -239,6 +239,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [33-Search-in-Rotated-Sorted-Array.md](Code/33-Search-in-Rotated-Sorted-Array/33-Search-in-Rotated-Sorted-Array.md)
 
+[81-Search-in-Rotated-Sorted-Array-II.md](Code/81-Search-in-Rotated-Sorted-Array-II/81-Search-in-Rotated-Sorted-Array-II.md)
+
 
 
 ---
