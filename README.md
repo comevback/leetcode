@@ -237,6 +237,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [LCR-173-takeAttendance.md](Code/LCR-173-takeAttendance/LCR-173-takeAttendance.md)
 
+[33-Search-in-Rotated-Sorted-Array.md](Code/33-Search-in-Rotated-Sorted-Array/33-Search-in-Rotated-Sorted-Array.md)
+
 
 
 ---
