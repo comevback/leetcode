@@ -63,7 +63,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 func main() {
@@ -97,7 +96,6 @@ func Constructor(w []int) Solution {
 // 它首先生成一个 [0, Arr 最后一个元素) 范围内的随机数。
 // 然后使用二分查找确定随机数落在哪个权重区间。
 func (this *Solution) PickIndex() int {
-	rand.Seed(time.Now().UnixNano()) // 初始化随机数生成器
 	r := rand.Intn(this.Arr[len(this.Arr)-1])
 
 	left, right := 0, len(this.Arr)
