@@ -243,6 +243,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [528-Random-Pick-with-Weight.md](Code/528-Random-Pick-with-Weight/528-Random-Pick-with-Weight.md)
 
+[870-Advantage-Shuffle.md](Code/870-Advantage-Shuffle/870-Advantage-Shuffle.md)
+
 
 
 ---
