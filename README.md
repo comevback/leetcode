@@ -241,6 +241,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [81-Search-in-Rotated-Sorted-Array-II.md](Code/81-Search-in-Rotated-Sorted-Array-II/81-Search-in-Rotated-Sorted-Array-II.md)
 
+[528-Random-Pick-with-Weight.md](Code/528-Random-Pick-with-Weight/528-Random-Pick-with-Weight.md)
+
 
 
 ---
