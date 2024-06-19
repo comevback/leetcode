@@ -245,6 +245,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [870-Advantage-Shuffle.md](Code/870-Advantage-Shuffle/870-Advantage-Shuffle.md)
 
+[380-Insert-Delete-GetRandom-O1.md](Code/380-Insert-Delete-GetRandom-O1/380-Insert-Delete-GetRandom-O1.md)
+
 
 
 ---
