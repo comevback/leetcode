@@ -247,6 +247,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [380-Insert-Delete-GetRandom-O1.md](Code/380-Insert-Delete-GetRandom-O1/380-Insert-Delete-GetRandom-O1.md)
 
+[710-Random-Pick-with-Blacklist.md](Code/710-Random-Pick-with-Blacklist/710-Random-Pick-with-Blacklist.md)
+
 
 
 ---
