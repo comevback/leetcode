@@ -249,7 +249,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [710-Random-Pick-with-Blacklist.md](Code/710-Random-Pick-with-Blacklist/710-Random-Pick-with-Blacklist.md)
 
-
+[1081-Smallest-Subsequence-of-Distinct-Characters.md](Code/1081-Smallest-Subsequence-of-Distinct-Characters/1081-Smallest-Subsequence-of-Distinct-Characters.md)
 
 ---
 
