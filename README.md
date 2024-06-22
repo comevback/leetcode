@@ -133,6 +133,10 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
 
+[1038-Binary-Search-Tree-to-Greater-Sum-Tree.md](Binary-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree.md)
+
+
+
 ---
 
 ## Two-Pointer
