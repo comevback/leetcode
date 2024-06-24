@@ -140,6 +140,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [701-Insert-into-a-Binary-Search-Tree.md](Binary-Tree/701-Insert-into-a-Binary-Search-Tree/701-Insert-into-a-Binary-Search-Tree.md)
 
+[98-Validate-Binary-Search-Tree.md](Binary-Tree/98-Validate-Binary-Search-Tree/98-Validate-Binary-Search-Tree.md)
+
 
 
 ---
