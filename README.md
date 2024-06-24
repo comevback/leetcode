@@ -138,6 +138,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [538-Convert-BST-to-Greater-Tree.md](Binary-Tree/538-Convert-BST-to-Greater-Tree/538-Convert-BST-to-Greater-Tree.md)
 
+[701-Insert-into-a-Binary-Search-Tree.md](Binary-Tree/701-Insert-into-a-Binary-Search-Tree/701-Insert-into-a-Binary-Search-Tree.md)
+
 
 
 ---
