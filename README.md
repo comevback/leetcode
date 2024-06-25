@@ -144,7 +144,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [95-Unique-Binary-Search-Trees-II.md](Binary-Tree/95-Unique-Binary-Search-Trees-II/95-Unique-Binary-Search-Trees-II.md)
 
-
+[96-Unique-Binary-Search-Trees.md](Binary-Tree/96-Unique-Binary-Search-Trees/96-Unique-Binary-Search-Trees.md)
 
 
 
