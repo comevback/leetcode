@@ -142,6 +142,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [98-Validate-Binary-Search-Tree.md](Binary-Tree/98-Validate-Binary-Search-Tree/98-Validate-Binary-Search-Tree.md)
 
+[95-Unique-Binary-Search-Trees-II.md](Binary-Tree/95-Unique-Binary-Search-Trees-II/95-Unique-Binary-Search-Trees-II.md)
+
 
 
 ---
