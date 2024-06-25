@@ -145,6 +145,106 @@ func MergeSortIterate(arr []int) []int {
 	res, _ := resQueue.Dequeue()
 	return res.Val
 }
+
+// ****************************************************  指针方法  ****************************************************
+func sortArray(nums []int) []int {
+	temp := make([]int, len(nums)) // 提前定义这个数组，避免在递归中重复定义，如果是很大的数组，在递归中定义的数组被重复创建和销毁，很浪费时间
+	MergeSortIndex(nums, 0, len(nums)-1, temp)
+	return nums
+}
+
+func MergeSortIndex(nums []int, lo int, hi int, temp []int) {
+	if lo >= hi {
+		return
+	}
+
+	mid := (lo + hi) / 2 // 这种方法可能引起整型溢出
+	mid = lo + (hi-lo)/2 // 这种方法不会溢出
+
+	MergeSortIndex(nums, lo, mid, temp)
+	MergeSortIndex(nums, mid+1, hi, temp)
+
+	Merge(nums, lo, mid, hi, temp)
+}
+
+func Merge(nums []int, lo int, mid int, hi int, temp []int) {
+	copy(temp[lo:hi+1], nums[lo:hi+1])
+
+	var leftIndex, rightIndex int = lo, mid + 1
+	var current int = lo
+
+	for leftIndex < mid+1 && rightIndex < hi+1 {
+		if temp[leftIndex] <= temp[rightIndex] {
+			nums[current] = temp[leftIndex]
+			leftIndex += 1
+		} else {
+			nums[current] = temp[rightIndex]
+			rightIndex += 1
+		}
+
+		current += 1
+	}
+
+	for leftIndex < mid+1 {
+		nums[current] = temp[leftIndex]
+		current += 1
+		leftIndex += 1
+	}
+
+	for rightIndex < hi+1 {
+		nums[current] = temp[rightIndex]
+		current += 1
+		rightIndex += 1
+	}
+
+}
+
+// *************************************************  review 6.18  ****************************************************
+// 指针实现
+func MergeSort_618(nums []int, temp []int, left int, right int) {
+	// 如果只有一个元素，直接返回
+	if left == right-1 {
+		return
+	}
+
+	mid := left + (right-left)/2
+	MergeSort_618(nums, temp, left, mid)
+	MergeSort_618(nums, temp, mid, right)
+
+	merge_618(nums, temp, left, mid, right)
+}
+
+// 合并数组中的left到mid和mid到right两个部分
+func merge_618(nums []int, temp []int, left int, mid int, right int) {
+	copy(temp[left:right], nums[left:right])
+	l1, l2 := left, mid
+	current := left
+
+	for l1 < mid && l2 < right {
+		if temp[l1] <= temp[l2] {
+			nums[current] = temp[l1]
+			l1 += 1
+		} else {
+			nums[current] = temp[l2]
+			l2 += 1
+		}
+		current += 1
+	}
+
+	for l1 < mid {
+		nums[current] = temp[l1]
+		l1 += 1
+		current += 1
+	}
+
+	for l2 < right {
+		nums[current] = temp[l2]
+		l2 += 1
+		current += 1
+	}
+}
+
+
 ```
 
 ---

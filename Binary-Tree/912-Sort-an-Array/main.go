@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	arr := []int{5, 4, 3, 2, 1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}
-	res := sortArray(arr)
-	fmt.Println(res)
+	// arr := []int{5, 1, 1, 2, 0, 0}
+	QuickSort(arr)
+	fmt.Println(arr)
 }
 
 func sortArray(nums []int) []int {
@@ -61,4 +65,34 @@ func Merge(nums []int, lo int, mid int, hi int, temp []int) {
 		rightIndex += 1
 	}
 
+}
+
+// **************************************************  Quick Sort  *************************************************
+func QuickSort(nums []int) {
+	if len(nums) < 2 {
+		return
+	}
+
+	pivot := rand.Intn(len(nums))
+	nums[len(nums)-1], nums[pivot] = nums[pivot], nums[len(nums)-1]
+	pivot = len(nums) - 1
+	head := 0
+
+	for head < pivot {
+		if nums[pivot] < nums[head] {
+			if pivot == head+1 {
+				nums[pivot], nums[head] = nums[head], nums[pivot]
+			} else {
+				nums[pivot], nums[head], nums[pivot-1] = nums[head], nums[pivot-1], nums[pivot]
+			}
+			pivot -= 1
+		} else {
+			head += 1
+		}
+	}
+
+	if pivot+1 < len(nums) {
+		QuickSort(nums[pivot+1:])
+	}
+	QuickSort(nums[:pivot])
 }

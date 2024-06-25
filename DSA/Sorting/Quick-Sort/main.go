@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
 	arr := []int{99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0}
@@ -39,7 +42,33 @@ func QuickSort(arr []int) {
 	}
 }
 
-// *****************************************************  迭代实现  *****************************************************
-func QuickSortItera(arr []int) {
+func QuickSort1(nums []int) {
+	if len(nums) < 2 {
+		return
+	}
 
+	pivot := rand.Intn(len(nums))
+	nums[len(nums)-1], nums[pivot] = nums[pivot], nums[len(nums)-1]
+	pivot = len(nums) - 1
+	head := 0
+
+	for head < pivot {
+		if nums[pivot] < nums[head] {
+			if pivot == head+1 {
+				nums[pivot], nums[head] = nums[head], nums[pivot]
+			} else {
+				nums[pivot], nums[head], nums[pivot-1] = nums[head], nums[pivot-1], nums[pivot]
+			}
+			pivot -= 1
+		} else {
+			head += 1
+		}
+	}
+
+	if pivot+1 < len(nums) {
+		QuickSort(nums[pivot+1:])
+	}
+	QuickSort(nums[:pivot])
 }
+
+// *****************************************************  迭代实现  *****************************************************
