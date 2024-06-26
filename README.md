@@ -148,6 +148,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [215-Kth-Largest-Element-in-an-Array.md](Binary-Tree/215-Kth-Largest-Element-in-an-Array/215-Kth-Largest-Element-in-an-Array.md)
 
+[236-Lowest-Common-Ancestor-of-a-Binary-Tree.md](Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree.md)
+
 
 
 ---
