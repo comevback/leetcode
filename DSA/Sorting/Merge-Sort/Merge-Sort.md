@@ -243,8 +243,6 @@ func merge_618(nums []int, temp []int, left int, mid int, right int) {
 		current += 1
 	}
 }
-
-
 ```
 
 ---
