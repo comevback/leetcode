@@ -152,6 +152,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md](Binary-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md)
 
+[222-Count-Complete-Tree-Nodes.md](Binary-Tree/222-Count-Complete-Tree-Nodes/222-Count-Complete-Tree-Nodes.md)
+
 
 
 ---
