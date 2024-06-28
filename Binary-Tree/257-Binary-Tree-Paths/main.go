@@ -1,9 +1,26 @@
 package main
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
+	root := &TreeNode{
+		Val: 1,
+		Left: &TreeNode{
+			Val: 2,
+			Right: &TreeNode{
+				Val: 5,
+			},
+		},
+		Right: &TreeNode{
+			Val: 3,
+		},
+	}
 
+	res := binaryTreePaths_628(root)
+	fmt.Println(res)
 }
 
 type TreeNode struct {
@@ -66,4 +83,36 @@ func getPath(root *TreeNode) []string {
 	}
 
 	return paths
+}
+
+// ******************************************  review 6.28  **********************************************
+var paths_628 []string
+
+func binaryTreePaths_628(root *TreeNode) []string {
+	paths_628 = []string{}
+	genePath(root, "")
+	return paths_628
+}
+
+func genePath(root *TreeNode, path string) {
+	if root == nil {
+		return
+	}
+	valStr := strconv.Itoa(root.Val)
+	path += valStr
+
+	if root.Left == nil && root.Right == nil {
+		paths_628 = append(paths_628, path)
+		return
+	}
+
+	path += "->"
+
+	if root.Left != nil {
+		genePath(root.Left, path)
+	}
+
+	if root.Right != nil {
+		genePath(root.Right, path)
+	}
 }
