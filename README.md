@@ -156,6 +156,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [199-Binary-Tree-Right-Side-View.md](Binary-Tree/199-Binary-Tree-Right-Side-View/199-Binary-Tree-Right-Side-View.md)
 
+[298-binary-tree-longest-consecutive-sequence.md](Binary-Tree/298-binary-tree-longest-consecutive-sequence/298-binary-tree-longest-consecutive-sequence.md)
+
 
 
 ---
