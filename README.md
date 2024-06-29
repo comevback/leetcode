@@ -160,6 +160,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [988-Smallest-String-Starting-From-Leaf.md](Binary-Tree/988-Smallest-String-Starting-From-Leaf/988-Smallest-String-Starting-From-Leaf.md)
 
+[1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md](Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md)
+
 
 
 ---
