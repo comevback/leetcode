@@ -158,6 +158,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [298-binary-tree-longest-consecutive-sequence.md](Binary-Tree/298-binary-tree-longest-consecutive-sequence/298-binary-tree-longest-consecutive-sequence.md)
 
+[988-Smallest-String-Starting-From-Leaf.md](Binary-Tree/988-Smallest-String-Starting-From-Leaf/988-Smallest-String-Starting-From-Leaf.md)
+
 
 
 ---
