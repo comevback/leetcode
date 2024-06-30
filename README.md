@@ -162,6 +162,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md](Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md)
 
+[270-closest-binary-search-tree-value.md](Binary-Tree/270-closest-binary-search-tree-value/270-closest-binary-search-tree-value.md)
+
 
 
 ---
