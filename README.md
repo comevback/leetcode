@@ -164,6 +164,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [270-closest-binary-search-tree-value.md](Binary-Tree/270-closest-binary-search-tree-value/270-closest-binary-search-tree-value.md)
 
+[404-Sum-of-Left-Leaves.md](Binary-Tree/404-Sum-of-Left-Leaves/404-Sum-of-Left-Leaves.md)
+
 
 
 ---
