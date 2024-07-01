@@ -170,6 +170,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md](Binary-Tree/971-Flip-Binary-Tree-To-Match-Preorder-Traversal/971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md)
 
+[987-Vertical-Order-Traversal-of-a-Binary-Tree.md](Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree.md)
+
 
 
 ---
