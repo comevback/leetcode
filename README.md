@@ -166,6 +166,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [404-Sum-of-Left-Leaves.md](Binary-Tree/404-Sum-of-Left-Leaves/404-Sum-of-Left-Leaves.md)
 
+[623-Add-One-Row-to-Tree.md](Binary-Tree/623-Add-One-Row-to-Tree/623-Add-One-Row-to-Tree.md)
+
 
 
 ---
