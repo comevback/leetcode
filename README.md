@@ -402,6 +402,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 86. [1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md](Code/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/1491-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary.md)
 87. [34-Find-First-and-Last-Position-of-Element-in-Sorted-Array.md](Two-Pointer/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array/34-Find-First-and-Last-Position-of-Element-in-Sorted-Array.md)
 88. [704-Binary-Search.md](Code/704-Binary-Search/704-Binary-Search.md)
+89. [274-H-Index.md](Code/274-H-Index/274-H-Index.md)
 
 ---
 

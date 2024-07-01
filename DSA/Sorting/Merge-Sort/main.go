@@ -145,8 +145,8 @@ func MergeSortIndex(nums []int, lo int, hi int, temp []int) {
 		return
 	}
 
-	mid := (lo + hi) / 2 // 这种方法可能引起整型溢出
-	mid = lo + (hi-lo)/2 // 这种方法不会溢出
+	// mid := (lo + hi) / 2 // 这种方法可能引起整型溢出
+	mid := lo + (hi-lo)/2 // 这种方法不会溢出
 
 	MergeSortIndex(nums, lo, mid, temp)
 	MergeSortIndex(nums, mid+1, hi, temp)
@@ -186,47 +186,44 @@ func Merge(nums []int, lo int, mid int, hi int, temp []int) {
 
 }
 
-// *************************************************  review 6.18  ****************************************************
+// *************************************************  review 7.1  ****************************************************
 // 指针实现
-func MergeSort_618(nums []int, temp []int, left int, right int) {
-	// 如果只有一个元素，直接返回
-	if left == right-1 {
+func mergeSort(nums []int, temp []int, left int, right int) {
+	if left >= right {
 		return
 	}
 
 	mid := left + (right-left)/2
-	MergeSort_618(nums, temp, left, mid)
-	MergeSort_618(nums, temp, mid, right)
-
-	merge_618(nums, temp, left, mid, right)
+	mergeSort(nums, temp, left, mid)
+	mergeSort(nums, temp, mid+1, right)
+	sortIndex(nums, temp, left, mid, right)
 }
 
-// 合并数组中的left到mid和mid到right两个部分
-func merge_618(nums []int, temp []int, left int, mid int, right int) {
-	copy(temp[left:right], nums[left:right])
-	l1, l2 := left, mid
-	current := left
+func sortIndex(nums []int, temp []int, left int, mid int, right int) {
+	copy(temp[left:right+1], nums[left:right+1])
+	var i, j int = left, mid + 1
+	var current int = left
 
-	for l1 < mid && l2 < right {
-		if temp[l1] <= temp[l2] {
-			nums[current] = temp[l1]
-			l1 += 1
+	for i < mid+1 && j < right+1 {
+		if temp[i] <= temp[j] {
+			nums[current] = temp[i]
+			i += 1
 		} else {
-			nums[current] = temp[l2]
-			l2 += 1
+			nums[current] = temp[j]
+			j += 1
 		}
 		current += 1
 	}
 
-	for l1 < mid {
-		nums[current] = temp[l1]
-		l1 += 1
+	for i < mid+1 {
+		nums[current] = temp[i]
+		i += 1
 		current += 1
 	}
 
-	for l2 < right {
-		nums[current] = temp[l2]
-		l2 += 1
+	for j < right+1 {
+		nums[current] = temp[j]
+		j += 1
 		current += 1
 	}
 }
