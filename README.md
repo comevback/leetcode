@@ -176,6 +176,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md](Binary-Tree/1315-Sum-of-Nodes-with-Even-Valued-Grandparent/1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md)
 
+[1448-Count-Good-Nodes-in-Binary-Tree.md](Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree.md)
+
 
 
 ---
