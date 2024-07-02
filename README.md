@@ -172,6 +172,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [987-Vertical-Order-Traversal-of-a-Binary-Tree.md](Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree.md)
 
+[993-Cousins-in-Binary-Tree.md](Binary-Tree/993-Cousins-in-Binary-Tree/993-Cousins-in-Binary-Tree.md)
+
 
 
 ---
