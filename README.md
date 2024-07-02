@@ -174,6 +174,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [993-Cousins-in-Binary-Tree.md](Binary-Tree/993-Cousins-in-Binary-Tree/993-Cousins-in-Binary-Tree.md)
 
+[1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md](Binary-Tree/1315-Sum-of-Nodes-with-Even-Valued-Grandparent/1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md)
+
 
 
 ---
