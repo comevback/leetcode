@@ -178,6 +178,10 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1448-Count-Good-Nodes-in-Binary-Tree.md](Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree.md)
 
+[1469-find-all-the-lonely-nodes.md](Binary-Tree/1469-find-all-the-lonely-nodes/1469-find-all-the-lonely-nodes.md)
+
+[1602-find-nearest-right-node-in-binary-tree.md](Binary-Tree/1602-find-nearest-right-node-in-binary-tree/1602-find-nearest-right-node-in-binary-tree.md)
+
 
 
 ---
