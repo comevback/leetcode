@@ -184,6 +184,10 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [437-Path-Sum-III.md](Binary-Tree/437-Path-Sum-III/437-Path-Sum-III.md)
 
+[513-Find-Bottom-Left-Tree-Value.md](Binary-Tree/513-Find-Bottom-Left-Tree-Value/513-Find-Bottom-Left-Tree-Value.md)
+
+[1261-Find-Elements-in-a-Contaminated-Binary-Tree.md](Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree.md)
+
 
 
 ---
