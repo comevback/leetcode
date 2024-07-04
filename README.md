@@ -182,6 +182,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1602-find-nearest-right-node-in-binary-tree.md](Binary-Tree/1602-find-nearest-right-node-in-binary-tree/1602-find-nearest-right-node-in-binary-tree.md)
 
+[437-Path-Sum-III.md](Binary-Tree/437-Path-Sum-III/437-Path-Sum-III.md)
+
 
 
 ---
