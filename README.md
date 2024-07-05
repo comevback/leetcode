@@ -2,7 +2,7 @@
 
 ---
 
-## Setup Command:
+## Setup Script:
 
 **Source Code**:
 [leetcode-setup.go](leetcode-setup.go)
@@ -187,6 +187,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 [513-Find-Bottom-Left-Tree-Value.md](Binary-Tree/513-Find-Bottom-Left-Tree-Value/513-Find-Bottom-Left-Tree-Value.md)
 
 [1261-Find-Elements-in-a-Contaminated-Binary-Tree.md](Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree.md)
+
+[100-Same-Tree.md](Binary-Tree/100-Same-Tree/100-Same-Tree.md)
 
 [572-Subtree-of-Another-Tree.md](Binary-Tree/572-Subtree-of-Another-Tree/572-Subtree-of-Another-Tree.md)
 
