@@ -190,6 +190,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [572-Subtree-of-Another-Tree.md](Binary-Tree/572-Subtree-of-Another-Tree/572-Subtree-of-Another-Tree.md)
 
+[1367-Linked-List-in-Binary-Tree.md](Binary-Tree/1367-Linked-List-in-Binary-Tree/1367-Linked-List-in-Binary-Tree.md)
+
 
 
 ---

@@ -84,4 +84,39 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 	// 返回这个节点
 	return root
 }
+
+// **************************************************************************************************************
+// review 7.5
+func buildTree_75(preorder []int, inorder []int) *TreeNode {
+	return build(preorder, inorder)
+}
+
+func build(preorder []int, inorder []int) *TreeNode {
+	if len(preorder) == 0 {
+		return nil
+	}
+
+	newNode := &TreeNode{
+		Val: preorder[0],
+	}
+
+	leftInOrder := []int{}
+	rightInOrder := []int{}
+	for i, v := range inorder {
+		if v == preorder[0] {
+			leftInOrder = inorder[:i]
+			if i+1 < len(inorder) {
+				rightInOrder = inorder[i+1:]
+			}
+		}
+	}
+
+	leftPreOrder := preorder[1 : 1+len(leftInOrder)]
+	rightPreOrder := preorder[1+len(leftInOrder):]
+
+	newNode.Left = build(leftPreOrder, leftInOrder)
+	newNode.Right = build(rightPreOrder, rightInOrder)
+
+	return newNode
+}
 ```

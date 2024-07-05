@@ -104,3 +104,46 @@ func LPS_615(needle string) []int {
 
 	return LPSlist // 返回LPS表
 }
+
+// *************************************************  review 7.5 *************************************************
+func KMP_75(arr []int, needle []int) int {
+	LPSlist := LPS_75(needle)
+	start := 0
+
+	for i := 0; i < len(arr); i++ {
+		if needle[start] == arr[i] {
+			if start == len(needle)-1 {
+				return i - start
+			}
+			start += 1
+		} else {
+			for start > 0 && needle[start] != arr[i] {
+				start = LPSlist[start-1]
+			}
+
+			if needle[start] == arr[i] {
+				start += 1
+			}
+		}
+	}
+
+	return -1
+}
+
+func LPS_75(needle []int) []int {
+	prefixList := make([]int, len(needle))
+	length := 0
+
+	for i := 1; i < len(needle); i++ {
+		for length > 0 && needle[length] != needle[i] {
+			length = prefixList[length-1]
+		}
+
+		if needle[length] == needle[i] {
+			length += 1
+			prefixList[i] = length
+		}
+	}
+
+	return prefixList
+}
