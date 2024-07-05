@@ -188,6 +188,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1261-Find-Elements-in-a-Contaminated-Binary-Tree.md](Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree.md)
 
+[572-Subtree-of-Another-Tree.md](Binary-Tree/572-Subtree-of-Another-Tree/572-Subtree-of-Another-Tree.md)
+
 
 
 ---
