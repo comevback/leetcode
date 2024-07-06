@@ -200,6 +200,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1110-Delete-Nodes-And-Return-Forest.md](Binary-Tree/1110-Delete-Nodes-And-Return-Forest/1110-Delete-Nodes-And-Return-Forest.md)
 
+[101-Symmetric-Tree.md](Binary-Tree/101-Symmetric-Tree/101-Symmetric-Tree.md)
+
 
 
 ---

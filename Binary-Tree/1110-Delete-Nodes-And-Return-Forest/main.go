@@ -75,3 +75,37 @@ func del(root *TreeNode) {
 		root.Right = nil
 	}
 }
+
+// ********************************************  labuladong solution  **********************************************
+// 注意：go 代码由 chatGPT🤖 根据我的 java 代码翻译，旨在帮助不同背景的读者理解算法逻辑。
+// 本代码已经通过力扣的测试用例，应该可直接成功提交。
+func delNodes1(root *TreeNode, to_delete []int) []*TreeNode {
+	delSet := make(map[int]bool)
+	for _, d := range to_delete {
+		delSet[d] = true
+	}
+	res := make([]*TreeNode, 0)
+	doDelete(root, false, &res, delSet)
+	return res
+}
+
+// 定义：输入一棵二叉树，删除 delSet 中的节点，返回删除完成后的根节点
+func doDelete(root *TreeNode, hasParent bool, res *[]*TreeNode, delSet map[int]bool) *TreeNode {
+	if root == nil {
+		return nil
+	}
+	// 判断是否需要被删除
+	deleted := delSet[root.Val]
+	if !deleted && !hasParent {
+		// 没有父节点且不需要被删除，就是一个新的根节点
+		*res = append(*res, root)
+	}
+	// 去左右子树进行删除
+	root.Left = doDelete(root.Left, !deleted, res, delSet)
+	root.Right = doDelete(root.Right, !deleted, res, delSet)
+	// 如果需要被删除，返回 nil 给父节点
+	if deleted {
+		return nil
+	}
+	return root
+}
