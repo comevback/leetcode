@@ -202,6 +202,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [101-Symmetric-Tree.md](Binary-Tree/101-Symmetric-Tree/101-Symmetric-Tree.md)
 
+[951-Flip-Equivalent-Binary-Trees.md](Binary-Tree/951-Flip-Equivalent-Binary-Trees/951-Flip-Equivalent-Binary-Trees.md)
+
 
 
 ---
