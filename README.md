@@ -204,6 +204,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [951-Flip-Equivalent-Binary-Trees.md](Binary-Tree/951-Flip-Equivalent-Binary-Trees/951-Flip-Equivalent-Binary-Trees.md)
 
+[124-Binary-Tree-Maximum-Path-Sum.md](Binary-Tree/124-Binary-Tree-Maximum-Path-Sum/124-Binary-Tree-Maximum-Path-Sum.md)
+
 
 
 ---
