@@ -210,6 +210,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [113-Path-Sum-II.md](Binary-Tree/113-Path-Sum-II/113-Path-Sum-II.md)
 
+[617-Merge-Two-Binary-Trees.md](Binary-Tree/617-Merge-Two-Binary-Trees/617-Merge-Two-Binary-Trees.md)
+
 
 
 ---
