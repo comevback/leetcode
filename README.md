@@ -206,6 +206,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [124-Binary-Tree-Maximum-Path-Sum.md](Binary-Tree/124-Binary-Tree-Maximum-Path-Sum/124-Binary-Tree-Maximum-Path-Sum.md)
 
+[112-Path-Sum.md](Binary-Tree/112-Path-Sum/112-Path-Sum.md)
+
 
 
 ---
