@@ -216,6 +216,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [897-Increasing-Order-Search-Tree.md](Binary-Tree/897-Increasing-Order-Search-Tree/897-Increasing-Order-Search-Tree.md)
 
+[938-Range-Sum-of-BST.md](Binary-Tree/938-Range-Sum-of-BST/938-Range-Sum-of-BST.md)
+
 ---
 
 ## Two-Pointer
