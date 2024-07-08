@@ -226,6 +226,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [563-Binary-Tree-Tilt.md](Binary-Tree/563-Binary-Tree-Tilt/563-Binary-Tree-Tilt.md)
 
+[687-Longest-Univalue-Path.md](Binary-Tree/687-Longest-Univalue-Path/687-Longest-Univalue-Path.md)
+
 ---
 
 ## Two-Pointer
