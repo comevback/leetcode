@@ -1,4 +1,4 @@
-# [*Memos Notion link*](https://quaint-fascinator-7a3.notion.site/Xu-leetcode-Summary-ef3bd2078fda4d8281a406e8989215af?pvs=4)
+# [_Memos Notion link_](https://quaint-fascinator-7a3.notion.site/Xu-leetcode-Summary-ef3bd2078fda4d8281a406e8989215af?pvs=4)
 
 ---
 
@@ -32,6 +32,7 @@ wget https://github.com/comevback/leetcode/blob/main/leetcode-setup-linux -O lee
 #### For macOS and Linux Users
 
 Move the Binary File and Set Execution Permissions:
+
 ```bash
 sudo mv leetcode-setup /usr/local/bin/ &&
 sudo chmod +x /usr/local/bin/leetcode-setup
@@ -42,9 +43,11 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 #### For Windows Users
 
 1. **Create a Directory:**
+
    - Create a directory where you will store the binary. Recommended locations are `C:\Tools` or `C:\Users\YourUsername\bin`.
 
 2. **Move the Binary File:**
+
    - Move the `leetcode-setup.exe` file into the directory you created.
 
 3. **Add the Directory to the PATH:**
@@ -135,7 +138,6 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1038-Binary-Search-Tree-to-Greater-Sum-Tree.md](Binary-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree.md)
 
-
 [538-Convert-BST-to-Greater-Tree.md](Binary-Tree/538-Convert-BST-to-Greater-Tree/538-Convert-BST-to-Greater-Tree.md)
 
 [701-Insert-into-a-Binary-Search-Tree.md](Binary-Tree/701-Insert-into-a-Binary-Search-Tree/701-Insert-into-a-Binary-Search-Tree.md)
@@ -212,7 +214,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [617-Merge-Two-Binary-Trees.md](Binary-Tree/617-Merge-Two-Binary-Trees/617-Merge-Two-Binary-Trees.md)
 
-
+[897-Increasing-Order-Search-Tree.md](Binary-Tree/897-Increasing-Order-Search-Tree/897-Increasing-Order-Search-Tree.md)
 
 ---
 
@@ -334,8 +336,6 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [316-Remove-Duplicate-Letters.md](Code/316-Remove-Duplicate-Letters/316-Remove-Duplicate-Letters.md)
 
-
-
 ---
 
 ## Other Skills
@@ -380,7 +380,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 24. [53-Maximum-Subarray.md](Memos/53-Maximum-Subarray.md)
 25. [Longest-Word.md](Memos/Longest-Word.md)
 26. [283-Move-Zeroes.md](Two-Pointer/283-Move-Zeroes/283-Move-Zeroes.md)
-27. [* 1915-Number-of-Wonderful-Substrings.md](Memos/1915-Number-of-Wonderful-Substrings.md)
+27. [\* 1915-Number-of-Wonderful-Substrings.md](Memos/1915-Number-of-Wonderful-Substrings.md)
 28. [2215-Find-the-Difference-of-Two-Arrays.md](Memos/2215-Find-the-Difference-of-Two-Arrays.md)
 29. [1207-Unique-Number-of-Occurrences.md](Memos/1207-Unique-Number-of-Occurrences.md)
 30. [392-Is-Subsequence.md](Memos/392-Is-Subsequence.md)
@@ -388,9 +388,9 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 32. [151-Reverse-Words-in-a-String.md](Memos/151-Reverse-Words-in-a-String.md)
 33. [238-Product-of-Array-Except-Self.md](Memos/238-Product-of-Array-Except-Self.md)
 34. [334-Increasing-Triplet-Subsequence.md](Memos/334-Increasing-Triplet-Subsequence.md)
-35. [* 443-String-Compression.md](Memos/443-String-Compression.md)
+35. [\* 443-String-Compression.md](Memos/443-String-Compression.md)
 36. [2441-Largest-Positive-Integer-That-Exists-With-Its-Negative.md](Memos/2441-Largest-Positive-Integer-That-Exists-With-Its-Negative.md)
-37. [* 322-Coin-Change.md](Memos/322-Coin-Change.md)
+37. [\* 322-Coin-Change.md](Memos/322-Coin-Change.md)
 38. [881-Boats-to-Save-People.md](Memos/881-Boats-to-Save-People.md)
 39. [11-Container-With-Most-Water.md](Memos/11-Container-With-Most-Water.md)
 40. [1679-Max-Number-of-K-Sum-Pairs.md](Memos/1679-Max-Number-of-K-Sum-Pairs.md)
@@ -408,7 +408,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 52. [28-Find-the-Index-of-the-First-Occurrence-in-a-String.md](Code/28-Find-the-Index-of-the-First-Occurrence-in-a-String/28-Find-the-Index-of-the-First-Occurrence-in-a-String.md)
 53. [242-Valid-Anagram.md](Memos/242-Valid-Anagram.md)
 54. [459-Repeated-Substring-Pattern.md](Memos/459-Repeated-Substring-Pattern.md)
-55. [* 3075-Maximize-Happiness-of-Selected-Children.md](Memos/3075-Maximize-Happiness-of-Selected-Children.md)
+55. [\* 3075-Maximize-Happiness-of-Selected-Children.md](Memos/3075-Maximize-Happiness-of-Selected-Children.md)
 56. [66-Plus-One.md](Memos/66-Plus-One.md)
 57. [1822-Sign-of-the-Product-of-an-Array.md](Memos/1822-Sign-of-the-Product-of-an-Array.md)
 58. [1502-Can-Make-Arithmetic-Progression-From-Sequence.md](Memos/1502-Can-Make-Arithmetic-Progression-From-Sequence.md)
@@ -448,6 +448,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 ---
 
 ## Paiza:
+
 1. [C084.md](Paiza/C/C084/C084.md)
 2. [B138.md](Paiza/B138/B138.md)
 3. [Search-History.md](Paiza/C/Search-History/Search-History.md)
@@ -456,7 +457,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 6. [Word-Count-Part2.md](Paiza/C/Word-Count-Part2/Word-Count-Part2.md)
 7. [Word-Count-Part3.md](Paiza/C/Word-Count-Part3/Word-Count-Part3.md)
 8. [Word-Count-Part4.md](Paiza/C/Word-Count-Part4/Word-Count-Part4.md)
-9.  [Word-Count-Part5.md](Paiza/C/Word-Count-Part5/Word-Count-Part5.md)
+9. [Word-Count-Part5.md](Paiza/C/Word-Count-Part5/Word-Count-Part5.md)
 10. [Word-Count-Part6.md](Paiza/C/Word-Count-Part6/Word-Count-Part6.md)
 11. [Word-Count-Part7.md](Paiza/C/Word-Count-Part7/Word-Count-Part7.md)
 12. [Word-Count-final.md](Paiza/C/Word-Count-final/Word-Count-final.md)
