@@ -228,6 +228,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [687-Longest-Univalue-Path.md](Binary-Tree/687-Longest-Univalue-Path/687-Longest-Univalue-Path.md)
 
+[865-Smallest-Subtree-with-all-the-Deepest-Nodes.md](Binary-Tree/865-Smallest-Subtree-with-all-the-Deepest-Nodes/865-Smallest-Subtree-with-all-the-Deepest-Nodes.md)
+
 ---
 
 ## Two-Pointer
