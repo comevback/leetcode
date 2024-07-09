@@ -234,6 +234,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1339-Maximum-Product-of-Splitted-Binary-Tree.md](Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree.md)
 
+[1372-Longest-ZigZag-Path-in-a-Binary-Tree.md](Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
