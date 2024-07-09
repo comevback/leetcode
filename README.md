@@ -230,6 +230,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [865-Smallest-Subtree-with-all-the-Deepest-Nodes.md](Binary-Tree/865-Smallest-Subtree-with-all-the-Deepest-Nodes/865-Smallest-Subtree-with-all-the-Deepest-Nodes.md)
 
+[1026-Maximum-Difference-Between-Node-and-Ancestor.md](Binary-Tree/1026-Maximum-Difference-Between-Node-and-Ancestor/1026-Maximum-Difference-Between-Node-and-Ancestor.md)
+
 ---
 
 ## Two-Pointer
