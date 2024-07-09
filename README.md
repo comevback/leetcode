@@ -236,6 +236,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1372-Longest-ZigZag-Path-in-a-Binary-Tree.md](Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree.md)
 
+[814-Binary-Tree-Pruning.md](Binary-Tree/814-Binary-Tree-Pruning/814-Binary-Tree-Pruning.md)
+
 ---
 
 ## Two-Pointer
