@@ -232,6 +232,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1026-Maximum-Difference-Between-Node-and-Ancestor.md](Binary-Tree/1026-Maximum-Difference-Between-Node-and-Ancestor/1026-Maximum-Difference-Between-Node-and-Ancestor.md)
 
+[1339-Maximum-Product-of-Splitted-Binary-Tree.md](Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
