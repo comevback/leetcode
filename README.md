@@ -238,6 +238,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [814-Binary-Tree-Pruning.md](Binary-Tree/814-Binary-Tree-Pruning/814-Binary-Tree-Pruning.md)
 
+[2049-Count-Nodes-With-the-Highest-Score.md](Binary-Tree/2049-Count-Nodes-With-the-Highest-Score/2049-Count-Nodes-With-the-Highest-Score.md)
+
 ---
 
 ## Two-Pointer
