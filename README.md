@@ -240,6 +240,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [2049-Count-Nodes-With-the-Highest-Score.md](Binary-Tree/2049-Count-Nodes-With-the-Highest-Score/2049-Count-Nodes-With-the-Highest-Score.md)
 
+[968-Binary-Tree-Cameras.md](Binary-Tree/968-Binary-Tree-Cameras/968-Binary-Tree-Cameras.md)
+
 ---
 
 ## Two-Pointer
