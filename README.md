@@ -242,6 +242,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [968-Binary-Tree-Cameras.md](Binary-Tree/968-Binary-Tree-Cameras/968-Binary-Tree-Cameras.md)
 
+[979-Distribute-Coins-in-Binary-Tree.md](Binary-Tree/979-Distribute-Coins-in-Binary-Tree/979-Distribute-Coins-in-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
