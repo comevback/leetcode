@@ -244,6 +244,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [979-Distribute-Coins-in-Binary-Tree.md](Binary-Tree/979-Distribute-Coins-in-Binary-Tree/979-Distribute-Coins-in-Binary-Tree.md)
 
+[1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md](Binary-Tree/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md)
+
 ---
 
 ## Two-Pointer
