@@ -260,6 +260,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1161-Maximum-Level-Sum-of-a-Binary-Tree.md](Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree.md)
 
+[1302-Deepest-Leaves-Sum.md](Binary-Tree/1302-Deepest-Leaves-Sum/1302-Deepest-Leaves-Sum.md)
+
 ---
 
 ## Two-Pointer
