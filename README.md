@@ -262,6 +262,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [1302-Deepest-Leaves-Sum.md](Binary-Tree/1302-Deepest-Leaves-Sum/1302-Deepest-Leaves-Sum.md)
 
+[1609-Even-Odd-Tree.md](Binary-Tree/1609-Even-Odd-Tree/1609-Even-Odd-Tree.md)
+
 ---
 
 ## Two-Pointer
