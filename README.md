@@ -248,6 +248,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [117-Populating-Next-Right-Pointers-in-Each-Node-II.md](Binary-Tree/117-Populating-Next-Right-Pointers-in-Each-Node-II/117-Populating-Next-Right-Pointers-in-Each-Node-II.md)
 
+[662-Maximum-Width-of-Binary-Tree.md](Binary-Tree/662-Maximum-Width-of-Binary-Tree/662-Maximum-Width-of-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
