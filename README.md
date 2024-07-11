@@ -104,165 +104,87 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 ## Binary-Tree 100
 
-[104-Maximum-Depth-of-Binary-Tree.md](Binary-Tree/104-Maximum-Depth-of-Binary-Tree/104-Maximum-Depth-of-Binary-Tree.md)
-
-[LCR-175-binary-tree-depth.md](Binary-Tree/LCR-175-binary-tree-depth/LCR-175-binary-tree-depth.md)
-
-[144-Binary-Tree-Preorder-Traversal.md](Binary-Tree/144-Binary-Tree-Preorder-Traversal/144-Binary-Tree-Preorder-Traversal.md)
-
-[543-Diameter-of-Binary-Tree.md](Binary-Tree/543-Diameter-of-Binary-Tree/543-Diameter-of-Binary-Tree.md)
-
-[257-Binary-Tree-Paths.md](Binary-Tree/257-Binary-Tree-Paths/257-Binary-Tree-Paths.md)
-
-[226-Invert-Binary-Tree.md](Binary-Tree/226-Invert-Binary-Tree/226-Invert-Binary-Tree.md)
-
-[116-Populating-Next-Right-Pointers-in-Each-Node.md](Binary-Tree/116-Populating-Next-Right-Pointers-in-Each-Node/116-Populating-Next-Right-Pointers-in-Each-Node.md)
-
-[114-Flatten-Binary-Tree-to-Linked-List.md](Binary-Tree/114-Flatten-Binary-Tree-to-Linked-List/114-Flatten-Binary-Tree-to-Linked-List.md)
-
-[654-Maximum-Binary-Tree.md](Binary-Tree/654-Maximum-Binary-Tree/654-Maximum-Binary-Tree.md)
-
-[105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md](Binary-Tree/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
-
-[106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md](Binary-Tree/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md)
-
-[889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md](Binary-Tree/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md)
-
-[652-Find-Duplicate-Subtrees.md](Binary-Tree/652-Find-Duplicate-Subtrees/652-Find-Duplicate-Subtrees.md)
-
-[297-Serialize-and-Deserialize-Binary-Tree.md](Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree.md)
-
-[912-Sort-an-Array.md](Binary-Tree/912-Sort-an-Array/912-Sort-an-Array.md)
-
-[315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
-
-[1038-Binary-Search-Tree-to-Greater-Sum-Tree.md](Binary-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree.md)
-
-[538-Convert-BST-to-Greater-Tree.md](Binary-Tree/538-Convert-BST-to-Greater-Tree/538-Convert-BST-to-Greater-Tree.md)
-
-[701-Insert-into-a-Binary-Search-Tree.md](Binary-Tree/701-Insert-into-a-Binary-Search-Tree/701-Insert-into-a-Binary-Search-Tree.md)
-
-[98-Validate-Binary-Search-Tree.md](Binary-Tree/98-Validate-Binary-Search-Tree/98-Validate-Binary-Search-Tree.md)
-
-[95-Unique-Binary-Search-Trees-II.md](Binary-Tree/95-Unique-Binary-Search-Trees-II/95-Unique-Binary-Search-Trees-II.md)
-
-[96-Unique-Binary-Search-Trees.md](Binary-Tree/96-Unique-Binary-Search-Trees/96-Unique-Binary-Search-Trees.md)
-
-[215-Kth-Largest-Element-in-an-Array.md](Binary-Tree/215-Kth-Largest-Element-in-an-Array/215-Kth-Largest-Element-in-an-Array.md)
-
-[236-Lowest-Common-Ancestor-of-a-Binary-Tree.md](Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree.md)
-
-[235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md](Binary-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md)
-
-[222-Count-Complete-Tree-Nodes.md](Binary-Tree/222-Count-Complete-Tree-Nodes/222-Count-Complete-Tree-Nodes.md)
-
-[199-Binary-Tree-Right-Side-View.md](Binary-Tree/199-Binary-Tree-Right-Side-View/199-Binary-Tree-Right-Side-View.md)
-
-[298-binary-tree-longest-consecutive-sequence.md](Binary-Tree/298-binary-tree-longest-consecutive-sequence/298-binary-tree-longest-consecutive-sequence.md)
-
-[988-Smallest-String-Starting-From-Leaf.md](Binary-Tree/988-Smallest-String-Starting-From-Leaf/988-Smallest-String-Starting-From-Leaf.md)
-
-[1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md](Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md)
-
-[270-closest-binary-search-tree-value.md](Binary-Tree/270-closest-binary-search-tree-value/270-closest-binary-search-tree-value.md)
-
-[404-Sum-of-Left-Leaves.md](Binary-Tree/404-Sum-of-Left-Leaves/404-Sum-of-Left-Leaves.md)
-
-[623-Add-One-Row-to-Tree.md](Binary-Tree/623-Add-One-Row-to-Tree/623-Add-One-Row-to-Tree.md)
-
-[971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md](Binary-Tree/971-Flip-Binary-Tree-To-Match-Preorder-Traversal/971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md)
-
-[987-Vertical-Order-Traversal-of-a-Binary-Tree.md](Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree.md)
-
-[993-Cousins-in-Binary-Tree.md](Binary-Tree/993-Cousins-in-Binary-Tree/993-Cousins-in-Binary-Tree.md)
-
-[1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md](Binary-Tree/1315-Sum-of-Nodes-with-Even-Valued-Grandparent/1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md)
-
-[1448-Count-Good-Nodes-in-Binary-Tree.md](Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree.md)
-
-[1469-find-all-the-lonely-nodes.md](Binary-Tree/1469-find-all-the-lonely-nodes/1469-find-all-the-lonely-nodes.md)
-
-[1602-find-nearest-right-node-in-binary-tree.md](Binary-Tree/1602-find-nearest-right-node-in-binary-tree/1602-find-nearest-right-node-in-binary-tree.md)
-
-[437-Path-Sum-III.md](Binary-Tree/437-Path-Sum-III/437-Path-Sum-III.md)
-
-[513-Find-Bottom-Left-Tree-Value.md](Binary-Tree/513-Find-Bottom-Left-Tree-Value/513-Find-Bottom-Left-Tree-Value.md)
-
-[1261-Find-Elements-in-a-Contaminated-Binary-Tree.md](Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree.md)
-
-[100-Same-Tree.md](Binary-Tree/100-Same-Tree/100-Same-Tree.md)
-
-[572-Subtree-of-Another-Tree.md](Binary-Tree/572-Subtree-of-Another-Tree/572-Subtree-of-Another-Tree.md)
-
-[1367-Linked-List-in-Binary-Tree.md](Binary-Tree/1367-Linked-List-in-Binary-Tree/1367-Linked-List-in-Binary-Tree.md)
-
-[Binary-Tree/894-All-Possible-Full-Binary-Trees/894-All-Possible-Full-Binary-Trees.md](Binary-Tree/894-All-Possible-Full-Binary-Trees/894-All-Possible-Full-Binary-Trees.md)
-
-[998-Maximum-Binary-Tree-II.md](Binary-Tree/998-Maximum-Binary-Tree-II/998-Maximum-Binary-Tree-II.md)
-
-[1110-Delete-Nodes-And-Return-Forest.md](Binary-Tree/1110-Delete-Nodes-And-Return-Forest/1110-Delete-Nodes-And-Return-Forest.md)
-
-[101-Symmetric-Tree.md](Binary-Tree/101-Symmetric-Tree/101-Symmetric-Tree.md)
-
-[951-Flip-Equivalent-Binary-Trees.md](Binary-Tree/951-Flip-Equivalent-Binary-Trees/951-Flip-Equivalent-Binary-Trees.md)
-
-[124-Binary-Tree-Maximum-Path-Sum.md](Binary-Tree/124-Binary-Tree-Maximum-Path-Sum/124-Binary-Tree-Maximum-Path-Sum.md)
-
-[112-Path-Sum.md](Binary-Tree/112-Path-Sum/112-Path-Sum.md)
-
-[113-Path-Sum-II.md](Binary-Tree/113-Path-Sum-II/113-Path-Sum-II.md)
-
-[617-Merge-Two-Binary-Trees.md](Binary-Tree/617-Merge-Two-Binary-Trees/617-Merge-Two-Binary-Trees.md)
-
-[897-Increasing-Order-Search-Tree.md](Binary-Tree/897-Increasing-Order-Search-Tree/897-Increasing-Order-Search-Tree.md)
-
-[938-Range-Sum-of-BST.md](Binary-Tree/938-Range-Sum-of-BST/938-Range-Sum-of-BST.md)
-
-[1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree.md](Binary-Tree/1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree/1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree.md)
-
-[110-Balanced-Binary-Tree.md](Binary-Tree/110-Balanced-Binary-Tree/110-Balanced-Binary-Tree.md)
-
-[508-Most-Frequent-Subtree-Sum.md](Binary-Tree/508-Most-Frequent-Subtree-Sum/508-Most-Frequent-Subtree-Sum.md)
-
-[563-Binary-Tree-Tilt.md](Binary-Tree/563-Binary-Tree-Tilt/563-Binary-Tree-Tilt.md)
-
-[687-Longest-Univalue-Path.md](Binary-Tree/687-Longest-Univalue-Path/687-Longest-Univalue-Path.md)
-
-[865-Smallest-Subtree-with-all-the-Deepest-Nodes.md](Binary-Tree/865-Smallest-Subtree-with-all-the-Deepest-Nodes/865-Smallest-Subtree-with-all-the-Deepest-Nodes.md)
-
-[1026-Maximum-Difference-Between-Node-and-Ancestor.md](Binary-Tree/1026-Maximum-Difference-Between-Node-and-Ancestor/1026-Maximum-Difference-Between-Node-and-Ancestor.md)
-
-[1339-Maximum-Product-of-Splitted-Binary-Tree.md](Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree.md)
-
-[1372-Longest-ZigZag-Path-in-a-Binary-Tree.md](Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree.md)
-
-[814-Binary-Tree-Pruning.md](Binary-Tree/814-Binary-Tree-Pruning/814-Binary-Tree-Pruning.md)
-
-[2049-Count-Nodes-With-the-Highest-Score.md](Binary-Tree/2049-Count-Nodes-With-the-Highest-Score/2049-Count-Nodes-With-the-Highest-Score.md)
-
-[968-Binary-Tree-Cameras.md](Binary-Tree/968-Binary-Tree-Cameras/968-Binary-Tree-Cameras.md)
-
-[979-Distribute-Coins-in-Binary-Tree.md](Binary-Tree/979-Distribute-Coins-in-Binary-Tree/979-Distribute-Coins-in-Binary-Tree.md)
-
-[1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md](Binary-Tree/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md)
-
-[117-Populating-Next-Right-Pointers-in-Each-Node-II.md](Binary-Tree/117-Populating-Next-Right-Pointers-in-Each-Node-II/117-Populating-Next-Right-Pointers-in-Each-Node-II.md)
-
-[662-Maximum-Width-of-Binary-Tree.md](Binary-Tree/662-Maximum-Width-of-Binary-Tree/662-Maximum-Width-of-Binary-Tree.md)
-
-[515-Find-Largest-Value-in-Each-Tree-Row.md](Binary-Tree/515-Find-Largest-Value-in-Each-Tree-Row/515-Find-Largest-Value-in-Each-Tree-Row.md)
-
-[637-Average-of-Levels-in-Binary-Tree.md](Binary-Tree/637-Average-of-Levels-in-Binary-Tree/637-Average-of-Levels-in-Binary-Tree.md)
-
-[102-Binary-Tree-Level-Order-Traversal.md](Binary-Tree/102-Binary-Tree-Level-Order-Traversal/102-Binary-Tree-Level-Order-Traversal.md)
-
-[958-Check-Completeness-of-a-Binary-Tree.md](Binary-Tree/958-Check-Completeness-of-a-Binary-Tree/958-Check-Completeness-of-a-Binary-Tree.md)
-
-[1161-Maximum-Level-Sum-of-a-Binary-Tree.md](Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree.md)
-
-[1302-Deepest-Leaves-Sum.md](Binary-Tree/1302-Deepest-Leaves-Sum/1302-Deepest-Leaves-Sum.md)
-
-[1609-Even-Odd-Tree.md](Binary-Tree/1609-Even-Odd-Tree/1609-Even-Odd-Tree.md)
+1. [104-Maximum-Depth-of-Binary-Tree.md](Binary-Tree/104-Maximum-Depth-of-Binary-Tree/104-Maximum-Depth-of-Binary-Tree.md)
+2. [LCR-175-binary-tree-depth.md](Binary-Tree/LCR-175-binary-tree-depth/LCR-175-binary-tree-depth.md)
+3. [144-Binary-Tree-Preorder-Traversal.md](Binary-Tree/144-Binary-Tree-Preorder-Traversal/144-Binary-Tree-Preorder-Traversal.md)
+4. [543-Diameter-of-Binary-Tree.md](Binary-Tree/543-Diameter-of-Binary-Tree/543-Diameter-of-Binary-Tree.md)
+5. [257-Binary-Tree-Paths.md](Binary-Tree/257-Binary-Tree-Paths/257-Binary-Tree-Paths.md)
+6. [226-Invert-Binary-Tree.md](Binary-Tree/226-Invert-Binary-Tree/226-Invert-Binary-Tree.md)
+7. [116-Populating-Next-Right-Pointers-in-Each-Node.md](Binary-Tree/116-Populating-Next-Right-Pointers-in-Each-Node/116-Populating-Next-Right-Pointers-in-Each-Node.md)
+8. [114-Flatten-Binary-Tree-to-Linked-List.md](Binary-Tree/114-Flatten-Binary-Tree-to-Linked-List/114-Flatten-Binary-Tree-to-Linked-List.md)
+9. [654-Maximum-Binary-Tree.md](Binary-Tree/654-Maximum-Binary-Tree/654-Maximum-Binary-Tree.md)
+10. [105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md](Binary-Tree/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal/105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal.md)
+11. [106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md](Binary-Tree/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal/106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal.md)
+12. [889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md](Binary-Tree/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal/889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal.md)
+13. [652-Find-Duplicate-Subtrees.md](Binary-Tree/652-Find-Duplicate-Subtrees/652-Find-Duplicate-Subtrees.md)
+14. [297-Serialize-and-Deserialize-Binary-Tree.md](Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree/297-Serialize-and-Deserialize-Binary-Tree.md)
+15. [912-Sort-an-Array.md](Binary-Tree/912-Sort-an-Array/912-Sort-an-Array.md)
+16. [315-Count-of-Smaller-Numbers-After-Self.md](Binary-Tree/nf-315-Count-of-Smaller-Numbers-After-Self/315-Count-of-Smaller-Numbers-After-Self.md)
+17. [1038-Binary-Search-Tree-to-Greater-Sum-Tree.md](Binary-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree/1038-Binary-Search-Tree-to-Greater-Sum-Tree.md)
+18. [538-Convert-BST-to-Greater-Tree.md](Binary-Tree/538-Convert-BST-to-Greater-Tree/538-Convert-BST-to-Greater-Tree.md)
+19. [701-Insert-into-a-Binary-Search-Tree.md](Binary-Tree/701-Insert-into-a-Binary-Search-Tree/701-Insert-into-a-Binary-Search-Tree.md)
+20. [98-Validate-Binary-Search-Tree.md](Binary-Tree/98-Validate-Binary-Search-Tree/98-Validate-Binary-Search-Tree.md)
+21. [95-Unique-Binary-Search-Trees-II.md](Binary-Tree/95-Unique-Binary-Search-Trees-II/95-Unique-Binary-Search-Trees-II.md)
+22. [96-Unique-Binary-Search-Trees.md](Binary-Tree/96-Unique-Binary-Search-Trees/96-Unique-Binary-Search-Trees.md)
+23. [215-Kth-Largest-Element-in-an-Array.md](Binary-Tree/215-Kth-Largest-Element-in-an-Array/215-Kth-Largest-Element-in-an-Array.md)
+24. [236-Lowest-Common-Ancestor-of-a-Binary-Tree.md](Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree/236-Lowest-Common-Ancestor-of-a-Binary-Tree.md)
+25. [235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md](Binary-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree.md)
+26. [222-Count-Complete-Tree-Nodes.md](Binary-Tree/222-Count-Complete-Tree-Nodes/222-Count-Complete-Tree-Nodes.md)
+27. [199-Binary-Tree-Right-Side-View.md](Binary-Tree/199-Binary-Tree-Right-Side-View/199-Binary-Tree-Right-Side-View.md)
+28. [298-binary-tree-longest-consecutive-sequence.md](Binary-Tree/298-binary-tree-longest-consecutive-sequence/298-binary-tree-longest-consecutive-sequence.md)
+29. [988-Smallest-String-Starting-From-Leaf.md](Binary-Tree/988-Smallest-String-Starting-From-Leaf/988-Smallest-String-Starting-From-Leaf.md)
+30. [1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md](Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree/1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree.md)
+31. [270-closest-binary-search-tree-value.md](Binary-Tree/270-closest-binary-search-tree-value/270-closest-binary-search-tree-value.md)
+32. [404-Sum-of-Left-Leaves.md](Binary-Tree/404-Sum-of-Left-Leaves/404-Sum-of-Left-Leaves.md)
+33. [623-Add-One-Row-to-Tree.md](Binary-Tree/623-Add-One-Row-to-Tree/623-Add-One-Row-to-Tree.md)
+34. [971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md](Binary-Tree/971-Flip-Binary-Tree-To-Match-Preorder-Traversal/971-Flip-Binary-Tree-To-Match-Preorder-Traversal.md)
+35. [987-Vertical-Order-Traversal-of-a-Binary-Tree.md](Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree/987-Vertical-Order-Traversal-of-a-Binary-Tree.md)
+36. [993-Cousins-in-Binary-Tree.md](Binary-Tree/993-Cousins-in-Binary-Tree/993-Cousins-in-Binary-Tree.md)
+37. [1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md](Binary-Tree/1315-Sum-of-Nodes-with-Even-Valued-Grandparent/1315-Sum-of-Nodes-with-Even-Valued-Grandparent.md)
+38. [1448-Count-Good-Nodes-in-Binary-Tree.md](Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree/1448-Count-Good-Nodes-in-Binary-Tree.md)
+39. [1469-find-all-the-lonely-nodes.md](Binary-Tree/1469-find-all-the-lonely-nodes/1469-find-all-the-lonely-nodes.md)
+40. [1602-find-nearest-right-node-in-binary-tree.md](Binary-Tree/1602-find-nearest-right-node-in-binary-tree/1602-find-nearest-right-node-in-binary-tree.md)
+41. [437-Path-Sum-III.md](Binary-Tree/437-Path-Sum-III/437-Path-Sum-III.md)
+42. [513-Find-Bottom-Left-Tree-Value.md](Binary-Tree/513-Find-Bottom-Left-Tree-Value/513-Find-Bottom-Left-Tree-Value.md)
+43. [1261-Find-Elements-in-a-Contaminated-Binary-Tree.md](Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree/1261-Find-Elements-in-a-Contaminated-Binary-Tree.md)
+44. [100-Same-Tree.md](Binary-Tree/100-Same-Tree/100-Same-Tree.md)
+45. [572-Subtree-of-Another-Tree.md](Binary-Tree/572-Subtree-of-Another-Tree/572-Subtree-of-Another-Tree.md)
+46. [1367-Linked-List-in-Binary-Tree.md](Binary-Tree/1367-Linked-List-in-Binary-Tree/1367-Linked-List-in-Binary-Tree.md)
+47. [894-All-Possible-Full-Binary-Trees.md](Binary-Tree/894-All-Possible-Full-Binary-Trees/894-All-Possible-Full-Binary-Trees.md)
+48. [998-Maximum-Binary-Tree-II.md](Binary-Tree/998-Maximum-Binary-Tree-II/998-Maximum-Binary-Tree-II.md)
+49. [1110-Delete-Nodes-And-Return-Forest.md](Binary-Tree/1110-Delete-Nodes-And-Return-Forest/1110-Delete-Nodes-And-Return-Forest.md)
+50. [101-Symmetric-Tree.md](Binary-Tree/101-Symmetric-Tree/101-Symmetric-Tree.md)
+51. [951-Flip-Equivalent-Binary-Trees.md](Binary-Tree/951-Flip-Equivalent-Binary-Trees/951-Flip-Equivalent-Binary-Trees.md)
+52. [124-Binary-Tree-Maximum-Path-Sum.md](Binary-Tree/124-Binary-Tree-Maximum-Path-Sum/124-Binary-Tree-Maximum-Path-Sum.md)
+53. [112-Path-Sum.md](Binary-Tree/112-Path-Sum/112-Path-Sum.md)
+54. [113-Path-Sum-II.md](Binary-Tree/113-Path-Sum-II/113-Path-Sum-II.md)
+55. [617-Merge-Two-Binary-Trees.md](Binary-Tree/617-Merge-Two-Binary-Trees/617-Merge-Two-Binary-Trees.md)
+56. [897-Increasing-Order-Search-Tree.md](Binary-Tree/897-Increasing-Order-Search-Tree/897-Increasing-Order-Search-Tree.md)
+57. [938-Range-Sum-of-BST.md](Binary-Tree/938-Range-Sum-of-BST/938-Range-Sum-of-BST.md)
+58. [1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree.md](Binary-Tree/1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree/1379-Find-a-Corresponding-Node-of-a-Binary-Tree-in-a-Clone-of-That-Tree.md)
+59. [110-Balanced-Binary-Tree.md](Binary-Tree/110-Balanced-Binary-Tree/110-Balanced-Binary-Tree.md)
+60. [508-Most-Frequent-Subtree-Sum.md](Binary-Tree/508-Most-Frequent-Subtree-Sum/508-Most-Frequent-Subtree-Sum.md)
+61. [563-Binary-Tree-Tilt.md](Binary-Tree/563-Binary-Tree-Tilt/563-Binary-Tree-Tilt.md)
+62. [687-Longest-Univalue-Path.md](Binary-Tree/687-Longest-Univalue-Path/687-Longest-Univalue-Path.md)
+63. [865-Smallest-Subtree-with-all-the-Deepest-Nodes.md](Binary-Tree/865-Smallest-Subtree-with-all-the-Deepest-Nodes/865-Smallest-Subtree-with-all-the-Deepest-Nodes.md)
+64. [1026-Maximum-Difference-Between-Node-and-Ancestor.md](Binary-Tree/1026-Maximum-Difference-Between-Node-and-Ancestor/1026-Maximum-Difference-Between-Node-and-Ancestor.md)
+65. [1339-Maximum-Product-of-Splitted-Binary-Tree.md](Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree/1339-Maximum-Product-of-Splitted-Binary-Tree.md)
+66. [1372-Longest-ZigZag-Path-in-a-Binary-Tree.md](Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree/1372-Longest-ZigZag-Path-in-a-Binary-Tree.md)
+67. [814-Binary-Tree-Pruning.md](Binary-Tree/814-Binary-Tree-Pruning/814-Binary-Tree-Pruning.md)
+68. [2049-Count-Nodes-With-the-Highest-Score.md](Binary-Tree/2049-Count-Nodes-With-the-Highest-Score/2049-Count-Nodes-With-the-Highest-Score.md)
+69. [968-Binary-Tree-Cameras.md](Binary-Tree/968-Binary-Tree-Cameras/968-Binary-Tree-Cameras.md)
+70. [979-Distribute-Coins-in-Binary-Tree.md](Binary-Tree/979-Distribute-Coins-in-Binary-Tree/979-Distribute-Coins-in-Binary-Tree.md)
+71. [1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md](Binary-Tree/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths/1080-Insufficient-Nodes-in-Root-to-Leaf-Paths.md)
+72. [117-Populating-Next-Right-Pointers-in-Each-Node-II.md](Binary-Tree/117-Populating-Next-Right-Pointers-in-Each-Node-II/117-Populating-Next-Right-Pointers-in-Each-Node-II.md)
+73. [662-Maximum-Width-of-Binary-Tree.md](Binary-Tree/662-Maximum-Width-of-Binary-Tree/662-Maximum-Width-of-Binary-Tree.md)
+74. [515-Find-Largest-Value-in-Each-Tree-Row.md](Binary-Tree/515-Find-Largest-Value-in-Each-Tree-Row/515-Find-Largest-Value-in-Each-Tree-Row.md)
+75. [637-Average-of-Levels-in-Binary-Tree.md](Binary-Tree/637-Average-of-Levels-in-Binary-Tree/637-Average-of-Levels-in-Binary-Tree.md)
+76. [102-Binary-Tree-Level-Order-Traversal.md](Binary-Tree/102-Binary-Tree-Level-Order-Traversal/102-Binary-Tree-Level-Order-Traversal.md)
+77. [958-Check-Completeness-of-a-Binary-Tree.md](Binary-Tree/958-Check-Completeness-of-a-Binary-Tree/958-Check-Completeness-of-a-Binary-Tree.md)
+78. [1161-Maximum-Level-Sum-of-a-Binary-Tree.md](Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree/1161-Maximum-Level-Sum-of-a-Binary-Tree.md)
+79. [1302-Deepest-Leaves-Sum.md](Binary-Tree/1302-Deepest-Leaves-Sum/1302-Deepest-Leaves-Sum.md)
+80. [1609-Even-Odd-Tree.md](Binary-Tree/1609-Even-Odd-Tree/1609-Even-Odd-Tree.md)
+81. [103-Binary-Tree-Zigzag-Level-Order-Traversal.md](Binary-Tree/103-Binary-Tree-Zigzag-Level-Order-Traversal/103-Binary-Tree-Zigzag-Level-Order-Traversal.md)
 
 ---
 
