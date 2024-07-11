@@ -256,6 +256,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [102-Binary-Tree-Level-Order-Traversal.md](Binary-Tree/102-Binary-Tree-Level-Order-Traversal/102-Binary-Tree-Level-Order-Traversal.md)
 
+[958-Check-Completeness-of-a-Binary-Tree.md](Binary-Tree/958-Check-Completeness-of-a-Binary-Tree/958-Check-Completeness-of-a-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
