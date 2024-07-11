@@ -252,6 +252,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 [515-Find-Largest-Value-in-Each-Tree-Row.md](Binary-Tree/515-Find-Largest-Value-in-Each-Tree-Row/515-Find-Largest-Value-in-Each-Tree-Row.md)
 
+[637-Average-of-Levels-in-Binary-Tree.md](Binary-Tree/637-Average-of-Levels-in-Binary-Tree/637-Average-of-Levels-in-Binary-Tree.md)
+
 ---
 
 ## Two-Pointer
