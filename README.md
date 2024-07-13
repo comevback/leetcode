@@ -187,6 +187,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 81. [103-Binary-Tree-Zigzag-Level-Order-Traversal.md](Binary-Tree/103-Binary-Tree-Zigzag-Level-Order-Traversal/103-Binary-Tree-Zigzag-Level-Order-Traversal.md)
 82. [919-Complete-Binary-Tree-Inserter.md](Binary-Tree/919-Complete-Binary-Tree-Inserter/919-Complete-Binary-Tree-Inserter.md)
 83. [863-All-Nodes-Distance-K-in-Binary-Tree.md](Binary-Tree/863-All-Nodes-Distance-K-in-Binary-Tree/863-All-Nodes-Distance-K-in-Binary-Tree.md)
+84. [582-kill-process.md](Binary-Tree/582-kill-process/582-kill-process.md)
 
 ---
 
