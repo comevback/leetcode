@@ -189,6 +189,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 83. [863-All-Nodes-Distance-K-in-Binary-Tree.md](Binary-Tree/863-All-Nodes-Distance-K-in-Binary-Tree/863-All-Nodes-Distance-K-in-Binary-Tree.md)
 84. [582-kill-process.md](Binary-Tree/582-kill-process/582-kill-process.md)
 85. [536-construct-binary-tree-from-string.md](Binary-Tree/536-construct-binary-tree-from-string/536-construct-binary-tree-from-string.md)
+86. [99-Recover-Binary-Search-Tree.md](Binary-Tree/99-Recover-Binary-Search-Tree/99-Recover-Binary-Search-Tree.md)
 
 ---
 
