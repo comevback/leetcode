@@ -190,6 +190,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 84. [582-kill-process.md](Binary-Tree/582-kill-process/582-kill-process.md)
 85. [536-construct-binary-tree-from-string.md](Binary-Tree/536-construct-binary-tree-from-string/536-construct-binary-tree-from-string.md)
 86. [99-Recover-Binary-Search-Tree.md](Binary-Tree/99-Recover-Binary-Search-Tree/99-Recover-Binary-Search-Tree.md)
+87. [669-Trim-a-Binary-Search-Tree.md](Binary-Tree/669-Trim-a-Binary-Search-Tree/669-Trim-a-Binary-Search-Tree.md)
 
 ---
 
