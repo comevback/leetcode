@@ -192,6 +192,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 86. [99-Recover-Binary-Search-Tree.md](Binary-Tree/99-Recover-Binary-Search-Tree/99-Recover-Binary-Search-Tree.md)
 87. [669-Trim-a-Binary-Search-Tree.md](Binary-Tree/669-Trim-a-Binary-Search-Tree/669-Trim-a-Binary-Search-Tree.md)
 88. [671-Second-Minimum-Node-In-a-Binary-Tree.md](Binary-Tree/671-Second-Minimum-Node-In-a-Binary-Tree/671-Second-Minimum-Node-In-a-Binary-Tree.md)
+89. [1008-Construct-Binary-Search-Tree-from-Preorder-Traversal.md](Binary-Tree/1008-Construct-Binary-Search-Tree-from-Preorder-Traversal/1008-Construct-Binary-Search-Tree-from-Preorder-Traversal.md)
 
 ---
 
