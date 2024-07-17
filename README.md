@@ -195,6 +195,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 89. [1008-Construct-Binary-Search-Tree-from-Preorder-Traversal.md](Binary-Tree/1008-Construct-Binary-Search-Tree-from-Preorder-Traversal/1008-Construct-Binary-Search-Tree-from-Preorder-Traversal.md)
 90. [108-Convert-Sorted-Array-to-Binary-Search-Tree.md](Binary-Tree/108-Convert-Sorted-Array-to-Binary-Search-Tree/108-Convert-Sorted-Array-to-Binary-Search-Tree.md)
 91. [173-Binary-Search-Tree-Iterator.md](Binary-Tree/173-Binary-Search-Tree-Iterator/173-Binary-Search-Tree-Iterator.md)
+92. [449-Serialize-and-Deserialize-BST.md](Binary-Tree/449-Serialize-and-Deserialize-BST/449-Serialize-and-Deserialize-BST.md)
 
 ---
 
