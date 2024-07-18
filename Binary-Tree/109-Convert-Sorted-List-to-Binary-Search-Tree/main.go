@@ -5,50 +5,58 @@ import (
 	"math"
 )
 
+// ListNode 定义单链表中的一个节点。
+type ListNode struct {
+	Val  int       // 节点的值
+	Next *ListNode // 指向下一个节点的指针
+}
+
+// TreeNode 定义二叉树中的一个节点。
+type TreeNode struct {
+	Val   int       // 节点的值
+	Left  *TreeNode // 指向左子节点的指针
+	Right *TreeNode // 指向右子节点的指针
+}
+
 func main() {
+	// 创建链表 -10 -> -3 -> 0 -> 5 -> 9
 	head := &ListNode{Val: -10}
 	head.Next = &ListNode{Val: -3}
 	head.Next.Next = &ListNode{Val: 0}
 	head.Next.Next.Next = &ListNode{Val: 5}
 	head.Next.Next.Next.Next = &ListNode{Val: 9}
 
+	// 将排序链表转换为高度平衡的二叉搜索树
 	res := sortedListToBST(head)
+	// 打印结果
 	fmt.Println(res)
 }
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
+// sortedListToBST 接收一个排序的链表并返回一个高度平衡的二叉搜索树。
 func sortedListToBST(head *ListNode) *TreeNode {
-	length := calLength(head)
-	res := build(&head, 0, length-1)
+	length := calLength(head)        // 计算链表长度
+	res := build(&head, 0, length-1) // 构建BST
 	return res
 }
 
+// build 递归函数用于构建BST。
 func build(head **ListNode, left, right int) *TreeNode {
 	if left > right {
 		return nil
 	}
 
-	var newNode *TreeNode = &TreeNode{}
-	mid := left + (right-left)/2
-	leftNode := build(head, left, mid-1)
-	newNode.Val = (*head).Val
-	(*head) = (*head).Next
-	rightNode := build(head, mid+1, right)
-	newNode.Left = leftNode
-	newNode.Right = rightNode
+	var newNode *TreeNode = &TreeNode{}    // 创建新的树节点
+	mid := left + (right-left)/2           // 计算中点
+	leftNode := build(head, left, mid-1)   // 递归构建左子树
+	newNode.Val = (*head).Val              // 设置当前节点的值
+	(*head) = (*head).Next                 // 移动到下一个链表节点
+	rightNode := build(head, mid+1, right) // 递归构建右子树
+	newNode.Left = leftNode                // 设置左子树
+	newNode.Right = rightNode              // 设置右子树
 	return newNode
 }
 
+// calLength 计算链表的长度。
 func calLength(head *ListNode) int {
 	current := head
 	length := 0
@@ -56,10 +64,10 @@ func calLength(head *ListNode) int {
 		length += 1
 		current = current.Next
 	}
-
 	return length
 }
 
+// calDepth 计算树的深度。
 func calDepth(num int) int {
 	level := 1
 	sum := 1
@@ -72,6 +80,7 @@ func calDepth(num int) int {
 	return level
 }
 
+// calDepth1 另一种计算树深度的方法，使用对数函数。
 func calDepth1(num int) int {
 	if num <= 0 {
 		return 0
