@@ -30,6 +30,13 @@ func main() {
 	res := sortedListToBST(head)
 	// 打印结果
 	fmt.Println(res)
+
+	// newHead := reverse(head)
+	// current := newHead
+	// for current != nil {
+	// 	fmt.Println(current.Val)
+	// 	current = current.Next
+	// }
 }
 
 // sortedListToBST 接收一个排序的链表并返回一个高度平衡的二叉搜索树。
@@ -86,4 +93,15 @@ func calDepth1(num int) int {
 		return 0
 	}
 	return int(math.Floor(math.Log2(float64(num))) + 1)
+}
+
+func reverse(head *ListNode) *ListNode {
+	var newHead *ListNode
+	for head != nil {
+		temp := head.Next
+		head.Next = newHead
+		newHead = head
+		head = temp
+	}
+	return newHead
 }
