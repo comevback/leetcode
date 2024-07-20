@@ -428,6 +428,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 89. [274-H-Index.md](Code/274-H-Index/274-H-Index.md)
 90. [205-Isomorphic-Strings.md](Code/205-Isomorphic-Strings/205-Isomorphic-Strings.md)
 91. [225-Implement-Stack-using-Queues.md](Code/225-Implement-Stack-using-Queues/225-Implement-Stack-using-Queues.md)
+92. [143-Reorder-List.md](Code/143-Reorder-List/143-Reorder-List.md)
 
 ---
 
