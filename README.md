@@ -429,6 +429,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 90. [205-Isomorphic-Strings.md](Code/205-Isomorphic-Strings/205-Isomorphic-Strings.md)
 91. [225-Implement-Stack-using-Queues.md](Code/225-Implement-Stack-using-Queues/225-Implement-Stack-using-Queues.md)
 92. [143-Reorder-List.md](Code/143-Reorder-List/143-Reorder-List.md)
+93. [20-Valid-Parentheses.md](Code/20-Valid-Parentheses/20-Valid-Parentheses.md)
 
 ---
 
