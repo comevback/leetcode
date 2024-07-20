@@ -431,6 +431,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 92. [143-Reorder-List.md](Code/143-Reorder-List/143-Reorder-List.md)
 93. [20-Valid-Parentheses.md](Code/20-Valid-Parentheses/20-Valid-Parentheses.md)
 94. [150-Evaluate-Reverse-Polish-Notation.md](Code/150-Evaluate-Reverse-Polish-Notation/150-Evaluate-Reverse-Polish-Notation.md)
+95. [388-Longest-Absolute-File-Path.md](Code/388-Longest-Absolute-File-Path/388-Longest-Absolute-File-Path.md)
 
 ---
 
