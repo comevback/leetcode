@@ -430,6 +430,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 91. [225-Implement-Stack-using-Queues.md](Code/225-Implement-Stack-using-Queues/225-Implement-Stack-using-Queues.md)
 92. [143-Reorder-List.md](Code/143-Reorder-List/143-Reorder-List.md)
 93. [20-Valid-Parentheses.md](Code/20-Valid-Parentheses/20-Valid-Parentheses.md)
+94. [150-Evaluate-Reverse-Polish-Notation.md](Code/150-Evaluate-Reverse-Polish-Notation/150-Evaluate-Reverse-Polish-Notation.md)
 
 ---
 
