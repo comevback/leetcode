@@ -442,6 +442,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 97. [239-Sliding-Window-Maximum.md](Code/239-Sliding-Window-Maximum/239-Sliding-Window-Maximum.md)
 98. [622-Design-Circular-Queue.md](Code/622-Design-Circular-Queue/622-Design-Circular-Queue.md)
 99. [641-Design-Circular-Deque.md](Code/641-Design-Circular-Deque/641-Design-Circular-Deque.md)
+100. [1670-Design-Front-Middle-Back-Queue.md](Code/1670-Design-Front-Middle-Back-Queue/1670-Design-Front-Middle-Back-Queue.md)
 
 ---
 
