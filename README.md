@@ -444,6 +444,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 99. [641-Design-Circular-Deque.md](Code/641-Design-Circular-Deque/641-Design-Circular-Deque.md)
 100. [1670-Design-Front-Middle-Back-Queue.md](Code/1670-Design-Front-Middle-Back-Queue/1670-Design-Front-Middle-Back-Queue.md)
 101. [496-Next-Greater-Element-I.md](Code/496-Next-Greater-Element-I/496-Next-Greater-Element-I.md)
+102. [503-Next-Greater-Element-II.md](Code/503-Next-Greater-Element-II/503-Next-Greater-Element-II.md)
 
 ---
 
