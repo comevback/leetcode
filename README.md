@@ -448,6 +448,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 103. [556-Next-Greater-Element-III.md](Code/556-Next-Greater-Element-III/556-Next-Greater-Element-III.md)
 104. [1019-Next-Greater-Node-In-Linked-List.md](Code/1019-Next-Greater-Node-In-Linked-List/1019-Next-Greater-Node-In-Linked-List.md)
 105. [1944-Number-of-Visible-People-in-a-Queue.md](Code/1944-Number-of-Visible-People-in-a-Queue/1944-Number-of-Visible-People-in-a-Queue.md)
+106. [1475-Final-Prices-With-a-Special-Discount-in-a-Shop.md](Code/1475-Final-Prices-With-a-Special-Discount-in-a-Shop/1475-Final-Prices-With-a-Special-Discount-in-a-Shop.md)
 
 ---
 
