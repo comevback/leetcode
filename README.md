@@ -446,6 +446,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 101. [496-Next-Greater-Element-I.md](Code/496-Next-Greater-Element-I/496-Next-Greater-Element-I.md)
 102. [503-Next-Greater-Element-II.md](Code/503-Next-Greater-Element-II/503-Next-Greater-Element-II.md)
 103. [556-Next-Greater-Element-III.md](Code/556-Next-Greater-Element-III/556-Next-Greater-Element-III.md)
+104. [1019-Next-Greater-Node-In-Linked-List.md](Code/1019-Next-Greater-Node-In-Linked-List/1019-Next-Greater-Node-In-Linked-List.md)
 
 ---
 
