@@ -451,6 +451,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 106. [1475-Final-Prices-With-a-Special-Discount-in-a-Shop.md](Code/1475-Final-Prices-With-a-Special-Discount-in-a-Shop/1475-Final-Prices-With-a-Special-Discount-in-a-Shop.md)
 107. [901-Online-Stock-Span.md](Code/901-Online-Stock-Span/901-Online-Stock-Span.md)
 108. [402-Remove-K-Digits.md](Code/402-Remove-K-Digits/402-Remove-K-Digits.md)
+109. [1438-Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit.md](Code/1438-Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit/1438-Longest-Continuous-Subarray-With-Absolute-Diff-Less-Than-or-Equal-to-Limit.md)
 
 ---
 
