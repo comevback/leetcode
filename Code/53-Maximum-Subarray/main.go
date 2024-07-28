@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var nums = []int{5, 4, -1, 7, 8}
-	res := maxSubArray1(nums)
+	var nums = []int{5, -3, 5, 5, -3, 5}
+	res := maxSubArray(nums)
 	fmt.Println(res)
 }
 
