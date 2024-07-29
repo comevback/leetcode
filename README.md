@@ -455,6 +455,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 110. [862-Shortest-Subarray-with-Sum-at-Least-K.md](Code/862-Shortest-Subarray-with-Sum-at-Least-K/862-Shortest-Subarray-with-Sum-at-Least-K.md)
 111. [135-Candy.md](Code/135-Candy/135-Candy.md)
 112. [918-Maximum-Sum-Circular-Subarray.md](Code/918-Maximum-Sum-Circular-Subarray/918-Maximum-Sum-Circular-Subarray.md)
+113. [1696-Jump-Game-VI.md](Code/1696-Jump-Game-VI/1696-Jump-Game-VI.md)
 
 ---
 
