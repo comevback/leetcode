@@ -459,6 +459,9 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 114. [1425-Constrained-Subsequence-Sum.md](Code/1425-Constrained-Subsequence-Sum/1425-Constrained-Subsequence-Sum.md)
 115. [146-LRU-Cache.md](Code/146-LRU-Cache/146-LRU-Cache.md)
 116. [134-Gas-Station.md](Code/134-Gas-Station/134-Gas-Station.md)
+117. [209-Minimum-Size-Subarray-Sum.md](Code/209-Minimum-Size-Subarray-Sum/209-Minimum-Size-Subarray-Sum.md)
+118. [290-Word-Pattern.md](Code/290-Word-Pattern/290-Word-Pattern.md)
+119. [49-Group-Anagrams.md](Code/49-Group-Anagrams/49-Group-Anagrams.md)
 
 ---
 
