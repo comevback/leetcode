@@ -94,6 +94,8 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 
 ## Sorting:
 
+[692-Top-K-Frequent-Words.md](Code/692-Top-K-Frequent-Words/692-Top-K-Frequent-Words.md)
+
 [Selection-Sort.md](DSA/Sorting/Selection-Sort/Selection-Sort.md)
 
 [Bubble-Sort.md](DSA/Sorting/Bubble-Sort/Bubble-Sort.md)

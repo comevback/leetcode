@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	// 主函数，这里可以调用 groupAnagrams 函数来进行测试。
+
 }
 
 // groupAnagrams 将数组中的字符串分组，每个组包含彼此是异位词的字符串。
