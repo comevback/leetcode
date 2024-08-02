@@ -465,6 +465,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 118. [290-Word-Pattern.md](Code/290-Word-Pattern/290-Word-Pattern.md)
 119. [49-Group-Anagrams.md](Code/49-Group-Anagrams/49-Group-Anagrams.md)
 120. [12-Integer-to-Roman.md](Code/12-Integer-to-Roman/12-Integer-to-Roman.md)
+121. [6-Zigzag-Conversion.md](Code/6-Zigzag-Conversion/6-Zigzag-Conversion.md)
 
 ---
 
