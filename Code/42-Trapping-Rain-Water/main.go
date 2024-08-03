@@ -46,5 +46,30 @@ func trap1(height []int) int {
 
 }
 
+type MaxQueue struct {
+	queue    []int
+	maxQueue []int
+}
 
-type Max
+func NewMaxQueue() MaxQueue {
+	return MaxQueue{
+		queue:    []int{},
+		maxQueue: []int{},
+	}
+}
+
+func (mq *MaxQueue) Enqueue(value int) {
+	mq.queue = append(mq.queue, value)
+	for len(mq.maxQueue) > 0 && value > mq.maxQueue[len(mq.maxQueue)-1] {
+		mq.maxQueue = mq.maxQueue[:len(mq.maxQueue)-1]
+	}
+
+}
+
+func (mq *MaxQueue) Dequeue() {
+
+}
+
+func (mq *MaxQueue) ViewMax() int {
+	return mq.maxQueue[0]
+}
