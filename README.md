@@ -469,6 +469,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 122. [7-Reverse-Integer.md](Code/7-Reverse-Integer/7-Reverse-Integer.md)
 123. [8-String-to-Integer-(atoi).md)](<Code/8-String-to-Integer-atoi/8-String-to-Integer-(atoi).md>)
 124. [9-Palindrome-Number.md](Code/9-Palindrome-Number/9-Palindrome-Number.md)
+125. [29-Divide-Two-Integers.md](Code/29-Divide-Two-Integers/29-Divide-Two-Integers.md)
 
 ---
 
