@@ -470,6 +470,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 123. [8-String-to-Integer-(atoi).md)](<Code/8-String-to-Integer-atoi/8-String-to-Integer-(atoi).md>)
 124. [9-Palindrome-Number.md](Code/9-Palindrome-Number/9-Palindrome-Number.md)
 125. [29-Divide-Two-Integers.md](Code/29-Divide-Two-Integers/29-Divide-Two-Integers.md)
+126. [202-Happy-Number.md](Code/202-Happy-Number/202-Happy-Number.md)
 
 ---
 
