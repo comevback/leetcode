@@ -468,6 +468,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 121. [6-Zigzag-Conversion.md](Code/6-Zigzag-Conversion/6-Zigzag-Conversion.md)
 122. [7-Reverse-Integer.md](Code/7-Reverse-Integer/7-Reverse-Integer.md)
 123. [8-String-to-Integer-(atoi).md)](<Code/8-String-to-Integer-atoi/8-String-to-Integer-(atoi).md>)
+124. [9-Palindrome-Number.md](Code/9-Palindrome-Number/9-Palindrome-Number.md)
 
 ---
 
