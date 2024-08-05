@@ -18,9 +18,16 @@ func main() {
 	win := 0
 	last := ""
 
-	dp := make([]string, len(numArr))
+	dp := make([][]int, len(numArr))
+	for i := range dp {
 
-	for _, v := range numArr {
+	}
+
+	// R : 0
+	// P : 1
+	// S : 2
+
+	for i, v := range numArr {
 		switch v {
 		case "R":
 			if last != "P" {

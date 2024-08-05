@@ -471,6 +471,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 124. [9-Palindrome-Number.md](Code/9-Palindrome-Number/9-Palindrome-Number.md)
 125. [29-Divide-Two-Integers.md](Code/29-Divide-Two-Integers/29-Divide-Two-Integers.md)
 126. [202-Happy-Number.md](Code/202-Happy-Number/202-Happy-Number.md)
+127. [2053-Kth-Distinct-String-in-an-Array.md](Code/2053-Kth-Distinct-String-in-an-Array/2053-Kth-Distinct-String-in-an-Array.md)
 
 ---
 
