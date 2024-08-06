@@ -472,6 +472,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 125. [29-Divide-Two-Integers.md](Code/29-Divide-Two-Integers/29-Divide-Two-Integers.md)
 126. [202-Happy-Number.md](Code/202-Happy-Number/202-Happy-Number.md)
 127. [2053-Kth-Distinct-String-in-an-Array.md](Code/2053-Kth-Distinct-String-in-an-Array/2053-Kth-Distinct-String-in-an-Array.md)
+128. [228-Summary-Ranges.md](Code/228-Summary-Ranges/228-Summary-Ranges.md)
 
 ---
 
