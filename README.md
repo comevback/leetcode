@@ -206,6 +206,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 92. [449-Serialize-and-Deserialize-BST.md](Binary-Tree/449-Serialize-and-Deserialize-BST/449-Serialize-and-Deserialize-BST.md)
 93. [1305-All-Elements-in-Two-Binary-Search-Trees.md](Binary-Tree/1305-All-Elements-in-Two-Binary-Search-Trees/1305-All-Elements-in-Two-Binary-Search-Trees.md)
 94. [109-Convert-Sorted-List-to-Binary-Search-Tree.md](Binary-Tree/109-Convert-Sorted-List-to-Binary-Search-Tree/109-Convert-Sorted-List-to-Binary-Search-Tree.md)
+95. [530-Minimum-Absolute-Difference-in-BST.md](Binary-Tree/530-Minimum-Absolute-Difference-in-BST/530-Minimum-Absolute-Difference-in-BST.md)
 
 ---
 
