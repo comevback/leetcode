@@ -475,6 +475,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 127. [2053-Kth-Distinct-String-in-an-Array.md](Code/2053-Kth-Distinct-String-in-an-Array/2053-Kth-Distinct-String-in-an-Array.md)
 128. [228-Summary-Ranges.md](Code/228-Summary-Ranges/228-Summary-Ranges.md)
 129. [2300-Successful-Pairs-of-Spells-and-Potions.md](Binary-Tree/2300-Successful-Pairs-of-Spells-and-Potions/2300-Successful-Pairs-of-Spells-and-Potions.md)
+130. [35-Search-Insert-Position.md](Code/35-Search-Insert-Position/35-Search-Insert-Position.md)
 
 ---
 
