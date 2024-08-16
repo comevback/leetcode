@@ -479,6 +479,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 130. [35-Search-Insert-Position.md](Code/35-Search-Insert-Position/35-Search-Insert-Position.md)
 131. [67-Add-Binary.md](Code/67-Add-Binary/67-Add-Binary.md)
 132. [128-Longest-Consecutive-Sequence.md](Code/128-Longest-Consecutive-Sequence/128-Longest-Consecutive-Sequence.md)
+133. [190-Reverse-Bits.md](Code/190-Reverse-Bits/190-Reverse-Bits.md)
 
 ---
 
