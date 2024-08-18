@@ -481,6 +481,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 131. [67-Add-Binary.md](Code/67-Add-Binary/67-Add-Binary.md)
 132. [128-Longest-Consecutive-Sequence.md](Code/128-Longest-Consecutive-Sequence/128-Longest-Consecutive-Sequence.md)
 133. [190-Reverse-Bits.md](Code/190-Reverse-Bits/190-Reverse-Bits.md)
+134. [860-Lemonade-Change.md](Code/860-Lemonade-Change/860-Lemonade-Change.md)
 
 ---
 
