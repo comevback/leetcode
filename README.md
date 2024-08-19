@@ -209,6 +209,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 95. [530-Minimum-Absolute-Difference-in-BST.md](Binary-Tree/530-Minimum-Absolute-Difference-in-BST/530-Minimum-Absolute-Difference-in-BST.md)
 96. [129-Sum-Root-to-Leaf-Numbers.md](Binary-Tree/129-Sum-Root-to-Leaf-Numbers/129-Sum-Root-to-Leaf-Numbers.md)
 97. [872-Leaf-Similar-Trees.md](Binary-Tree/872-Leaf-Similar-Trees/872-Leaf-Similar-Trees.md)
+98. [94-Binary-Tree-Inorder-Traversal.md](Binary-Tree/94-Binary-Tree-Inorder-Traversal/94-Binary-Tree-Inorder-Traversal.md)
 
 ---
 
