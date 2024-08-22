@@ -212,6 +212,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 98. [94-Binary-Tree-Inorder-Traversal.md](Binary-Tree/94-Binary-Tree-Inorder-Traversal/94-Binary-Tree-Inorder-Traversal.md)
 99. [111-Minimum-Depth-of-Binary-Tree.md](Binary-Tree/111-Minimum-Depth-of-Binary-Tree/111-Minimum-Depth-of-Binary-Tree.md)
 100. [107-Binary-Tree-Level-Order-Traversal-II.md](Binary-Tree/107-Binary-Tree-Level-Order-Traversal-II/107-Binary-Tree-Level-Order-Traversal-II.md)
+101. [145-Binary-Tree-Postorder-Traversal.md](Binary-Tree/145-Binary-Tree-Postorder-Traversal/145-Binary-Tree-Postorder-Traversal.md)
 
 ---
 
