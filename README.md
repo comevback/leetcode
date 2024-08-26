@@ -216,6 +216,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 102. [501-Find-Mode-in-Binary-Search-Tree.md](Binary-Tree/501-Find-Mode-in-Binary-Search-Tree/501-Find-Mode-in-Binary-Search-Tree.md)
 103. [655-Print-Binary-Tree.md](Binary-Tree/655-Print-Binary-Tree/655-Print-Binary-Tree.md)
 104. [703-Kth-Largest-Element-in-a-Stream.md](Binary-Tree/703-Kth-Largest-Element-in-a-Stream/703-Kth-Largest-Element-in-a-Stream.md)
+105. [2236-Root-Equals-Sum-of-Children.md](Binary-Tree/2236-Root-Equals-Sum-of-Children/2236-Root-Equals-Sum-of-Children.md)
 
 ---
 
