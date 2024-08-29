@@ -219,6 +219,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 105. [2236-Root-Equals-Sum-of-Children.md](Binary-Tree/2236-Root-Equals-Sum-of-Children/2236-Root-Equals-Sum-of-Children.md)
 106. [2265-Count-Nodes-Equal-to-Average-of-Subtree.md](Binary-Tree/2265-Count-Nodes-Equal-to-Average-of-Subtree/2265-Count-Nodes-Equal-to-Average-of-Subtree.md)
 107. [2331-Evaluate-Boolean-Binary-Tree.md](Binary-Tree/2331-Evaluate-Boolean-Binary-Tree/2331-Evaluate-Boolean-Binary-Tree.md)
+108. [2583-Kth-Largest-Sum-in-a-Binary-Tree.md](Binary-Tree/2583-Kth-Largest-Sum-in-a-Binary-Tree/2583-Kth-Largest-Sum-in-a-Binary-Tree.md)
 
 ---
 
