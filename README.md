@@ -221,6 +221,7 @@ sudo chmod +x /usr/local/bin/leetcode-setup
 107. [2331-Evaluate-Boolean-Binary-Tree.md](Binary-Tree/2331-Evaluate-Boolean-Binary-Tree/2331-Evaluate-Boolean-Binary-Tree.md)
 108. [2583-Kth-Largest-Sum-in-a-Binary-Tree.md](Binary-Tree/2583-Kth-Largest-Sum-in-a-Binary-Tree/2583-Kth-Largest-Sum-in-a-Binary-Tree.md)
 109. [2385-Amount-of-Time-for-Binary-Tree-to-Be-Infected.md](Binary-Tree/2385-Amount-of-Time-for-Binary-Tree-to-Be-Infected/2385-Amount-of-Time-for-Binary-Tree-to-Be-Infected.md)
+110. [2415-Reverse-Odd-Levels-of-Binary-Tree.md](Binary-Tree/2415-Reverse-Odd-Levels-of-Binary-Tree/2415-Reverse-Odd-Levels-of-Binary-Tree.md)
 
 ---
 
