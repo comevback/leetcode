@@ -146,3 +146,14 @@ temps/
 *.mp4
 pre.md
 __MACOSX
+/leetcode-java/leetcode-java.iml
+/.idea/.gitignore
+/.idea/labuladong/editor.xml
+/.idea/leetcode/editor.xml
+/.idea/leetcode.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/labuladong/statistics.xml
+/.idea/leetcode/statistics.xml
+/.idea/libraries/test.xml
+/.idea/vcs.xml
