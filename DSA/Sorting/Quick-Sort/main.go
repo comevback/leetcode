@@ -66,9 +66,9 @@ func QuickSort1(nums []int) {
 	}
 
 	if pivot+1 < len(nums) {
-		QuickSort(nums[pivot+1:])
+		QuickSort1(nums[pivot+1:])
 	}
-	QuickSort(nums[:pivot])
+	QuickSort1(nums[:pivot])
 }
 
 // *****************************************************  迭代实现  *****************************************************
