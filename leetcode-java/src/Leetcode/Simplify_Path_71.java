@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Leetcode 71. Simplify Path
+ * https://leetcode.com/problems/simplify-path/
+ *
+ * Given an absolute path for a file (Unix-style), simplify it.
+ *
+ * Example:
+ * Input: "/a/./b/../../c/"
+ * Output: "/c"
+ */
 public class Simplify_Path_71 {
     public static void main(String[] args){
         String input = "/../";
