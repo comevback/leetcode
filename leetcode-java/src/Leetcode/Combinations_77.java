@@ -27,7 +27,7 @@ public class Combinations_77 {
             for (int i = start; i <= n - (k - path.size()) + 1; i++){
                 path.add(i);
                 backtrack(n, k, i+1, path, res);
-                path.remove(path.size() - 1);
+                path.removeLast();
             }
         }
     }
